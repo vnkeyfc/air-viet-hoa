@@ -1,0 +1,7701 @@
+{-# cp utf8 #- Disassembled with Kprl 1.40 -}
+
+#file 'SEEN0232.TXT'
+
+#kidoku_type 2
+#character '＊Ａ'
+#character 'Housewife'
+#character 'Haruko'
+#character 'Voice'
+#character 'Children'
+#character 'Child'
+#character 'Misuzu'
+#entrypoint 000
+intF[1107] = 1
+strS[1000] = 'BG003'
+goto_unless (intF[1107] == 1) @1
+intF[1107] = 0
+msgHide
+
+  @1
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @5
+goto_unless (!intF[4]) @2
+strS[1003] = 'SDT07'
+goto @3
+
+  @2
+goto_unless (intF[4] == 1) @3
+strS[1003] = 'SDT08'
+
+  @3
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @4
+objBgMove (83, 16, 16)
+goto @5
+
+  @4
+goto_unless (intB[2] == 1) @5
+objBgMove (83, 16, 66)
+
+  @5
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @6
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @6
+bgrMulti (strS[1000], 48)
+bgmLoop ('BGM03')
+'\s{strS[1901]}'
+strS[1900] = 'I\'m used to walking around town now. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I probably won\'t need Misuzu\'s map anymore. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But it\'s so hot... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I doubt it\'ll rain for a while. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s a housewife splashing water on the scorched road. '
+gosub @761
+pause
+koePlay (505903)
+'\s{strS[1901]}'
+strS[1900] = '__(Splash some on me please...) '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Splash! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Some of it lands on my feet. '
+gosub @761
+pause
+koePlay (505904)
+'\s{strS[1901]}'
+strS[1900] = 'HousewifeOh, I\'m sorry. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It pisses me off when it actually happens. '
+gosub @761
+pause
+koePlay (505905)
+'\s{strS[1901]}'
+strS[1900] = 'HousewifeHere, have a towel... '
+gosub @761
+pause
+koePlay (505906)
+'\s{strS[1901]}'
+strS[1900] = '__It\'s fine. It\'ll dry by itself... '
+gosub @761
+pause
+intF[1107] = 1
+strS[1000] = 'BG014'
+goto_unless (intF[1107] == 1) @7
+intF[1107] = 0
+msgHide
+
+  @7
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @11
+goto_unless (!intF[4]) @8
+strS[1003] = 'SDT07'
+goto @9
+
+  @8
+goto_unless (intF[4] == 1) @9
+strS[1003] = 'SDT08'
+
+  @9
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @10
+objBgMove (83, 16, 16)
+goto @11
+
+  @10
+goto_unless (intB[2] == 1) @11
+objBgMove (83, 16, 66)
+
+  @11
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @12
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @12
+bgrMulti (strS[1000], 48)
+goto_unless (intF[335] == 1) @103
+'\s{strS[1901]}'
+strS[1900] = 'It\'s so hot... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I can\'t go back to the Kamio house yet. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s right. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can cool off by clearing my mind. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Someone interrupted me the last time I tried though. '
+gosub @761
+pause
+strS[1903] = 'Give it a try'
+strS[1904] = 'Don\'t bother '
+DisableAutoSavepoints
+'\s{strS[1901]}'
+CallDLL (0, 200, -1, 1181551, 1181552)
+intF[399] = select ('\s{strS[1903]}', '\s{strS[1904]}')
+EnableAutoSavepoints
+goto_unless (!intF[399]) @57
+'\s{strS[1901]}'
+strS[1900] = 'It\'s completely deserted here, so everything should work fine. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I place my puppet on the ground and touch it with my fingertip. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I suddenly hear a strange noise. '
+gosub @761
+pause
+koePlay (505907)
+'\s{strS[1901]}'
+strS[1900] = '__Hm...? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Vrrroooooooooom! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Snatch! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I grab my puppet and leap back. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A bike zooms past me. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Screeeeeech! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It stops a few metres ahead. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @13
+intF[1107] = 0
+msgHide
+
+  @13
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @17
+goto_unless (!intF[4]) @14
+strS[1003] = 'SDT07'
+goto @15
+
+  @14
+goto_unless (intF[4] == 1) @15
+strS[1003] = 'SDT08'
+
+  @15
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @16
+objBgMove (83, 16, 16)
+goto @17
+
+  @16
+goto_unless (intB[2] == 1) @17
+objBgMove (83, 16, 66)
+
+  @17
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @18
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @18
+bgrMulti (strS[1000], 60, copy('CGHR25S', 61))
+koePlay (505908)
+'\s{strS[1901]}'
+strS[1900] = 'Haruko...Oh, hiya. '
+gosub @761
+pause
+koePlay (505909)
+'\s{strS[1901]}'
+strS[1900] = '__Were you lying in wait for the perfect opportunity to flatten my puppet!? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @19
+intF[1107] = 0
+msgHide
+
+  @19
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @23
+goto_unless (!intF[4]) @20
+strS[1003] = 'SDT07'
+goto @21
+
+  @20
+goto_unless (intF[4] == 1) @21
+strS[1003] = 'SDT08'
+
+  @21
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @22
+objBgMove (83, 16, 16)
+goto @23
+
+  @22
+goto_unless (intB[2] == 1) @23
+objBgMove (83, 16, 66)
+
+  @23
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @24
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @24
+bgrMulti (strS[1000], 60, copy('CGHR10S', 61))
+koePlay (505910)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoWhat are yeh talkin\' about? '
+gosub @761
+pause
+koePlay (505911)
+'\s{strS[1901]}'
+strS[1900] = '__Oh, nothing. '
+gosub @761
+pause
+goto_unless (intF[351] == 1) @37
+goto_unless (intF[1107] == 1) @25
+intF[1107] = 0
+msgHide
+
+  @25
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @29
+goto_unless (!intF[4]) @26
+strS[1003] = 'SDT07'
+goto @27
+
+  @26
+goto_unless (intF[4] == 1) @27
+strS[1003] = 'SDT08'
+
+  @27
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @28
+objBgMove (83, 16, 16)
+goto @29
+
+  @28
+goto_unless (intB[2] == 1) @29
+objBgMove (83, 16, 66)
+
+  @29
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @30
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @30
+bgrMulti (strS[1000], 60, copy('CGHR15S', 61))
+koePlay (505912)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoAnd what\'s tha\' yeh\'re wearin\'!? '
+gosub @761
+pause
+koePlay (505913)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoIt\'s scarin\' me! '
+gosub @761
+pause
+koePlay (505914)
+'\s{strS[1901]}'
+strS[1900] = '__Leave me alone. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @31
+intF[1107] = 0
+msgHide
+
+  @31
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @35
+goto_unless (!intF[4]) @32
+strS[1003] = 'SDT07'
+goto @33
+
+  @32
+goto_unless (intF[4] == 1) @33
+strS[1003] = 'SDT08'
+
+  @33
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @34
+objBgMove (83, 16, 16)
+goto @35
+
+  @34
+goto_unless (intB[2] == 1) @35
+objBgMove (83, 16, 66)
+
+  @35
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @36
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @36
+bgrMulti (strS[1000], 60, copy('CGHR15S', 61))
+koePlay (505915)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoDid yeh pick up fashion tips from some city folk or summat? '
+gosub @761
+pause
+goto @38
+
+  @37
+goto_unless (!intF[351]) @38
+koePlay (505916)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoAnyway, what\'re yeh doin\' here? '
+gosub @761
+pause
+
+  @38
+koePlay (505917)
+'\s{strS[1901]}'
+strS[1900] = '__That\'s my line. '
+gosub @761
+pause
+koePlay (505918)
+'\s{strS[1901]}'
+strS[1900] = '__You\'re not meant to drive a motorbike around here. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @39
+intF[1107] = 0
+msgHide
+
+  @39
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @43
+goto_unless (!intF[4]) @40
+strS[1003] = 'SDT07'
+goto @41
+
+  @40
+goto_unless (intF[4] == 1) @41
+strS[1003] = 'SDT08'
+
+  @41
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @42
+objBgMove (83, 16, 16)
+goto @43
+
+  @42
+goto_unless (intB[2] == 1) @43
+objBgMove (83, 16, 66)
+
+  @43
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @44
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @44
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Haruko looks at the mountain she just drove down. '
+gosub @761
+pause
+koePlay (505919)
+'\s{strS[1901]}'
+strS[1900] = '__There\'s a shrine up there, right? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @45
+intF[1107] = 0
+msgHide
+
+  @45
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @49
+goto_unless (!intF[4]) @46
+strS[1003] = 'SDT07'
+goto @47
+
+  @46
+goto_unless (intF[4] == 1) @47
+strS[1003] = 'SDT08'
+
+  @47
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @48
+objBgMove (83, 16, 16)
+goto @49
+
+  @48
+goto_unless (intB[2] == 1) @49
+objBgMove (83, 16, 66)
+
+  @49
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @50
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @50
+bgrMulti (strS[1000], 60, copy('CGHR12S', 61))
+koePlay (505920)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoYeah. '
+gosub @761
+pause
+koePlay (505921)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoI visit it every now an\' then. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @51
+intF[1107] = 0
+msgHide
+
+  @51
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @55
+goto_unless (!intF[4]) @52
+strS[1003] = 'SDT07'
+goto @53
+
+  @52
+goto_unless (intF[4] == 1) @53
+strS[1003] = 'SDT08'
+
+  @53
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @54
+objBgMove (83, 16, 16)
+goto @55
+
+  @54
+goto_unless (intB[2] == 1) @55
+objBgMove (83, 16, 66)
+
+  @55
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @56
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @56
+bgrMulti (strS[1000], 60, copy('CGHR26S', 61))
+koePlay (505922)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoI jus\' missed crashin\' into the donations box though. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s one hell of a worshipper. '
+gosub @761
+pause
+goto @102
+
+  @57
+goto_unless (intF[399] == 1) @102
+'\s{strS[1901]}'
+strS[1900] = 'No, I\'d better not. We wouldn\'t need things like electric fans or air conditioning if clearing your mind did the trick. '
+gosub @761
+pause
+koePlay (505923)
+'\s{strS[1901]}'
+strS[1900] = '__Hm...? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Vrrroooooooooom! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A bike zooms past me. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Screeeeeech! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It stops a few metres ahead. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @58
+intF[1107] = 0
+msgHide
+
+  @58
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @62
+goto_unless (!intF[4]) @59
+strS[1003] = 'SDT07'
+goto @60
+
+  @59
+goto_unless (intF[4] == 1) @60
+strS[1003] = 'SDT08'
+
+  @60
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @61
+objBgMove (83, 16, 16)
+goto @62
+
+  @61
+goto_unless (intB[2] == 1) @62
+objBgMove (83, 16, 66)
+
+  @62
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @63
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @63
+bgrMulti (strS[1000], 60, copy('CGHR25S', 61))
+koePlay (505924)
+'\s{strS[1901]}'
+strS[1900] = 'Haruko...Oh, hiya. '
+gosub @761
+pause
+koePlay (505925)
+'\s{strS[1901]}'
+strS[1900] = '__Were you trying to run over my puppet!? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @64
+intF[1107] = 0
+msgHide
+
+  @64
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @68
+goto_unless (!intF[4]) @65
+strS[1003] = 'SDT07'
+goto @66
+
+  @65
+goto_unless (intF[4] == 1) @66
+strS[1003] = 'SDT08'
+
+  @66
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @67
+objBgMove (83, 16, 16)
+goto @68
+
+  @67
+goto_unless (intB[2] == 1) @68
+objBgMove (83, 16, 66)
+
+  @68
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @69
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @69
+bgrMulti (strS[1000], 60, copy('CGHR10S', 61))
+koePlay (505926)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoWhat are yeh talkin\' about? '
+gosub @761
+pause
+koePlay (505927)
+'\s{strS[1901]}'
+strS[1900] = '__Oh, nothing. '
+gosub @761
+pause
+goto_unless (intF[351] == 1) @82
+goto_unless (intF[1107] == 1) @70
+intF[1107] = 0
+msgHide
+
+  @70
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @74
+goto_unless (!intF[4]) @71
+strS[1003] = 'SDT07'
+goto @72
+
+  @71
+goto_unless (intF[4] == 1) @72
+strS[1003] = 'SDT08'
+
+  @72
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @73
+objBgMove (83, 16, 16)
+goto @74
+
+  @73
+goto_unless (intB[2] == 1) @74
+objBgMove (83, 16, 66)
+
+  @74
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @75
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @75
+bgrMulti (strS[1000], 60, copy('CGHR15S', 61))
+koePlay (505928)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoAnd what\'s tha\' yeh\'re wearin\'!? '
+gosub @761
+pause
+koePlay (505929)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoIt\'s scarin\' me! '
+gosub @761
+pause
+koePlay (505930)
+'\s{strS[1901]}'
+strS[1900] = '__Leave me alone. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @76
+intF[1107] = 0
+msgHide
+
+  @76
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @80
+goto_unless (!intF[4]) @77
+strS[1003] = 'SDT07'
+goto @78
+
+  @77
+goto_unless (intF[4] == 1) @78
+strS[1003] = 'SDT08'
+
+  @78
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @79
+objBgMove (83, 16, 16)
+goto @80
+
+  @79
+goto_unless (intB[2] == 1) @80
+objBgMove (83, 16, 66)
+
+  @80
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @81
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @81
+bgrMulti (strS[1000], 60, copy('CGHR15S', 61))
+koePlay (505931)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoDid yeh pick up fashion tips from some city folk or summat? '
+gosub @761
+pause
+goto @83
+
+  @82
+goto_unless (!intF[351]) @83
+koePlay (505932)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoAnyway, what\'re yeh doin\' here? '
+gosub @761
+pause
+
+  @83
+koePlay (505933)
+'\s{strS[1901]}'
+strS[1900] = '__That\'s my line. '
+gosub @761
+pause
+koePlay (505934)
+'\s{strS[1901]}'
+strS[1900] = '__You\'re not meant to drive a motorbike around here. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @84
+intF[1107] = 0
+msgHide
+
+  @84
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @88
+goto_unless (!intF[4]) @85
+strS[1003] = 'SDT07'
+goto @86
+
+  @85
+goto_unless (intF[4] == 1) @86
+strS[1003] = 'SDT08'
+
+  @86
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @87
+objBgMove (83, 16, 16)
+goto @88
+
+  @87
+goto_unless (intB[2] == 1) @88
+objBgMove (83, 16, 66)
+
+  @88
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @89
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @89
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Haruko looks at the mountain she just drove down. '
+gosub @761
+pause
+koePlay (505935)
+'\s{strS[1901]}'
+strS[1900] = '__There\'s a shrine up there, right? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @90
+intF[1107] = 0
+msgHide
+
+  @90
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @94
+goto_unless (!intF[4]) @91
+strS[1003] = 'SDT07'
+goto @92
+
+  @91
+goto_unless (intF[4] == 1) @92
+strS[1003] = 'SDT08'
+
+  @92
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @93
+objBgMove (83, 16, 16)
+goto @94
+
+  @93
+goto_unless (intB[2] == 1) @94
+objBgMove (83, 16, 66)
+
+  @94
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @95
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @95
+bgrMulti (strS[1000], 60, copy('CGHR12S', 61))
+koePlay (505936)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoYeah. '
+gosub @761
+pause
+koePlay (505937)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoI visit it every now an\' then. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @96
+intF[1107] = 0
+msgHide
+
+  @96
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @100
+goto_unless (!intF[4]) @97
+strS[1003] = 'SDT07'
+goto @98
+
+  @97
+goto_unless (intF[4] == 1) @98
+strS[1003] = 'SDT08'
+
+  @98
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @99
+objBgMove (83, 16, 16)
+goto @100
+
+  @99
+goto_unless (intB[2] == 1) @100
+objBgMove (83, 16, 66)
+
+  @100
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @101
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @101
+bgrMulti (strS[1000], 60, copy('CGHR26S', 61))
+koePlay (505938)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoI jus\' missed crashin\' into the donations box though. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s one hell of a worshipper. '
+gosub @761
+pause
+
+  @102
+goto @205
+
+  @103
+goto_unless (!intF[335]) @205
+'\s{strS[1901]}'
+strS[1900] = 'It\'s so hot... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I can\'t go back to the Kamio house yet. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s right. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can cool off by clearing my mind. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But the big question is, is it worth a try? '
+gosub @761
+pause
+strS[1903] = 'Give it a try'
+strS[1904] = 'Don\'t bother '
+DisableAutoSavepoints
+'\s{strS[1901]}'
+CallDLL (0, 200, -1, 1181551, 1181552)
+intF[399] = select ('\s{strS[1903]}', '\s{strS[1904]}')
+EnableAutoSavepoints
+goto_unless (!intF[399]) @148
+'\s{strS[1901]}'
+strS[1900] = 'I place my puppet on the ground and touch it with my fingertip. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I suddenly hear a strange noise. '
+gosub @761
+pause
+koePlay (505939)
+'\s{strS[1901]}'
+strS[1900] = '__Hm...? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Vrrroooooooooom! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Snatch! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I grab my puppet and leap back. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A bike zooms past me. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Screeeeeech! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It stops a few metres ahead. '
+gosub @761
+pause
+bgmLoop ('BGM02')
+goto_unless (intF[1107] == 1) @104
+intF[1107] = 0
+msgHide
+
+  @104
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @108
+goto_unless (!intF[4]) @105
+strS[1003] = 'SDT07'
+goto @106
+
+  @105
+goto_unless (intF[4] == 1) @106
+strS[1003] = 'SDT08'
+
+  @106
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @107
+objBgMove (83, 16, 16)
+goto @108
+
+  @107
+goto_unless (intB[2] == 1) @108
+objBgMove (83, 16, 66)
+
+  @108
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @109
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @109
+bgrMulti (strS[1000], 60, copy('CGHR25S', 61))
+koePlay (505940)
+'\s{strS[1901]}'
+strS[1900] = 'Haruko...Oh, hiya. '
+gosub @761
+pause
+koePlay (505941)
+'\s{strS[1901]}'
+strS[1900] = '__Is it me, or is everyone in this town trying to murder my puppet? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @110
+intF[1107] = 0
+msgHide
+
+  @110
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @114
+goto_unless (!intF[4]) @111
+strS[1003] = 'SDT07'
+goto @112
+
+  @111
+goto_unless (intF[4] == 1) @112
+strS[1003] = 'SDT08'
+
+  @112
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @113
+objBgMove (83, 16, 16)
+goto @114
+
+  @113
+goto_unless (intB[2] == 1) @114
+objBgMove (83, 16, 66)
+
+  @114
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @115
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @115
+bgrMulti (strS[1000], 60, copy('CGHR10S', 61))
+koePlay (505942)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoWhat are yeh talkin\' about? '
+gosub @761
+pause
+koePlay (505943)
+'\s{strS[1901]}'
+strS[1900] = '__Oh, nothing. '
+gosub @761
+pause
+goto_unless (intF[351] == 1) @128
+goto_unless (intF[1107] == 1) @116
+intF[1107] = 0
+msgHide
+
+  @116
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @120
+goto_unless (!intF[4]) @117
+strS[1003] = 'SDT07'
+goto @118
+
+  @117
+goto_unless (intF[4] == 1) @118
+strS[1003] = 'SDT08'
+
+  @118
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @119
+objBgMove (83, 16, 16)
+goto @120
+
+  @119
+goto_unless (intB[2] == 1) @120
+objBgMove (83, 16, 66)
+
+  @120
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @121
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @121
+bgrMulti (strS[1000], 60, copy('CGHR15S', 61))
+koePlay (505944)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoAnd what\'s tha\' yeh\'re wearin\'!? '
+gosub @761
+pause
+koePlay (505945)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoIt\'s scarin\' me! '
+gosub @761
+pause
+koePlay (505946)
+'\s{strS[1901]}'
+strS[1900] = '__Leave me alone. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @122
+intF[1107] = 0
+msgHide
+
+  @122
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @126
+goto_unless (!intF[4]) @123
+strS[1003] = 'SDT07'
+goto @124
+
+  @123
+goto_unless (intF[4] == 1) @124
+strS[1003] = 'SDT08'
+
+  @124
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @125
+objBgMove (83, 16, 16)
+goto @126
+
+  @125
+goto_unless (intB[2] == 1) @126
+objBgMove (83, 16, 66)
+
+  @126
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @127
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @127
+bgrMulti (strS[1000], 60, copy('CGHR15S', 61))
+koePlay (505947)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoThat\'s way too fancy... '
+gosub @761
+pause
+koePlay (505948)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoDid yeh pick up fashion tips from some city folk or summat? '
+gosub @761
+pause
+goto @129
+
+  @128
+goto_unless (!intF[351]) @129
+koePlay (505949)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoAnyway, what\'re yeh doin\' here? '
+gosub @761
+pause
+
+  @129
+koePlay (505950)
+'\s{strS[1901]}'
+strS[1900] = '__That\'s my line. '
+gosub @761
+pause
+koePlay (505951)
+'\s{strS[1901]}'
+strS[1900] = '__You\'re not meant to drive a motorbike around here. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @130
+intF[1107] = 0
+msgHide
+
+  @130
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @134
+goto_unless (!intF[4]) @131
+strS[1003] = 'SDT07'
+goto @132
+
+  @131
+goto_unless (intF[4] == 1) @132
+strS[1003] = 'SDT08'
+
+  @132
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @133
+objBgMove (83, 16, 16)
+goto @134
+
+  @133
+goto_unless (intB[2] == 1) @134
+objBgMove (83, 16, 66)
+
+  @134
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @135
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @135
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Haruko looks at the mountain she just drove down. '
+gosub @761
+pause
+koePlay (505952)
+'\s{strS[1901]}'
+strS[1900] = '__There\'s a shrine up there, right? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @136
+intF[1107] = 0
+msgHide
+
+  @136
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @140
+goto_unless (!intF[4]) @137
+strS[1003] = 'SDT07'
+goto @138
+
+  @137
+goto_unless (intF[4] == 1) @138
+strS[1003] = 'SDT08'
+
+  @138
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @139
+objBgMove (83, 16, 16)
+goto @140
+
+  @139
+goto_unless (intB[2] == 1) @140
+objBgMove (83, 16, 66)
+
+  @140
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @141
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @141
+bgrMulti (strS[1000], 60, copy('CGHR12S', 61))
+koePlay (505953)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoYeah. '
+gosub @761
+pause
+koePlay (505954)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoI visit it every now an\' then. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @142
+intF[1107] = 0
+msgHide
+
+  @142
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @146
+goto_unless (!intF[4]) @143
+strS[1003] = 'SDT07'
+goto @144
+
+  @143
+goto_unless (intF[4] == 1) @144
+strS[1003] = 'SDT08'
+
+  @144
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @145
+objBgMove (83, 16, 16)
+goto @146
+
+  @145
+goto_unless (intB[2] == 1) @146
+objBgMove (83, 16, 66)
+
+  @146
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @147
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @147
+bgrMulti (strS[1000], 60, copy('CGHR26S', 61))
+koePlay (505955)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoI jus\' missed crashin\' into the donations box though. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s one hell of a worshipper. '
+gosub @761
+pause
+goto @205
+
+  @148
+goto_unless (intF[399] == 1) @205
+'\s{strS[1901]}'
+strS[1900] = 'No, I\'d better not. We wouldn\'t need things like electric fans or air conditioning if clearing your mind did the trick. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can hear a roaring sound behind me. '
+gosub @761
+pause
+koePlay (505956)
+'\s{strS[1901]}'
+strS[1900] = '__Hm...? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Vrrroooooooooom! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Pow! '
+gosub @761
+shake (1)
+strS[1900] = ' '
+gosub @761
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'A motorbike hit me! '
+gosub @761
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG051', 0)
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tweet, tweet... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Bzzzz, bzzz... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sky is a clear, serene blue. '
+gosub @761
+pause
+koePlay (505957)
+'\s{strS[1901]}'
+strS[1900] = '__Oh yeah. I should go preach about love and peace... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I get up. '
+gosub @761
+pause
+intF[1107] = 1
+strS[1000] = 'BG014'
+goto_unless (intF[1107] == 1) @149
+intF[1107] = 0
+msgHide
+
+  @149
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @153
+goto_unless (!intF[4]) @150
+strS[1003] = 'SDT07'
+goto @151
+
+  @150
+goto_unless (intF[4] == 1) @151
+strS[1003] = 'SDT08'
+
+  @151
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @152
+objBgMove (83, 16, 16)
+goto @153
+
+  @152
+goto_unless (intB[2] == 1) @153
+objBgMove (83, 16, 66)
+
+  @153
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @154
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @154
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+koePlay (505958)
+'\s{strS[1901]}'
+strS[1900] = '__No, wait...! Who ran me over!? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s a motorbike parked in front of me. '
+gosub @761
+pause
+koePlay (505959)
+'\s{strS[1901]}'
+strS[1900] = 'VoiceUwah... I think I jus\' hit summat. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The rider takes off her helmet. '
+gosub @761
+pause
+bgmFadeOut (1200)
+goto_unless (intF[1107] == 1) @155
+intF[1107] = 0
+msgHide
+
+  @155
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @159
+goto_unless (!intF[4]) @156
+strS[1003] = 'SDT07'
+goto @157
+
+  @156
+goto_unless (intF[4] == 1) @157
+strS[1003] = 'SDT08'
+
+  @157
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @158
+objBgMove (83, 16, 16)
+goto @159
+
+  @158
+goto_unless (intB[2] == 1) @159
+objBgMove (83, 16, 66)
+
+  @159
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @160
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @160
+bgrMulti (strS[1000], 60, copy('CGHR11S', 61))
+bgmFadeOutEx
+bgmLoop ('BGM02')
+koePlay (505960)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoOh, look who it is. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @161
+intF[1107] = 0
+msgHide
+
+  @161
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @165
+goto_unless (!intF[4]) @162
+strS[1003] = 'SDT07'
+goto @163
+
+  @162
+goto_unless (intF[4] == 1) @163
+strS[1003] = 'SDT08'
+
+  @163
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @164
+objBgMove (83, 16, 16)
+goto @165
+
+  @164
+goto_unless (intB[2] == 1) @165
+objBgMove (83, 16, 66)
+
+  @165
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @166
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @166
+bgrMulti (strS[1000], 60, copy('CGHR26S', 61))
+koePlay (505961)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoYeh look a bit shaken up, but yer standin\' up straight. No harm done then. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m speechless. '
+gosub @761
+pause
+goto_unless (intF[351] == 1) @179
+goto_unless (intF[1107] == 1) @167
+intF[1107] = 0
+msgHide
+
+  @167
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @171
+goto_unless (!intF[4]) @168
+strS[1003] = 'SDT07'
+goto @169
+
+  @168
+goto_unless (intF[4] == 1) @169
+strS[1003] = 'SDT08'
+
+  @169
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @170
+objBgMove (83, 16, 16)
+goto @171
+
+  @170
+goto_unless (intB[2] == 1) @171
+objBgMove (83, 16, 66)
+
+  @171
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @172
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @172
+bgrMulti (strS[1000], 60, copy('CGHR15S', 61))
+koePlay (505962)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoAnd what the hell are yeh wearin\'!? '
+gosub @761
+pause
+koePlay (505963)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoYeh scarin\' me! '
+gosub @761
+pause
+koePlay (505964)
+'\s{strS[1901]}'
+strS[1900] = '__Leave me alone. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @173
+intF[1107] = 0
+msgHide
+
+  @173
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @177
+goto_unless (!intF[4]) @174
+strS[1003] = 'SDT07'
+goto @175
+
+  @174
+goto_unless (intF[4] == 1) @175
+strS[1003] = 'SDT08'
+
+  @175
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @176
+objBgMove (83, 16, 16)
+goto @177
+
+  @176
+goto_unless (intB[2] == 1) @177
+objBgMove (83, 16, 66)
+
+  @177
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @178
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @178
+bgrMulti (strS[1000], 60, copy('CGHR15S', 61))
+koePlay (505965)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoThat\'s way too fancy... '
+gosub @761
+pause
+koePlay (505966)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoDid yeh pick up fashion tips from some city folk or summat? '
+gosub @761
+pause
+goto @180
+
+  @179
+goto_unless (!intF[351]) @180
+koePlay (505967)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoAnyway, what\'re yeh doin\' here? '
+gosub @761
+pause
+
+  @180
+goto_unless (intF[1107] == 1) @181
+intF[1107] = 0
+msgHide
+
+  @181
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @185
+goto_unless (!intF[4]) @182
+strS[1003] = 'SDT07'
+goto @183
+
+  @182
+goto_unless (intF[4] == 1) @183
+strS[1003] = 'SDT08'
+
+  @183
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @184
+objBgMove (83, 16, 16)
+goto @185
+
+  @184
+goto_unless (intB[2] == 1) @185
+objBgMove (83, 16, 66)
+
+  @185
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @186
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @186
+bgrMulti (strS[1000], 60, copy('CGHR25S', 61))
+koePlay (505968)
+'\s{strS[1901]}'
+strS[1900] = '__That\'s my line. '
+gosub @761
+pause
+koePlay (505969)
+'\s{strS[1901]}'
+strS[1900] = '__You\'re not meant to drive a motorbike around here. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @187
+intF[1107] = 0
+msgHide
+
+  @187
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @191
+goto_unless (!intF[4]) @188
+strS[1003] = 'SDT07'
+goto @189
+
+  @188
+goto_unless (intF[4] == 1) @189
+strS[1003] = 'SDT08'
+
+  @189
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @190
+objBgMove (83, 16, 16)
+goto @191
+
+  @190
+goto_unless (intB[2] == 1) @191
+objBgMove (83, 16, 66)
+
+  @191
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @192
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @192
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Haruko looks at the mountain she just drove down. '
+gosub @761
+pause
+koePlay (505970)
+'\s{strS[1901]}'
+strS[1900] = '__There\'s a shrine up there, right? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @193
+intF[1107] = 0
+msgHide
+
+  @193
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @197
+goto_unless (!intF[4]) @194
+strS[1003] = 'SDT07'
+goto @195
+
+  @194
+goto_unless (intF[4] == 1) @195
+strS[1003] = 'SDT08'
+
+  @195
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @196
+objBgMove (83, 16, 16)
+goto @197
+
+  @196
+goto_unless (intB[2] == 1) @197
+objBgMove (83, 16, 66)
+
+  @197
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @198
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @198
+bgrMulti (strS[1000], 60, copy('CGHR12S', 61))
+koePlay (505971)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoYeah. '
+gosub @761
+pause
+koePlay (505972)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoI visit it every now an\' then. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @199
+intF[1107] = 0
+msgHide
+
+  @199
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @203
+goto_unless (!intF[4]) @200
+strS[1003] = 'SDT07'
+goto @201
+
+  @200
+goto_unless (intF[4] == 1) @201
+strS[1003] = 'SDT08'
+
+  @201
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @202
+objBgMove (83, 16, 16)
+goto @203
+
+  @202
+goto_unless (intB[2] == 1) @203
+objBgMove (83, 16, 66)
+
+  @203
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @204
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @204
+bgrMulti (strS[1000], 60, copy('CGHR26S', 61))
+koePlay (505973)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoI jus\' missed crashin\' into the donations box though. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s one hell of a worshipper. '
+gosub @761
+pause
+
+  @205
+koePlay (505974)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoAnyway, I\'ve got to get back teh work! '
+gosub @761
+pause
+koePlay (505975)
+'\s{strS[1901]}'
+strS[1900] = '__Yeah, yeah, get going. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @206
+intF[1107] = 0
+msgHide
+
+  @206
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @210
+goto_unless (!intF[4]) @207
+strS[1003] = 'SDT07'
+goto @208
+
+  @207
+goto_unless (intF[4] == 1) @208
+strS[1003] = 'SDT08'
+
+  @208
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @209
+objBgMove (83, 16, 16)
+goto @210
+
+  @209
+goto_unless (intB[2] == 1) @210
+objBgMove (83, 16, 66)
+
+  @210
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @211
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @211
+bgrMulti (strS[1000], 0)
+koePlay (505976)
+'\s{strS[1901]}'
+strS[1900] = 'HarukoSee yeh. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Vrrroooooooooom! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bike blows up dust as it fades into the distance. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sounds of the peaceful countryside return. '
+gosub @761
+pause
+bgmFadeOut (1200)
+koePlay (505977)
+'\s{strS[1901]}'
+strS[1900] = '__(The shrine, eh...?) '
+gosub @761
+pause
+koePlay (505978)
+'\s{strS[1901]}'
+strS[1900] = '__(I\'ve got nothing else to do. Might as well have a look.) '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I walk in the direction Haruko came from. '
+gosub @761
+pause
+intF[1107] = 1
+strS[1000] = 'BG013'
+goto_unless (intF[1107] == 1) @212
+intF[1107] = 0
+msgHide
+
+  @212
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @216
+goto_unless (!intF[4]) @213
+strS[1003] = 'SDT07'
+goto @214
+
+  @213
+goto_unless (intF[4] == 1) @214
+strS[1003] = 'SDT08'
+
+  @214
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @215
+objBgMove (83, 16, 16)
+goto @216
+
+  @215
+goto_unless (intB[2] == 1) @216
+objBgMove (83, 16, 66)
+
+  @216
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @217
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @217
+bgrMulti (strS[1000], 48)
+wavStop
+wavPlay ('MINMIN')
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I didn\'t come here for any particular reason really... '
+gosub @761
+pause
+koePlay (505979)
+'\s{strS[1901]}'
+strS[1900] = '__(There\'s nothing here...) '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Only the clouds\' shadows move. The cicadas\' buzzing fills my ears. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s no cars, or people talking. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Nothing but buzzing, buzzing, and more buzzing. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Buzzbuzzbuzzbuzzbuzzbuzzbuzzbuzz... '
+gosub @761
+pause
+koePlay (505980)
+'\s{strS[1901]}'
+strS[1900] = '__Shut up! '
+gosub @761
+pause
+wavStopAll
+wavStop
+wavPlay ('MINMIN')
+'\s{strS[1901]}'
+strS[1900] = 'But they just got louder, to spite me... '
+gosub @761
+pause
+koePlay (505981)
+'\s{strS[1901]}'
+strS[1900] = '__Guess I\'ll head back... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I turn around. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s a few kids standing under a tree. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They\'re holding nets and cages. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They\'re probably catching insects. '
+gosub @761
+pause
+bgmLoop ('BGM00')
+koePlay (505982)
+'\s{strS[1901]}'
+strS[1900] = 'ChildOh, let\'s ask him. '
+gosub @761
+pause
+koePlay (505983)
+'\s{strS[1901]}'
+strS[1900] = 'ChildHe\'s pretty big. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t know why, but they\'re looking at me. '
+gosub @761
+pause
+koePlay (505984)
+'\s{strS[1901]}'
+strS[1900] = 'ChildUhh, his eyes look kinda scary... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+koePlay (505985)
+'\s{strS[1901]}'
+strS[1900] = 'ChildHiya. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'One of them approaches me. '
+gosub @761
+pause
+koePlay (505986)
+'\s{strS[1901]}'
+strS[1900] = '__What...? '
+gosub @761
+pause
+koePlay (505987)
+'\s{strS[1901]}'
+strS[1900] = 'ChildCan you kick that tree for us? '
+gosub @761
+pause
+koePlay (505988)
+'\s{strS[1901]}'
+strS[1900] = '__Kick it? Why? '
+gosub @761
+pause
+koePlay (505989)
+'\s{strS[1901]}'
+strS[1900] = 'ChildTo make the insects fall out. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look up at the tree. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Will that really work...? '
+gosub @761
+pause
+koePlay (505990)
+'\s{strS[1901]}'
+strS[1900] = '__Okay, I\'ll give it a kick. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The kids cheer. '
+gosub @761
+pause
+koePlay (505991)
+'\s{strS[1901]}'
+strS[1900] = 'ChildKick it as hard as you can. '
+gosub @761
+pause
+koePlay (505992)
+'\s{strS[1901]}'
+strS[1900] = '__As hard as I can...? '
+gosub @761
+pause
+koePlay (505993)
+'\s{strS[1901]}'
+strS[1900] = '__Move aside, you guys. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I stand in front of the tree. '
+gosub @761
+pause
+koePlay (505994)
+'\s{strS[1901]}'
+strS[1900] = '__One, two...! '
+gosub @761
+pause
+wavStopAll
+'\s{strS[1901]}'
+strS[1900] = 'Bam!! '
+gosub @761
+shake (3)
+strS[1900] = ' '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The tree shakes for an instant. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Thud thud thud!! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Loads of insects fall down. '
+gosub @761
+pause
+koePlay (505995)
+'\s{strS[1901]}'
+strS[1900] = '__See you. '
+gosub @761
+pause
+koePlay (505996)
+'\s{strS[1901]}'
+strS[1900] = 'ChildWah! That guy\'s leaving with tons of crawlies on him! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m covered in insects. '
+gosub @761
+pause
+koePlay (505997)
+'\s{strS[1901]}'
+strS[1900] = 'ChildYaaay! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The kids flock around me, catching them. '
+gosub @761
+pause
+koePlay (505998)
+'\s{strS[1901]}'
+strS[1900] = 'ChildI don\'t need another beetle. '
+gosub @761
+pause
+koePlay (505999)
+'\s{strS[1901]}'
+strS[1900] = '__Get them off me! '
+gosub @761
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+intF[1107] = 1
+strS[1000] = 'BG013'
+goto_unless (intF[1107] == 1) @218
+intF[1107] = 0
+msgHide
+
+  @218
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @222
+goto_unless (!intF[4]) @219
+strS[1003] = 'SDT07'
+goto @220
+
+  @219
+goto_unless (intF[4] == 1) @220
+strS[1003] = 'SDT08'
+
+  @220
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @221
+objBgMove (83, 16, 16)
+goto @222
+
+  @221
+goto_unless (intB[2] == 1) @222
+objBgMove (83, 16, 66)
+
+  @222
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @223
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @223
+bgrMulti (strS[1000], 48)
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The kids leave. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I watch them go. '
+gosub @761
+pause
+koePlay (606000)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuBye bye. '
+gosub @761
+pause
+koePlay (606001)
+'\s{strS[1901]}'
+strS[1900] = '__Huh...? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @224
+intF[1107] = 0
+msgHide
+
+  @224
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @228
+goto_unless (!intF[4]) @225
+strS[1003] = 'SDT07'
+goto @226
+
+  @225
+goto_unless (intF[4] == 1) @226
+strS[1003] = 'SDT08'
+
+  @226
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @227
+objBgMove (83, 16, 16)
+goto @228
+
+  @227
+goto_unless (intB[2] == 1) @228
+objBgMove (83, 16, 66)
+
+  @228
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @229
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @229
+bgrMulti (strS[1000], 60, copy('CGMZ10S', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu\'s standing next to me. '
+gosub @761
+pause
+koePlay (606002)
+'\s{strS[1901]}'
+strS[1900] = '__You were here...? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @230
+intF[1107] = 0
+msgHide
+
+  @230
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @234
+goto_unless (!intF[4]) @231
+strS[1003] = 'SDT07'
+goto @232
+
+  @231
+goto_unless (intF[4] == 1) @232
+strS[1003] = 'SDT08'
+
+  @232
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @233
+objBgMove (83, 16, 16)
+goto @234
+
+  @233
+goto_unless (intB[2] == 1) @234
+objBgMove (83, 16, 66)
+
+  @234
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @235
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @235
+bgrMulti (strS[1000], 60, copy('CGMZ16S', 61))
+koePlay (606003)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI only got here just now. But it looks like I missed them. '
+gosub @761
+pause
+koePlay (606004)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThe kids left... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @236
+intF[1107] = 0
+msgHide
+
+  @236
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @240
+goto_unless (!intF[4]) @237
+strS[1003] = 'SDT07'
+goto @238
+
+  @237
+goto_unless (intF[4] == 1) @238
+strS[1003] = 'SDT08'
+
+  @238
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @239
+objBgMove (83, 16, 16)
+goto @240
+
+  @239
+goto_unless (intB[2] == 1) @240
+objBgMove (83, 16, 66)
+
+  @240
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @241
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @241
+bgrMulti (strS[1000], 60, copy('CGMZ25S', 61))
+koePlay (606005)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYou were playing with those kids, __-san. '
+gosub @761
+pause
+koePlay (606006)
+'\s{strS[1901]}'
+strS[1900] = '__No I wasn\'t. '
+gosub @761
+pause
+koePlay (606007)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuIt\'s not good to play by yourself. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She must think I caught insects with those kids. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @242
+intF[1107] = 0
+msgHide
+
+  @242
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @246
+goto_unless (!intF[4]) @243
+strS[1003] = 'SDT07'
+goto @244
+
+  @243
+goto_unless (intF[4] == 1) @244
+strS[1003] = 'SDT08'
+
+  @244
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @245
+objBgMove (83, 16, 16)
+goto @246
+
+  @245
+goto_unless (intB[2] == 1) @246
+objBgMove (83, 16, 66)
+
+  @246
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @247
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @247
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606008)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI wish you\'d invited me too. '
+gosub @761
+pause
+koePlay (606009)
+'\s{strS[1901]}'
+strS[1900] = '__Weren\'t you cleaning? '
+gosub @761
+pause
+koePlay (606010)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuBut it\'s not nice to go ahead without me. '
+gosub @761
+pause
+koePlay (606011)
+'\s{strS[1901]}'
+strS[1900] = '__I wasn\'t really playing with them though... '
+gosub @761
+pause
+koePlay (606012)
+'\s{strS[1901]}'
+strS[1900] = '__What about you? Why\'d you come here? '
+gosub @761
+pause
+koePlay (606013)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI followed you here. I saw you from downtown. '
+gosub @761
+pause
+koePlay (606014)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuAnd when I did, you were catching insects with those kids. '
+gosub @761
+pause
+koePlay (606015)
+'\s{strS[1901]}'
+strS[1900] = '__I told you, I wasn\'t. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @248
+intF[1107] = 0
+msgHide
+
+  @248
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @252
+goto_unless (!intF[4]) @249
+strS[1003] = 'SDT07'
+goto @250
+
+  @249
+goto_unless (intF[4] == 1) @250
+strS[1003] = 'SDT08'
+
+  @250
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @251
+objBgMove (83, 16, 16)
+goto @252
+
+  @251
+goto_unless (intB[2] == 1) @252
+objBgMove (83, 16, 66)
+
+  @252
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @253
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @253
+bgrMulti (strS[1000], 60, copy('CGMZ26S', 61))
+koePlay (606016)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuHere\'s a beetle as proof. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She picks up a beetle from my back. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It zooms off Misuzu\'s hand. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @254
+intF[1107] = 0
+msgHide
+
+  @254
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @258
+goto_unless (!intF[4]) @255
+strS[1003] = 'SDT07'
+goto @256
+
+  @255
+goto_unless (intF[4] == 1) @256
+strS[1003] = 'SDT08'
+
+  @256
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @257
+objBgMove (83, 16, 16)
+goto @258
+
+  @257
+goto_unless (intB[2] == 1) @258
+objBgMove (83, 16, 66)
+
+  @258
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @259
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @259
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606017)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYou\'re really interesting, __-san. '
+gosub @761
+pause
+koePlay (606018)
+'\s{strS[1901]}'
+strS[1900] = '__I am? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @260
+intF[1107] = 0
+msgHide
+
+  @260
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @264
+goto_unless (!intF[4]) @261
+strS[1003] = 'SDT07'
+goto @262
+
+  @261
+goto_unless (intF[4] == 1) @262
+strS[1003] = 'SDT08'
+
+  @262
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @263
+objBgMove (83, 16, 16)
+goto @264
+
+  @263
+goto_unless (intB[2] == 1) @264
+objBgMove (83, 16, 66)
+
+  @264
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @265
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @265
+bgrMulti (strS[1000], 60, copy('CGMZ12S', 61))
+koePlay (606019)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYou\'re quiet with a cool attitude, but you\'re always doing childish things. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '...The truth shocks me. '
+gosub @761
+pause
+koePlay (606020)
+'\s{strS[1901]}'
+strS[1900] = '__Seriously...? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @266
+intF[1107] = 0
+msgHide
+
+  @266
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @270
+goto_unless (!intF[4]) @267
+strS[1003] = 'SDT07'
+goto @268
+
+  @267
+goto_unless (intF[4] == 1) @268
+strS[1003] = 'SDT08'
+
+  @268
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @269
+objBgMove (83, 16, 16)
+goto @270
+
+  @269
+goto_unless (intB[2] == 1) @270
+objBgMove (83, 16, 66)
+
+  @270
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @271
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @271
+bgrMulti (strS[1000], 60, copy('CGMZ10S', 61))
+koePlay (606021)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYep, seriously. '
+gosub @761
+pause
+goto_unless (intF[351] == 1) @272
+koePlay (606022)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYou were walking around in that Stegosaurus t-shirt, going \'Gao, gao\' today. '
+gosub @761
+pause
+koePlay (606023)
+'\s{strS[1901]}'
+strS[1900] = '__I wasn\'t doing that because I wanted to... '
+gosub @761
+pause
+
+  @272
+goto_unless (intF[1107] == 1) @273
+intF[1107] = 0
+msgHide
+
+  @273
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @277
+goto_unless (!intF[4]) @274
+strS[1003] = 'SDT07'
+goto @275
+
+  @274
+goto_unless (intF[4] == 1) @275
+strS[1003] = 'SDT08'
+
+  @275
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @276
+objBgMove (83, 16, 16)
+goto @277
+
+  @276
+goto_unless (intB[2] == 1) @277
+objBgMove (83, 16, 66)
+
+  @277
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @278
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @278
+bgrMulti (strS[1000], 60, copy('CGMZ26S', 61))
+koePlay (606024)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuBut that\'s what makes you interesting, so I like it. '
+gosub @761
+pause
+koePlay (606025)
+'\s{strS[1901]}'
+strS[1900] = '__I don\'t care if you like me or lump me. I\'m gonna go through life with a cool attitude from now on... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @279
+intF[1107] = 0
+msgHide
+
+  @279
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @283
+goto_unless (!intF[4]) @280
+strS[1003] = 'SDT07'
+goto @281
+
+  @280
+goto_unless (intF[4] == 1) @281
+strS[1003] = 'SDT08'
+
+  @281
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @282
+objBgMove (83, 16, 16)
+goto @283
+
+  @282
+goto_unless (intB[2] == 1) @283
+objBgMove (83, 16, 66)
+
+  @283
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @284
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @284
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I start wobbling downhill. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @285
+intF[1107] = 0
+msgHide
+
+  @285
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @289
+goto_unless (!intF[4]) @286
+strS[1003] = 'SDT07'
+goto @287
+
+  @286
+goto_unless (intF[4] == 1) @287
+strS[1003] = 'SDT08'
+
+  @287
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @288
+objBgMove (83, 16, 16)
+goto @289
+
+  @288
+goto_unless (intB[2] == 1) @289
+objBgMove (83, 16, 66)
+
+  @289
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @290
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @290
+bgrMulti (strS[1000], 60, copy('CGMZ25S', 61))
+koePlay (606026)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuWhere are you going? '
+gosub @761
+pause
+koePlay (606027)
+'\s{strS[1901]}'
+strS[1900] = '__Wherever the wind takes me. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I reply cooly. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @291
+intF[1107] = 0
+msgHide
+
+  @291
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @295
+goto_unless (!intF[4]) @292
+strS[1003] = 'SDT07'
+goto @293
+
+  @292
+goto_unless (intF[4] == 1) @293
+strS[1003] = 'SDT08'
+
+  @293
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @294
+objBgMove (83, 16, 16)
+goto @295
+
+  @294
+goto_unless (intB[2] == 1) @295
+objBgMove (83, 16, 66)
+
+  @295
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @296
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @296
+bgrMulti (strS[1000], 0)
+koePlay (606028)
+'\s{strS[1901]}'
+strS[1900] = '__See you. '
+gosub @761
+pause
+koePlay (606029)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuWah, wait! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu runs up to me and grabs my arm. '
+gosub @761
+pause
+koePlay (606030)
+'\s{strS[1901]}'
+strS[1900] = '__What? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @297
+intF[1107] = 0
+msgHide
+
+  @297
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @301
+goto_unless (!intF[4]) @298
+strS[1003] = 'SDT07'
+goto @299
+
+  @298
+goto_unless (intF[4] == 1) @299
+strS[1003] = 'SDT08'
+
+  @299
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @300
+objBgMove (83, 16, 16)
+goto @301
+
+  @300
+goto_unless (intB[2] == 1) @301
+objBgMove (83, 16, 66)
+
+  @301
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @302
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @302
+bgrMulti (strS[1000], 60, copy('CGMZ16S', 61))
+koePlay (606031)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuUmm... '
+gosub @761
+pause
+koePlay (606032)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI\'d like to play more, since we\'re already out here. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @303
+intF[1107] = 0
+msgHide
+
+  @303
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @307
+goto_unless (!intF[4]) @304
+strS[1003] = 'SDT07'
+goto @305
+
+  @304
+goto_unless (intF[4] == 1) @305
+strS[1003] = 'SDT08'
+
+  @305
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @306
+objBgMove (83, 16, 16)
+goto @307
+
+  @306
+goto_unless (intB[2] == 1) @307
+objBgMove (83, 16, 66)
+
+  @307
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @308
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @308
+bgrMulti (strS[1000], 60, copy('CGMZ25S', 61))
+koePlay (606033)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuLike hide and seek. '
+gosub @761
+pause
+koePlay (606034)
+'\s{strS[1901]}'
+strS[1900] = '__What? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @309
+intF[1107] = 0
+msgHide
+
+  @309
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @313
+goto_unless (!intF[4]) @310
+strS[1003] = 'SDT07'
+goto @311
+
+  @310
+goto_unless (intF[4] == 1) @311
+strS[1003] = 'SDT08'
+
+  @311
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @312
+objBgMove (83, 16, 16)
+goto @313
+
+  @312
+goto_unless (intB[2] == 1) @313
+objBgMove (83, 16, 66)
+
+  @313
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @314
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @314
+bgrMulti (strS[1000], 60, copy('CGMZ11S', 61))
+koePlay (606035)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuHide and seek! '
+gosub @761
+pause
+koePlay (606036)
+'\s{strS[1901]}'
+strS[1900] = '__Can\'t you find some kids around town to do that with? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @315
+intF[1107] = 0
+msgHide
+
+  @315
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @319
+goto_unless (!intF[4]) @316
+strS[1003] = 'SDT07'
+goto @317
+
+  @316
+goto_unless (intF[4] == 1) @317
+strS[1003] = 'SDT08'
+
+  @317
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @318
+objBgMove (83, 16, 16)
+goto @319
+
+  @318
+goto_unless (intB[2] == 1) @319
+objBgMove (83, 16, 66)
+
+  @319
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @320
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @320
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606037)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI want to play with you, __-san. '
+gosub @761
+pause
+koePlay (606038)
+'\s{strS[1901]}'
+strS[1900] = '__How old are we again? '
+gosub @761
+pause
+koePlay (606039)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuIt\'s got nothing to do with age. '
+gosub @761
+pause
+koePlay (606040)
+'\s{strS[1901]}'
+strS[1900] = '__But I just decided to go through life with a cool attitude... '
+gosub @761
+pause
+strS[1903] = 'Go back'
+strS[1904] = 'Play with Misuzu '
+DisableAutoSavepoints
+'\s{strS[1901]}'
+CallDLL (0, 200, -1, 1181551, 1181552)
+intF[399] = select ('\s{strS[1903]}', '\s{strS[1904]}')
+EnableAutoSavepoints
+goto_unless (!intF[399]) @369
+koePlay (606041)
+'\s{strS[1901]}'
+strS[1900] = '__I\'m going back. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @321
+intF[1107] = 0
+msgHide
+
+  @321
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @325
+goto_unless (!intF[4]) @322
+strS[1003] = 'SDT07'
+goto @323
+
+  @322
+goto_unless (intF[4] == 1) @323
+strS[1003] = 'SDT08'
+
+  @323
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @324
+objBgMove (83, 16, 16)
+goto @325
+
+  @324
+goto_unless (intB[2] == 1) @325
+objBgMove (83, 16, 66)
+
+  @325
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @326
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @326
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I turn around and start heading down the hill. '
+gosub @761
+pause
+koePlay (606042)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuAww... That\'s a shame. '
+gosub @761
+pause
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu follows after me. '
+gosub @761
+pause
+bgmFadeOutEx
+bgmLoop ('BGM03')
+intF[1107] = 1
+strS[1000] = 'BG014'
+goto_unless (intF[1107] == 1) @327
+intF[1107] = 0
+msgHide
+
+  @327
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @331
+goto_unless (!intF[4]) @328
+strS[1003] = 'SDT07'
+goto @329
+
+  @328
+goto_unless (intF[4] == 1) @329
+strS[1003] = 'SDT08'
+
+  @329
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @330
+objBgMove (83, 16, 16)
+goto @331
+
+  @330
+goto_unless (intB[2] == 1) @331
+objBgMove (83, 16, 66)
+
+  @331
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @332
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @332
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I can hear the stream bubbling. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu peers at it from the bridge. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @333
+intF[1107] = 0
+msgHide
+
+  @333
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @337
+goto_unless (!intF[4]) @334
+strS[1003] = 'SDT07'
+goto @335
+
+  @334
+goto_unless (intF[4] == 1) @335
+strS[1003] = 'SDT08'
+
+  @335
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @336
+objBgMove (83, 16, 16)
+goto @337
+
+  @336
+goto_unless (intB[2] == 1) @337
+objBgMove (83, 16, 66)
+
+  @337
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @338
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @338
+bgrMulti (strS[1000], 60, copy('CGMZ10S', 61))
+koePlay (606043)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI want to scoop up fish... '
+gosub @761
+pause
+koePlay (606044)
+'\s{strS[1901]}'
+strS[1900] = '__I want to go swimming too... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It would be so refreshing if we did. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I\'ve already found out for myself just how shallow the stream is. We can\'t swim in it. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @339
+intF[1107] = 0
+msgHide
+
+  @339
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @343
+goto_unless (!intF[4]) @340
+strS[1003] = 'SDT07'
+goto @341
+
+  @340
+goto_unless (intF[4] == 1) @341
+strS[1003] = 'SDT08'
+
+  @341
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @342
+objBgMove (83, 16, 16)
+goto @343
+
+  @342
+goto_unless (intB[2] == 1) @343
+objBgMove (83, 16, 66)
+
+  @343
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @344
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @344
+bgrMulti (strS[1000], 60, copy('CGMZ26S', 61))
+koePlay (606045)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYep, that\'d be nice. '
+gosub @761
+pause
+koePlay (606046)
+'\s{strS[1901]}'
+strS[1900] = '__You think everything\'s nice. '
+gosub @761
+pause
+koePlay (606047)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuIt\'s the summer holidays. I want to play as much as possible. '
+gosub @761
+pause
+koePlay (606048)
+'\s{strS[1901]}'
+strS[1900] = '__You have homework too. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @345
+intF[1107] = 0
+msgHide
+
+  @345
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @349
+goto_unless (!intF[4]) @346
+strS[1003] = 'SDT07'
+goto @347
+
+  @346
+goto_unless (intF[4] == 1) @347
+strS[1003] = 'SDT08'
+
+  @347
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @348
+objBgMove (83, 16, 16)
+goto @349
+
+  @348
+goto_unless (intB[2] == 1) @349
+objBgMove (83, 16, 66)
+
+  @349
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @350
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @350
+bgrMulti (strS[1000], 60, copy('CGMZ16S', 61))
+koePlay (606049)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI\'m doing that as well. '
+gosub @761
+pause
+koePlay (606050)
+'\s{strS[1901]}'
+strS[1900] = '__Are you really...? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @351
+intF[1107] = 0
+msgHide
+
+  @351
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @355
+goto_unless (!intF[4]) @352
+strS[1003] = 'SDT07'
+goto @353
+
+  @352
+goto_unless (intF[4] == 1) @353
+strS[1003] = 'SDT08'
+
+  @353
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @354
+objBgMove (83, 16, 16)
+goto @355
+
+  @354
+goto_unless (intB[2] == 1) @355
+objBgMove (83, 16, 66)
+
+  @355
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @356
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @356
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606051)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThat\'s why we should play. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @357
+intF[1107] = 0
+msgHide
+
+  @357
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @361
+goto_unless (!intF[4]) @358
+strS[1003] = 'SDT07'
+goto @359
+
+  @358
+goto_unless (intF[4] == 1) @359
+strS[1003] = 'SDT08'
+
+  @359
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @360
+objBgMove (83, 16, 16)
+goto @361
+
+  @360
+goto_unless (intB[2] == 1) @361
+objBgMove (83, 16, 66)
+
+  @361
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @362
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @362
+bgrMulti (strS[1000], 0)
+koePlay (606052)
+'\s{strS[1901]}'
+strS[1900] = '__I told you I don\'t want to... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Splash! '
+gosub @761
+pause
+koePlay (606053)
+'\s{strS[1901]}'
+strS[1900] = '__What? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu\'s isn\'t there when I turn around. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Instead, I hear happy shouts and giggles coming from below. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s already started playing. '
+gosub @761
+pause
+koePlay (606054)
+'\s{strS[1901]}'
+strS[1900] = '__Haah... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I only waste time when I\'m around her. I never make progress on anything. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'ve honestly enjoyed it more than a few times. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I can\'t relax right now. I have a goal to achieve. '
+gosub @761
+pause
+koePlay (606055)
+'\s{strS[1901]}'
+strS[1900] = '__Misuzu. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I call out to her. '
+gosub @761
+pause
+koePlay (606056)
+'\s{strS[1901]}'
+strS[1900] = '__I have something to do, so I\'m heading off. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She doesn\'t reply. I can only hear her giggles below the bridge. '
+gosub @761
+pause
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = 'I leave the bridge behind. '
+gosub @761
+pause
+intF[1107] = 1
+strS[1000] = 'BG003'
+goto_unless (intF[1107] == 1) @363
+intF[1107] = 0
+msgHide
+
+  @363
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @367
+goto_unless (!intF[4]) @364
+strS[1003] = 'SDT07'
+goto @365
+
+  @364
+goto_unless (intF[4] == 1) @365
+strS[1003] = 'SDT08'
+
+  @365
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @366
+objBgMove (83, 16, 16)
+goto @367
+
+  @366
+goto_unless (intB[2] == 1) @367
+objBgMove (83, 16, 66)
+
+  @367
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @368
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @368
+bgrMulti (strS[1000], 48)
+intF[368] = 1
+jump (230)
+goto @760
+
+  @369
+goto_unless (intF[399] == 1) @760
+'\s{strS[1901]}'
+strS[1900] = 'She wants to play, but I don\'t feel like hide and seek. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'If she\'s too good at it, I\'d be looking for her until the sun sets. '
+gosub @761
+pause
+koePlay (606057)
+'\s{strS[1901]}'
+strS[1900] = '__Let\'s have a race instead. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This way it\'ll end instantly. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @370
+intF[1107] = 0
+msgHide
+
+  @370
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @374
+goto_unless (!intF[4]) @371
+strS[1003] = 'SDT07'
+goto @372
+
+  @371
+goto_unless (intF[4] == 1) @372
+strS[1003] = 'SDT08'
+
+  @372
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @373
+objBgMove (83, 16, 16)
+goto @374
+
+  @373
+goto_unless (intB[2] == 1) @374
+objBgMove (83, 16, 66)
+
+  @374
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @375
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @375
+bgrMulti (strS[1000], 60, copy('CGMZ11S', 61))
+koePlay (606058)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuOkay, what\'s the boundary? '
+gosub @761
+pause
+koePlay (606059)
+'\s{strS[1901]}'
+strS[1900] = '__Hmm... From here to the top? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @376
+intF[1107] = 0
+msgHide
+
+  @376
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @380
+goto_unless (!intF[4]) @377
+strS[1003] = 'SDT07'
+goto @378
+
+  @377
+goto_unless (intF[4] == 1) @378
+strS[1003] = 'SDT08'
+
+  @378
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @379
+objBgMove (83, 16, 16)
+goto @380
+
+  @379
+goto_unless (intB[2] == 1) @380
+objBgMove (83, 16, 66)
+
+  @380
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @381
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @381
+bgrMulti (strS[1000], 60, copy('CGMZ10S', 61))
+koePlay (606060)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuAll right. Then get ready, set... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @382
+intF[1107] = 0
+msgHide
+
+  @382
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @386
+goto_unless (!intF[4]) @383
+strS[1003] = 'SDT07'
+goto @384
+
+  @383
+goto_unless (intF[4] == 1) @384
+strS[1003] = 'SDT08'
+
+  @384
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @385
+objBgMove (83, 16, 16)
+goto @386
+
+  @385
+goto_unless (intB[2] == 1) @386
+objBgMove (83, 16, 66)
+
+  @386
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @387
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @387
+bgrMulti (strS[1000], 0)
+koePlay (606061)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuGo! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We run off. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu disappears from view soon after. '
+gosub @761
+pause
+intF[1107] = 1
+strS[1000] = 'BG012'
+goto_unless (intF[1107] == 1) @388
+intF[1107] = 0
+msgHide
+
+  @388
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @392
+goto_unless (!intF[4]) @389
+strS[1003] = 'SDT07'
+goto @390
+
+  @389
+goto_unless (intF[4] == 1) @390
+strS[1003] = 'SDT08'
+
+  @390
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @391
+objBgMove (83, 16, 16)
+goto @392
+
+  @391
+goto_unless (intB[2] == 1) @392
+objBgMove (83, 16, 66)
+
+  @392
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @393
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @393
+bgrMulti (strS[1000], 48)
+'\s{strS[1901]}'
+strS[1900] = 'She\'s so slow I can\'t work out how to go easy on her. '
+gosub @761
+pause
+koePlay (606062)
+'\s{strS[1901]}'
+strS[1900] = '__(I could\'ve won just walking...) '
+gosub @761
+pause
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = 'That\'s how slow she is. '
+gosub @761
+pause
+wavStop
+wavLoop ('MINMIN', 0)
+koePlay (606063)
+'\s{strS[1901]}'
+strS[1900] = '__(This is so stupid in this weather...) '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Sweat streams down my forehead as I wait for Misuzu. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '...She\'s absurdly slow. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I have a bad feeling about this now. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can run in this heat because I have the stamina. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But she\'s just a normal girl. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I rush down the hill again. '
+gosub @761
+pause
+koePlay (606064)
+'\s{strS[1901]}'
+strS[1900] = '__(I should\'ve just made her go back home...) '
+gosub @761
+pause
+intF[1107] = 1
+strS[1000] = 'BG013'
+goto_unless (intF[1107] == 1) @394
+intF[1107] = 0
+msgHide
+
+  @394
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @398
+goto_unless (!intF[4]) @395
+strS[1003] = 'SDT07'
+goto @396
+
+  @395
+goto_unless (intF[4] == 1) @396
+strS[1003] = 'SDT08'
+
+  @396
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @397
+objBgMove (83, 16, 16)
+goto @398
+
+  @397
+goto_unless (intB[2] == 1) @398
+objBgMove (83, 16, 66)
+
+  @398
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @399
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @399
+bgrMulti (strS[1000], 48)
+koePlay (606065)
+'\s{strS[1901]}'
+strS[1900] = '__Misuzu! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu is crouching halfway up the hill. '
+gosub @761
+pause
+koePlay (606066)
+'\s{strS[1901]}'
+strS[1900] = '__Are you okay, Misuzu? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @400
+intF[1107] = 0
+msgHide
+
+  @400
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @404
+goto_unless (!intF[4]) @401
+strS[1003] = 'SDT07'
+goto @402
+
+  @401
+goto_unless (intF[4] == 1) @402
+strS[1003] = 'SDT08'
+
+  @402
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @403
+objBgMove (83, 16, 16)
+goto @404
+
+  @403
+goto_unless (intB[2] == 1) @404
+objBgMove (83, 16, 66)
+
+  @404
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @405
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @405
+bgrMulti (strS[1000], 60, copy('CGMZ10S', 61))
+koePlay (606067)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuAh, __-san. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu gets up and turns around. '
+gosub @761
+pause
+bgmLoop ('BGM02')
+goto_unless (intF[1107] == 1) @406
+intF[1107] = 0
+msgHide
+
+  @406
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @410
+goto_unless (!intF[4]) @407
+strS[1003] = 'SDT07'
+goto @408
+
+  @407
+goto_unless (intF[4] == 1) @408
+strS[1003] = 'SDT08'
+
+  @408
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @409
+objBgMove (83, 16, 16)
+goto @410
+
+  @409
+goto_unless (intB[2] == 1) @410
+objBgMove (83, 16, 66)
+
+  @410
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @411
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @411
+bgrMulti (strS[1000], 60, copy('CGMZ12S', 61))
+koePlay (606068)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuLook, it\'s a stag beetle. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+koePlay (606069)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThey\'re really rare, you know. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+koePlay (606070)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThe kids will love me if I show it to them. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @412
+intF[1107] = 0
+msgHide
+
+  @412
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @416
+goto_unless (!intF[4]) @413
+strS[1003] = 'SDT07'
+goto @414
+
+  @413
+goto_unless (intF[4] == 1) @414
+strS[1003] = 'SDT08'
+
+  @414
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @415
+objBgMove (83, 16, 16)
+goto @416
+
+  @415
+goto_unless (intB[2] == 1) @416
+objBgMove (83, 16, 66)
+
+  @416
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @417
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @417
+bgrMulti (strS[1000], 60, copy('CGMZ25S', 61))
+koePlay (606071)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuHm? __-san? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @418
+intF[1107] = 0
+msgHide
+
+  @418
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @422
+goto_unless (!intF[4]) @419
+strS[1003] = 'SDT07'
+goto @420
+
+  @419
+goto_unless (intF[4] == 1) @420
+strS[1003] = 'SDT08'
+
+  @420
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @421
+objBgMove (83, 16, 16)
+goto @422
+
+  @421
+goto_unless (intB[2] == 1) @422
+objBgMove (83, 16, 66)
+
+  @422
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @423
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @423
+bgrMulti (strS[1000], 60, copy('CGMZ16S', 61))
+koePlay (606072)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI wish you\'d say something. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @424
+intF[1107] = 0
+msgHide
+
+  @424
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @428
+goto_unless (!intF[4]) @425
+strS[1003] = 'SDT07'
+goto @426
+
+  @425
+goto_unless (intF[4] == 1) @426
+strS[1003] = 'SDT08'
+
+  @426
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @427
+objBgMove (83, 16, 16)
+goto @428
+
+  @427
+goto_unless (intB[2] == 1) @428
+objBgMove (83, 16, 66)
+
+  @428
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @429
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @429
+bgrMulti (strS[1000], 60, copy('CGMZ26S', 61))
+koePlay (606073)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThere\'s a stag beetle on your face! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Stab! Stab!'
+gosub @761
+shake (1)
+strS[1900] = ' '
+gosub @761
+pause
+koePlay (606074)
+'\s{strS[1901]}'
+strS[1900] = '__Gwah...! '
+gosub @761
+pause
+koePlay (606075)
+'\s{strS[1901]}'
+strS[1900] = '__Don\'t let it crawl there! It hurts! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I tear the ridiculously huge insect off my face and shove it at Misuzu. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @430
+intF[1107] = 0
+msgHide
+
+  @430
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @434
+goto_unless (!intF[4]) @431
+strS[1003] = 'SDT07'
+goto @432
+
+  @431
+goto_unless (intF[4] == 1) @432
+strS[1003] = 'SDT08'
+
+  @432
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @433
+objBgMove (83, 16, 16)
+goto @434
+
+  @433
+goto_unless (intB[2] == 1) @434
+objBgMove (83, 16, 66)
+
+  @434
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @435
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @435
+bgrMulti (strS[1000], 60, copy('CGMZ14S', 61))
+koePlay (606076)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuNihaha... I\'m sorry. '
+gosub @761
+pause
+koePlay (606077)
+'\s{strS[1901]}'
+strS[1900] = '__...I was worried about you. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @436
+intF[1107] = 0
+msgHide
+
+  @436
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @440
+goto_unless (!intF[4]) @437
+strS[1003] = 'SDT07'
+goto @438
+
+  @437
+goto_unless (intF[4] == 1) @438
+strS[1003] = 'SDT08'
+
+  @438
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @439
+objBgMove (83, 16, 16)
+goto @440
+
+  @439
+goto_unless (intB[2] == 1) @440
+objBgMove (83, 16, 66)
+
+  @440
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @441
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @441
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606078)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuHm? '
+gosub @761
+pause
+koePlay (606079)
+'\s{strS[1901]}'
+strS[1900] = '__Remember what we were just doing? '
+gosub @761
+pause
+koePlay (606080)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuCatching insects. '
+gosub @761
+pause
+koePlay (606081)
+'\s{strS[1901]}'
+strS[1900] = '__...What happened to the race? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @442
+intF[1107] = 0
+msgHide
+
+  @442
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @446
+goto_unless (!intF[4]) @443
+strS[1003] = 'SDT07'
+goto @444
+
+  @443
+goto_unless (intF[4] == 1) @444
+strS[1003] = 'SDT08'
+
+  @444
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @445
+objBgMove (83, 16, 16)
+goto @446
+
+  @445
+goto_unless (intB[2] == 1) @446
+objBgMove (83, 16, 66)
+
+  @446
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @447
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @447
+bgrMulti (strS[1000], 60, copy('CGMZ11S', 61))
+koePlay (606082)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuOh right. Yep, that too. '
+gosub @761
+pause
+koePlay (606083)
+'\s{strS[1901]}'
+strS[1900] = '__Things always end like this... I\'ll stop hanging out with you if this keeps up. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @448
+intF[1107] = 0
+msgHide
+
+  @448
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @452
+goto_unless (!intF[4]) @449
+strS[1003] = 'SDT07'
+goto @450
+
+  @449
+goto_unless (intF[4] == 1) @450
+strS[1003] = 'SDT08'
+
+  @450
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @451
+objBgMove (83, 16, 16)
+goto @452
+
+  @451
+goto_unless (intB[2] == 1) @452
+objBgMove (83, 16, 66)
+
+  @452
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @453
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @453
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I place my hands on my knees and steady my breath. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m sweating like crazy from all the rushing back and forth. '
+gosub @761
+pause
+koePlay (606084)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuGet set, go! '
+gosub @761
+pause
+koePlay (606085)
+'\s{strS[1901]}'
+strS[1900] = '__What...? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu runs up the hill by herself. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I watch her, dumbfounded. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t think she\'s coming back. '
+gosub @761
+pause
+koePlay (606086)
+'\s{strS[1901]}'
+strS[1900] = '__I\'m going to have to go up there one more time, aren\'t I...? '
+gosub @761
+pause
+wavStopAll
+intF[1107] = 1
+strS[1000] = 'BG012'
+goto_unless (intF[1107] == 1) @454
+intF[1107] = 0
+msgHide
+
+  @454
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @458
+goto_unless (!intF[4]) @455
+strS[1003] = 'SDT07'
+goto @456
+
+  @455
+goto_unless (intF[4] == 1) @456
+strS[1003] = 'SDT08'
+
+  @456
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @457
+objBgMove (83, 16, 16)
+goto @458
+
+  @457
+goto_unless (intB[2] == 1) @458
+objBgMove (83, 16, 66)
+
+  @458
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @459
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @459
+bgrMulti (strS[1000], 48)
+koePlay (606087)
+'\s{strS[1901]}'
+strS[1900] = '__Haah... haah... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @460
+intF[1107] = 0
+msgHide
+
+  @460
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @464
+goto_unless (!intF[4]) @461
+strS[1003] = 'SDT07'
+goto @462
+
+  @461
+goto_unless (intF[4] == 1) @462
+strS[1003] = 'SDT08'
+
+  @462
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @463
+objBgMove (83, 16, 16)
+goto @464
+
+  @463
+goto_unless (intB[2] == 1) @464
+objBgMove (83, 16, 66)
+
+  @464
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @465
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @465
+bgrMulti (strS[1000], 60, copy('CGMZ13S', 61))
+'\s{strS[1901]}'
+strS[1900] = 'I see Misuzu standing at the top of the stone stairs, flashing a victory sign. '
+gosub @761
+pause
+koePlay (606088)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI won. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @466
+intF[1107] = 0
+msgHide
+
+  @466
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @470
+goto_unless (!intF[4]) @467
+strS[1003] = 'SDT07'
+goto @468
+
+  @467
+goto_unless (intF[4] == 1) @468
+strS[1003] = 'SDT08'
+
+  @468
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @469
+objBgMove (83, 16, 16)
+goto @470
+
+  @469
+goto_unless (intB[2] == 1) @470
+objBgMove (83, 16, 66)
+
+  @470
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @471
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @471
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606089)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuWas I fast? '
+gosub @761
+pause
+koePlay (606090)
+'\s{strS[1901]}'
+strS[1900] = '__Yeah, you were. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @472
+intF[1107] = 0
+msgHide
+
+  @472
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @476
+goto_unless (!intF[4]) @473
+strS[1003] = 'SDT07'
+goto @474
+
+  @473
+goto_unless (intF[4] == 1) @474
+strS[1003] = 'SDT08'
+
+  @474
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @475
+objBgMove (83, 16, 16)
+goto @476
+
+  @475
+goto_unless (intB[2] == 1) @476
+objBgMove (83, 16, 66)
+
+  @476
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @477
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @477
+bgrMulti (strS[1000], 60, copy('CGMZ26S', 61))
+koePlay (606091)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuMisuzu-chin is amazing. '
+gosub @761
+pause
+koePlay (606092)
+'\s{strS[1901]}'
+strS[1900] = '__Haah... '
+gosub @761
+pause
+koePlay (606093)
+'\s{strS[1901]}'
+strS[1900] = '__Why must I make round trips up this hill in this heat... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @478
+intF[1107] = 0
+msgHide
+
+  @478
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @482
+goto_unless (!intF[4]) @479
+strS[1003] = 'SDT07'
+goto @480
+
+  @479
+goto_unless (intF[4] == 1) @480
+strS[1003] = 'SDT08'
+
+  @480
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @481
+objBgMove (83, 16, 16)
+goto @482
+
+  @481
+goto_unless (intB[2] == 1) @482
+objBgMove (83, 16, 66)
+
+  @482
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @483
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @483
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I want to collapse. '
+gosub @761
+pause
+koePlay (606094)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThe beetle will be moving here. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu sticks the huge stag beetle she found earlier onto a tree. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m sure this is inconvenient for the beetle too. '
+gosub @761
+pause
+koePlay (606095)
+'\s{strS[1901]}'
+strS[1900] = '__But you know... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look around the area. '
+gosub @761
+pause
+koePlay (606096)
+'\s{strS[1901]}'
+strS[1900] = '__This is a shrine, right? It\'s completely deserted... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @484
+intF[1107] = 0
+msgHide
+
+  @484
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @488
+goto_unless (!intF[4]) @485
+strS[1003] = 'SDT07'
+goto @486
+
+  @485
+goto_unless (intF[4] == 1) @486
+strS[1003] = 'SDT08'
+
+  @486
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @487
+objBgMove (83, 16, 16)
+goto @488
+
+  @487
+goto_unless (intB[2] == 1) @488
+objBgMove (83, 16, 66)
+
+  @488
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @489
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @489
+bgrMulti (strS[1000], 60, copy('CGMZ10S', 61))
+koePlay (606097)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThat\'s how it usually is. '
+gosub @761
+pause
+koePlay (606098)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuBut it\'ll be filled with people soon. '
+gosub @761
+pause
+koePlay (606099)
+'\s{strS[1901]}'
+strS[1900] = '__Does everyone evacuate here if there\'s a flood? '
+gosub @761
+pause
+koePlay (606100)
+'\s{strS[1901]}'
+strS[1900] = '__You\'re one to make horrible predictions... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @490
+intF[1107] = 0
+msgHide
+
+  @490
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @494
+goto_unless (!intF[4]) @491
+strS[1003] = 'SDT07'
+goto @492
+
+  @491
+goto_unless (intF[4] == 1) @492
+strS[1003] = 'SDT08'
+
+  @492
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @493
+objBgMove (83, 16, 16)
+goto @494
+
+  @493
+goto_unless (intB[2] == 1) @494
+objBgMove (83, 16, 66)
+
+  @494
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @495
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @495
+bgrMulti (strS[1000], 60, copy('CGMZ16S', 61))
+koePlay (606101)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI didn\'t say that! '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @496
+intF[1107] = 0
+msgHide
+
+  @496
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @500
+goto_unless (!intF[4]) @497
+strS[1003] = 'SDT07'
+goto @498
+
+  @497
+goto_unless (intF[4] == 1) @498
+strS[1003] = 'SDT08'
+
+  @498
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @499
+objBgMove (83, 16, 16)
+goto @500
+
+  @499
+goto_unless (intB[2] == 1) @500
+objBgMove (83, 16, 66)
+
+  @500
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @501
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @501
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606102)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuIt\'s written down on the map I drew. '
+gosub @761
+pause
+koePlay (606103)
+'\s{strS[1901]}'
+strS[1900] = '__What is? '
+gosub @761
+pause
+koePlay (606104)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThe reason why the shrine will be crowded with people. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @502
+intF[1107] = 0
+msgHide
+
+  @502
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @506
+goto_unless (!intF[4]) @503
+strS[1003] = 'SDT07'
+goto @504
+
+  @503
+goto_unless (intF[4] == 1) @504
+strS[1003] = 'SDT08'
+
+  @504
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @505
+objBgMove (83, 16, 16)
+goto @506
+
+  @505
+goto_unless (intB[2] == 1) @506
+objBgMove (83, 16, 66)
+
+  @506
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @507
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @507
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I get the map out. '
+gosub @761
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGMP06', 0)
+koePlay (606105)
+'\s{strS[1901]}'
+strS[1900] = '__There\'s a giant, unknown creature here. '
+gosub @761
+pause
+koePlay (606106)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuNext to it. '
+gosub @761
+pause
+koePlay (606107)
+'\s{strS[1901]}'
+strS[1900] = '__...It\'ll be the summer festival soon. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @508
+intF[1107] = 0
+msgHide
+
+  @508
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @512
+goto_unless (!intF[4]) @509
+strS[1003] = 'SDT07'
+goto @510
+
+  @509
+goto_unless (intF[4] == 1) @510
+strS[1003] = 'SDT08'
+
+  @510
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @511
+objBgMove (83, 16, 16)
+goto @512
+
+  @511
+goto_unless (intB[2] == 1) @512
+objBgMove (83, 16, 66)
+
+  @512
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @513
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @513
+bgrMulti (strS[1000], 0)
+goto_unless (intF[1107] == 1) @514
+intF[1107] = 0
+msgHide
+
+  @514
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @518
+goto_unless (!intF[4]) @515
+strS[1003] = 'SDT07'
+goto @516
+
+  @515
+goto_unless (intF[4] == 1) @516
+strS[1003] = 'SDT08'
+
+  @516
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @517
+objBgMove (83, 16, 16)
+goto @518
+
+  @517
+goto_unless (intB[2] == 1) @518
+objBgMove (83, 16, 66)
+
+  @518
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @519
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @519
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606108)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYes, a festival. '
+gosub @761
+pause
+koePlay (606109)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThe summer festival takes place here. '
+gosub @761
+pause
+koePlay (606110)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThere\'ll be tons of people then. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @520
+intF[1107] = 0
+msgHide
+
+  @520
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @524
+goto_unless (!intF[4]) @521
+strS[1003] = 'SDT07'
+goto @522
+
+  @521
+goto_unless (intF[4] == 1) @522
+strS[1003] = 'SDT08'
+
+  @522
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @523
+objBgMove (83, 16, 16)
+goto @524
+
+  @523
+goto_unless (intB[2] == 1) @524
+objBgMove (83, 16, 66)
+
+  @524
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @525
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @525
+bgrMulti (strS[1000], 60, copy('CGMZ11S', 61))
+koePlay (606111)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuAll the kids come here. '
+gosub @761
+pause
+koePlay (606112)
+'\s{strS[1901]}'
+strS[1900] = '__That\'s terrible... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wouldn\'t want to be in the middle of that. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @526
+intF[1107] = 0
+msgHide
+
+  @526
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @530
+goto_unless (!intF[4]) @527
+strS[1003] = 'SDT07'
+goto @528
+
+  @527
+goto_unless (intF[4] == 1) @528
+strS[1003] = 'SDT08'
+
+  @528
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @529
+objBgMove (83, 16, 16)
+goto @530
+
+  @529
+goto_unless (intB[2] == 1) @530
+objBgMove (83, 16, 66)
+
+  @530
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @531
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @531
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606113)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuMm? '
+gosub @761
+pause
+koePlay (606114)
+'\s{strS[1901]}'
+strS[1900] = '__No... nothing. '
+gosub @761
+pause
+bgmFadeOut (1200)
+goto_unless (intF[1107] == 1) @532
+intF[1107] = 0
+msgHide
+
+  @532
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @536
+goto_unless (!intF[4]) @533
+strS[1003] = 'SDT07'
+goto @534
+
+  @533
+goto_unless (intF[4] == 1) @534
+strS[1003] = 'SDT08'
+
+  @534
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @535
+objBgMove (83, 16, 16)
+goto @536
+
+  @535
+goto_unless (intB[2] == 1) @536
+objBgMove (83, 16, 66)
+
+  @536
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @537
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @537
+bgrMulti (strS[1000], 60, copy('CGMZ24S', 61))
+koePlay (606115)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuAnyway, that\'s why it\'s so quiet right now. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @538
+intF[1107] = 0
+msgHide
+
+  @538
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @542
+goto_unless (!intF[4]) @539
+strS[1003] = 'SDT07'
+goto @540
+
+  @539
+goto_unless (intF[4] == 1) @540
+strS[1003] = 'SDT08'
+
+  @540
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @541
+objBgMove (83, 16, 16)
+goto @542
+
+  @541
+goto_unless (intB[2] == 1) @542
+objBgMove (83, 16, 66)
+
+  @542
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @543
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @543
+bgrMulti (strS[1000], 0)
+wavStop
+wavLoop ('MINMIN', 0)
+'\s{strS[1901]}'
+strS[1900] = 'I can only hear the cicadas buzzing around us. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s like the trees spend the year after the festival drawing in the air...  '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then once they\'ve finished sucking it up, the day of the festival arrives again. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This place revolves solely around that day. '
+gosub @761
+pause
+koePlay (606116)
+'\s{strS[1901]}'
+strS[1900] = '__Then the festival\'s the main event of your summer holiday. '
+gosub @761
+pause
+bgmLoop ('BGM00')
+goto_unless (intF[1107] == 1) @544
+intF[1107] = 0
+msgHide
+
+  @544
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @548
+goto_unless (!intF[4]) @545
+strS[1003] = 'SDT07'
+goto @546
+
+  @545
+goto_unless (intF[4] == 1) @546
+strS[1003] = 'SDT08'
+
+  @546
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @547
+objBgMove (83, 16, 16)
+goto @548
+
+  @547
+goto_unless (intB[2] == 1) @548
+objBgMove (83, 16, 66)
+
+  @548
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @549
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @549
+bgrMulti (strS[1000], 60, copy('CGMZ26S', 61))
+koePlay (606117)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYep, I guess. '
+gosub @761
+pause
+koePlay (606118)
+'\s{strS[1901]}'
+strS[1900] = '__It\'s something to look forward to. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @550
+intF[1107] = 0
+msgHide
+
+  @550
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @554
+goto_unless (!intF[4]) @551
+strS[1003] = 'SDT07'
+goto @552
+
+  @551
+goto_unless (intF[4] == 1) @552
+strS[1003] = 'SDT08'
+
+  @552
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @553
+objBgMove (83, 16, 16)
+goto @554
+
+  @553
+goto_unless (intB[2] == 1) @554
+objBgMove (83, 16, 66)
+
+  @554
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @555
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @555
+bgrMulti (strS[1000], 60, copy('CGMZ12S', 61))
+koePlay (606119)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYep, it is. '
+gosub @761
+pause
+koePlay (606120)
+'\s{strS[1901]}'
+strS[1900] = '__Incidentally, do you still believe that? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @556
+intF[1107] = 0
+msgHide
+
+  @556
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @560
+goto_unless (!intF[4]) @557
+strS[1003] = 'SDT07'
+goto @558
+
+  @557
+goto_unless (intF[4] == 1) @558
+strS[1003] = 'SDT08'
+
+  @558
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @559
+objBgMove (83, 16, 16)
+goto @560
+
+  @559
+goto_unless (intB[2] == 1) @560
+objBgMove (83, 16, 66)
+
+  @560
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @561
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @561
+bgrMulti (strS[1000], 60, copy('CGMZ10S', 61))
+koePlay (606121)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuBelieve what? '
+gosub @761
+pause
+koePlay (606122)
+'\s{strS[1901]}'
+strS[1900] = '__That chicks will turn into dinosaurs when they grow up. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @562
+intF[1107] = 0
+msgHide
+
+  @562
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @566
+goto_unless (!intF[4]) @563
+strS[1003] = 'SDT07'
+goto @564
+
+  @563
+goto_unless (intF[4] == 1) @564
+strS[1003] = 'SDT08'
+
+  @564
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @565
+objBgMove (83, 16, 16)
+goto @566
+
+  @565
+goto_unless (intB[2] == 1) @566
+objBgMove (83, 16, 66)
+
+  @566
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @567
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @567
+bgrMulti (strS[1000], 60, copy('CGMZ14S', 61))
+koePlay (606123)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuOf course I don\'t. Chicks turn into chickens when they grow up. '
+gosub @761
+pause
+koePlay (606124)
+'\s{strS[1901]}'
+strS[1900] = '__Well said. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @568
+intF[1107] = 0
+msgHide
+
+  @568
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @572
+goto_unless (!intF[4]) @569
+strS[1003] = 'SDT07'
+goto @570
+
+  @569
+goto_unless (intF[4] == 1) @570
+strS[1003] = 'SDT08'
+
+  @570
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @571
+objBgMove (83, 16, 16)
+goto @572
+
+  @571
+goto_unless (intB[2] == 1) @572
+objBgMove (83, 16, 66)
+
+  @572
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @573
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @573
+bgrMulti (strS[1000], 60, copy('CGMZ25S', 61))
+koePlay (606125)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuBut how did you find out about that...? '
+gosub @761
+pause
+koePlay (606126)
+'\s{strS[1901]}'
+strS[1900] = '__Haruko told me. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @574
+intF[1107] = 0
+msgHide
+
+  @574
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @578
+goto_unless (!intF[4]) @575
+strS[1003] = 'SDT07'
+goto @576
+
+  @575
+goto_unless (intF[4] == 1) @576
+strS[1003] = 'SDT08'
+
+  @576
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @577
+objBgMove (83, 16, 16)
+goto @578
+
+  @577
+goto_unless (intB[2] == 1) @578
+objBgMove (83, 16, 66)
+
+  @578
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @579
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @579
+bgrMulti (strS[1000], 60, copy('CGMZ16S', 61))
+koePlay (606127)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuHaah... I can\'t believe she brought that up. It\'s from forever ago... '
+gosub @761
+pause
+koePlay (606128)
+'\s{strS[1901]}'
+strS[1900] = '__She said you cried all day afterwards. '
+gosub @761
+pause
+koePlay (606129)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYep... '
+gosub @761
+pause
+koePlay (606130)
+'\s{strS[1901]}'
+strS[1900] = '__You must have really wanted that chick. I mean, that baby dinosaur. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @580
+intF[1107] = 0
+msgHide
+
+  @580
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @584
+goto_unless (!intF[4]) @581
+strS[1003] = 'SDT07'
+goto @582
+
+  @581
+goto_unless (intF[4] == 1) @582
+strS[1003] = 'SDT08'
+
+  @582
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @583
+objBgMove (83, 16, 16)
+goto @584
+
+  @583
+goto_unless (intB[2] == 1) @584
+objBgMove (83, 16, 66)
+
+  @584
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @585
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @585
+bgrMulti (strS[1000], 60, copy('CGMZ23S', 61))
+koePlay (606131)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuNo, it wasn\'t the chick or a baby dinosaur I wanted. '
+gosub @761
+pause
+koePlay (606132)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI would have taken anything, if it was something that... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @586
+intF[1107] = 0
+msgHide
+
+  @586
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @590
+goto_unless (!intF[4]) @587
+strS[1003] = 'SDT07'
+goto @588
+
+  @587
+goto_unless (intF[4] == 1) @588
+strS[1003] = 'SDT08'
+
+  @588
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @589
+objBgMove (83, 16, 16)
+goto @590
+
+  @589
+goto_unless (intB[2] == 1) @590
+objBgMove (83, 16, 66)
+
+  @590
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @591
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @591
+bgrMulti (strS[1000], 60, copy('CGMZ24S', 61))
+koePlay (606133)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuMum bought me... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @592
+intF[1107] = 0
+msgHide
+
+  @592
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @596
+goto_unless (!intF[4]) @593
+strS[1003] = 'SDT07'
+goto @594
+
+  @593
+goto_unless (intF[4] == 1) @594
+strS[1003] = 'SDT08'
+
+  @594
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @595
+objBgMove (83, 16, 16)
+goto @596
+
+  @595
+goto_unless (intB[2] == 1) @596
+objBgMove (83, 16, 66)
+
+  @596
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @597
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @597
+bgrMulti (strS[1000], 60, copy('CGMZ11S', 61))
+koePlay (606134)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuLet\'s go back. '
+gosub @761
+pause
+koePlay (606135)
+'\s{strS[1901]}'
+strS[1900] = '__Yeah. '
+gosub @761
+pause
+wavStopAll
+intF[1107] = 1
+strS[1000] = 'BG014'
+goto_unless (intF[1107] == 1) @598
+intF[1107] = 0
+msgHide
+
+  @598
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @602
+goto_unless (!intF[4]) @599
+strS[1003] = 'SDT07'
+goto @600
+
+  @599
+goto_unless (intF[4] == 1) @600
+strS[1003] = 'SDT08'
+
+  @600
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @601
+objBgMove (83, 16, 16)
+goto @602
+
+  @601
+goto_unless (intB[2] == 1) @602
+objBgMove (83, 16, 66)
+
+  @602
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @603
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @603
+bgrMulti (strS[1000], 48)
+'\s{strS[1901]}'
+strS[1900] = 'I can hear the stream bubbling. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu peers at it from the bridge. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @604
+intF[1107] = 0
+msgHide
+
+  @604
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @608
+goto_unless (!intF[4]) @605
+strS[1003] = 'SDT07'
+goto @606
+
+  @605
+goto_unless (intF[4] == 1) @606
+strS[1003] = 'SDT08'
+
+  @606
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @607
+objBgMove (83, 16, 16)
+goto @608
+
+  @607
+goto_unless (intB[2] == 1) @608
+objBgMove (83, 16, 66)
+
+  @608
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @609
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @609
+bgrMulti (strS[1000], 60, copy('CGMZ11S', 61))
+koePlay (606136)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI want to scoop up fish... '
+gosub @761
+pause
+koePlay (606137)
+'\s{strS[1901]}'
+strS[1900] = '__I want to go swimming too... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It would be so refreshing if we did. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @610
+intF[1107] = 0
+msgHide
+
+  @610
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @614
+goto_unless (!intF[4]) @611
+strS[1003] = 'SDT07'
+goto @612
+
+  @611
+goto_unless (intF[4] == 1) @612
+strS[1003] = 'SDT08'
+
+  @612
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @613
+objBgMove (83, 16, 16)
+goto @614
+
+  @613
+goto_unless (intB[2] == 1) @614
+objBgMove (83, 16, 66)
+
+  @614
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @615
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @615
+bgrMulti (strS[1000], 60, copy('CGMZ20S', 61))
+koePlay (606138)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYep, that\'d be nice. '
+gosub @761
+pause
+koePlay (606139)
+'\s{strS[1901]}'
+strS[1900] = '__You think everything\'s nice. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @616
+intF[1107] = 0
+msgHide
+
+  @616
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @620
+goto_unless (!intF[4]) @617
+strS[1003] = 'SDT07'
+goto @618
+
+  @617
+goto_unless (intF[4] == 1) @618
+strS[1003] = 'SDT08'
+
+  @618
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @619
+objBgMove (83, 16, 16)
+goto @620
+
+  @619
+goto_unless (intB[2] == 1) @620
+objBgMove (83, 16, 66)
+
+  @620
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @621
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @621
+bgrMulti (strS[1000], 60, copy('CGMZ12S', 61))
+koePlay (606140)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuIt\'s the summer holidays. I want to play as much as possible. '
+gosub @761
+pause
+koePlay (606141)
+'\s{strS[1901]}'
+strS[1900] = '__You have homework too. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @622
+intF[1107] = 0
+msgHide
+
+  @622
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @626
+goto_unless (!intF[4]) @623
+strS[1003] = 'SDT07'
+goto @624
+
+  @623
+goto_unless (intF[4] == 1) @624
+strS[1003] = 'SDT08'
+
+  @624
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @625
+objBgMove (83, 16, 16)
+goto @626
+
+  @625
+goto_unless (intB[2] == 1) @626
+objBgMove (83, 16, 66)
+
+  @626
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @627
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @627
+bgrMulti (strS[1000], 60, copy('CGMZ16S', 61))
+koePlay (606142)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI\'m doing that as well. '
+gosub @761
+pause
+koePlay (606143)
+'\s{strS[1901]}'
+strS[1900] = '__Are you really...? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @628
+intF[1107] = 0
+msgHide
+
+  @628
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @632
+goto_unless (!intF[4]) @629
+strS[1003] = 'SDT07'
+goto @630
+
+  @629
+goto_unless (intF[4] == 1) @630
+strS[1003] = 'SDT08'
+
+  @630
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @631
+objBgMove (83, 16, 16)
+goto @632
+
+  @631
+goto_unless (intB[2] == 1) @632
+objBgMove (83, 16, 66)
+
+  @632
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @633
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @633
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'The wind finally picks up. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We stand there for a while, letting our sweat dry. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu\'s isn\'t there when I turn around. Instead, I hear happy shouts and giggles coming from below. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s already started playing. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s always so easy going. '
+gosub @761
+pause
+bgmFadeOut (1200)
+intF[1107] = 1
+strS[1000] = 'BG005N'
+goto_unless (intF[1107] == 1) @634
+intF[1107] = 0
+msgHide
+
+  @634
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @638
+goto_unless (!intF[4]) @635
+strS[1003] = 'SDT07'
+goto @636
+
+  @635
+goto_unless (intF[4] == 1) @636
+strS[1003] = 'SDT08'
+
+  @636
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @637
+objBgMove (83, 16, 16)
+goto @638
+
+  @637
+goto_unless (intB[2] == 1) @638
+objBgMove (83, 16, 66)
+
+  @638
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @639
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @639
+bgrMulti (strS[1000], 48)
+wavStop
+wavPlay ('KOOROGI')
+'\s{strS[1901]}'
+strS[1900] = 'Once it gets dark, the two of us go on a walk. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The wind is still tepid.  '
+gosub @761
+pause
+bgmLoop ('BGM03')
+'\s{strS[1901]}'
+strS[1900] = 'I can hear wind chimes coming from a house nearby. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu reacts to every little noise, and peeks inside the gardens of various houses. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @640
+intF[1107] = 0
+msgHide
+
+  @640
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @644
+goto_unless (!intF[4]) @641
+strS[1003] = 'SDT07'
+goto @642
+
+  @641
+goto_unless (intF[4] == 1) @642
+strS[1003] = 'SDT08'
+
+  @642
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @643
+objBgMove (83, 16, 16)
+goto @644
+
+  @643
+goto_unless (intB[2] == 1) @644
+objBgMove (83, 16, 66)
+
+  @644
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @645
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @645
+bgrMulti (strS[1000], 60, copy('CGMZ10SN', 61))
+koePlay (606144)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuAh, they\'re using sparklers. '
+gosub @761
+pause
+koePlay (606145)
+'\s{strS[1901]}'
+strS[1900] = '__Do you want to join them? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @646
+intF[1107] = 0
+msgHide
+
+  @646
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @650
+goto_unless (!intF[4]) @647
+strS[1003] = 'SDT07'
+goto @648
+
+  @647
+goto_unless (intF[4] == 1) @648
+strS[1003] = 'SDT08'
+
+  @648
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @649
+objBgMove (83, 16, 16)
+goto @650
+
+  @649
+goto_unless (intB[2] == 1) @650
+objBgMove (83, 16, 66)
+
+  @650
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @651
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @651
+bgrMulti (strS[1000], 60, copy('CGMZ16SN', 61))
+koePlay (606146)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuNo, it\'s fine. They look like they\'re having fun with their family. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @652
+intF[1107] = 0
+msgHide
+
+  @652
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @656
+goto_unless (!intF[4]) @653
+strS[1003] = 'SDT07'
+goto @654
+
+  @653
+goto_unless (intF[4] == 1) @654
+strS[1003] = 'SDT08'
+
+  @654
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @655
+objBgMove (83, 16, 16)
+goto @656
+
+  @655
+goto_unless (intB[2] == 1) @656
+objBgMove (83, 16, 66)
+
+  @656
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @657
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @657
+bgrMulti (strS[1000], 60, copy('CGMZ20SN', 61))
+koePlay (606147)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuLet\'s go! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She pulls on my hand and we distance ourselves from the houses. '
+gosub @761
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+intF[1107] = 1
+strS[1000] = 'BG003N'
+goto_unless (intF[1107] == 1) @658
+intF[1107] = 0
+msgHide
+
+  @658
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @662
+goto_unless (!intF[4]) @659
+strS[1003] = 'SDT07'
+goto @660
+
+  @659
+goto_unless (intF[4] == 1) @660
+strS[1003] = 'SDT08'
+
+  @660
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @661
+objBgMove (83, 16, 16)
+goto @662
+
+  @661
+goto_unless (intB[2] == 1) @662
+objBgMove (83, 16, 66)
+
+  @662
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @663
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @663
+bgrMulti (strS[1000], 48)
+wavStopAll
+goto_unless (intF[1107] == 1) @664
+intF[1107] = 0
+msgHide
+
+  @664
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @668
+goto_unless (!intF[4]) @665
+strS[1003] = 'SDT07'
+goto @666
+
+  @665
+goto_unless (intF[4] == 1) @666
+strS[1003] = 'SDT08'
+
+  @666
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @667
+objBgMove (83, 16, 16)
+goto @668
+
+  @667
+goto_unless (intB[2] == 1) @668
+objBgMove (83, 16, 66)
+
+  @668
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @669
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @669
+bgrMulti (strS[1000], 60, copy('CGMZ20SN', 61))
+koePlay (606148)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI have plenty of fun just playing with you, __-san. '
+gosub @761
+pause
+koePlay (606149)
+'\s{strS[1901]}'
+strS[1900] = '__Really? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @670
+intF[1107] = 0
+msgHide
+
+  @670
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @674
+goto_unless (!intF[4]) @671
+strS[1003] = 'SDT07'
+goto @672
+
+  @671
+goto_unless (intF[4] == 1) @672
+strS[1003] = 'SDT08'
+
+  @672
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @673
+objBgMove (83, 16, 16)
+goto @674
+
+  @673
+goto_unless (intB[2] == 1) @674
+objBgMove (83, 16, 66)
+
+  @674
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @675
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @675
+bgrMulti (strS[1000], 60, copy('CGMZ11SN', 61))
+koePlay (606150)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYep, you\'re an interesting person. '
+gosub @761
+pause
+koePlay (606151)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuOh, I mean you\'re an interesting tadpole. '
+gosub @761
+pause
+koePlay (606152)
+'\s{strS[1901]}'
+strS[1900] = '__Don\'t go out of your way to call me that. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @676
+intF[1107] = 0
+msgHide
+
+  @676
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @680
+goto_unless (!intF[4]) @677
+strS[1003] = 'SDT07'
+goto @678
+
+  @677
+goto_unless (intF[4] == 1) @678
+strS[1003] = 'SDT08'
+
+  @678
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @679
+objBgMove (83, 16, 16)
+goto @680
+
+  @679
+goto_unless (intB[2] == 1) @680
+objBgMove (83, 16, 66)
+
+  @680
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @681
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @681
+bgrMulti (strS[1000], 60, copy('CGMZ10SN', 61))
+koePlay (606153)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI did lots with the tadpole today. '
+gosub @761
+pause
+koePlay (606154)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuWe raced at the shrine, caught a stag beetle, and played in the stream. '
+gosub @761
+pause
+koePlay (606155)
+'\s{strS[1901]}'
+strS[1900] = '__I suppose... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @682
+intF[1107] = 0
+msgHide
+
+  @682
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @686
+goto_unless (!intF[4]) @683
+strS[1003] = 'SDT07'
+goto @684
+
+  @683
+goto_unless (intF[4] == 1) @684
+strS[1003] = 'SDT08'
+
+  @684
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @685
+objBgMove (83, 16, 16)
+goto @686
+
+  @685
+goto_unless (intB[2] == 1) @686
+objBgMove (83, 16, 66)
+
+  @686
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @687
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @687
+bgrMulti (strS[1000], 60, copy('CGMZ26SN', 61))
+koePlay (606156)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI had fun. '
+gosub @761
+pause
+koePlay (606157)
+'\s{strS[1901]}'
+strS[1900] = '__I\'m happy for you. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @688
+intF[1107] = 0
+msgHide
+
+  @688
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @692
+goto_unless (!intF[4]) @689
+strS[1003] = 'SDT07'
+goto @690
+
+  @689
+goto_unless (intF[4] == 1) @690
+strS[1003] = 'SDT08'
+
+  @690
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @691
+objBgMove (83, 16, 16)
+goto @692
+
+  @691
+goto_unless (intB[2] == 1) @692
+objBgMove (83, 16, 66)
+
+  @692
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @693
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @693
+bgrMulti (strS[1000], 60, copy('CGMZ10SN', 61))
+koePlay (606158)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYep, it was great. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @694
+intF[1107] = 0
+msgHide
+
+  @694
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @698
+goto_unless (!intF[4]) @695
+strS[1003] = 'SDT07'
+goto @696
+
+  @695
+goto_unless (intF[4] == 1) @696
+strS[1003] = 'SDT08'
+
+  @696
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @697
+objBgMove (83, 16, 16)
+goto @698
+
+  @697
+goto_unless (intB[2] == 1) @698
+objBgMove (83, 16, 66)
+
+  @698
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @699
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @699
+bgrMulti (strS[1000], 60, copy('CGMZ24SN', 61))
+koePlay (606159)
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu...You see, it\'s actually my birthday today. '
+gosub @761
+pause
+koePlay (606160)
+'\s{strS[1901]}'
+strS[1900] = '__What? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m genuinely surprised. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I didn\'t think she\'d hide something like that. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @700
+intF[1107] = 0
+msgHide
+
+  @700
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @704
+goto_unless (!intF[4]) @701
+strS[1003] = 'SDT07'
+goto @702
+
+  @701
+goto_unless (intF[4] == 1) @702
+strS[1003] = 'SDT08'
+
+  @702
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @703
+objBgMove (83, 16, 16)
+goto @704
+
+  @703
+goto_unless (intB[2] == 1) @704
+objBgMove (83, 16, 66)
+
+  @704
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @705
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @705
+bgrMulti (strS[1000], 60, copy('CGMZ11SN', 61))
+koePlay (606161)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI\'m really, really happy... I\'ve never had such a fun birthday before. '
+gosub @761
+pause
+koePlay (606162)
+'\s{strS[1901]}'
+strS[1900] = '__Hey... Why did you keep quiet about something that important? '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @706
+intF[1107] = 0
+msgHide
+
+  @706
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @710
+goto_unless (!intF[4]) @707
+strS[1003] = 'SDT07'
+goto @708
+
+  @707
+goto_unless (intF[4] == 1) @708
+strS[1003] = 'SDT08'
+
+  @708
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @709
+objBgMove (83, 16, 16)
+goto @710
+
+  @709
+goto_unless (intB[2] == 1) @710
+objBgMove (83, 16, 66)
+
+  @710
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @711
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @711
+bgrMulti (strS[1000], 60, copy('CGMZ25SN', 61))
+koePlay (606163)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuWhat would you have done if I\'d mentioned it, __-san? '
+gosub @761
+pause
+koePlay (606164)
+'\s{strS[1901]}'
+strS[1900] = '__Well, buy you a present... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = '...Except I don\'t have any money. '
+gosub @761
+pause
+koePlay (606165)
+'\s{strS[1901]}'
+strS[1900] = '__Well, I\'d at least hang out with you... Which we did. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @712
+intF[1107] = 0
+msgHide
+
+  @712
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @716
+goto_unless (!intF[4]) @713
+strS[1003] = 'SDT07'
+goto @714
+
+  @713
+goto_unless (intF[4] == 1) @714
+strS[1003] = 'SDT08'
+
+  @714
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @715
+objBgMove (83, 16, 16)
+goto @716
+
+  @715
+goto_unless (intB[2] == 1) @716
+objBgMove (83, 16, 66)
+
+  @716
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @717
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @717
+bgrMulti (strS[1000], 60, copy('CGMZ12SN', 61))
+koePlay (606166)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYep, you did, __-san. '
+gosub @761
+pause
+koePlay (606167)
+'\s{strS[1901]}'
+strS[1900] = '__Yeah... So I did... '
+gosub @761
+pause
+koePlay (606168)
+'\s{strS[1901]}'
+strS[1900] = '__But still, I would have tried to liven it up in my own way if I\'d known it was special... '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @718
+intF[1107] = 0
+msgHide
+
+  @718
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @722
+goto_unless (!intF[4]) @719
+strS[1003] = 'SDT07'
+goto @720
+
+  @719
+goto_unless (intF[4] == 1) @720
+strS[1003] = 'SDT08'
+
+  @720
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @721
+objBgMove (83, 16, 16)
+goto @722
+
+  @721
+goto_unless (intB[2] == 1) @722
+objBgMove (83, 16, 66)
+
+  @722
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @723
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @723
+bgrMulti (strS[1000], 60, copy('CGMZ10SN', 61))
+koePlay (606169)
+'\s{strS[1901]}'
+strS[1900] = '__(No, maybe I wouldn\'t have...) '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'In the end, the day would\'ve been the same no matter what. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @724
+intF[1107] = 0
+msgHide
+
+  @724
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @728
+goto_unless (!intF[4]) @725
+strS[1003] = 'SDT07'
+goto @726
+
+  @725
+goto_unless (intF[4] == 1) @726
+strS[1003] = 'SDT08'
+
+  @726
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @727
+objBgMove (83, 16, 16)
+goto @728
+
+  @727
+goto_unless (intB[2] == 1) @728
+objBgMove (83, 16, 66)
+
+  @728
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @729
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @729
+bgrMulti (strS[1000], 60, copy('CGMZ20SN', 61))
+koePlay (606170)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuWe should head back soon. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @730
+intF[1107] = 0
+msgHide
+
+  @730
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @734
+goto_unless (!intF[4]) @731
+strS[1003] = 'SDT07'
+goto @732
+
+  @731
+goto_unless (intF[4] == 1) @732
+strS[1003] = 'SDT08'
+
+  @732
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @733
+objBgMove (83, 16, 16)
+goto @734
+
+  @733
+goto_unless (intB[2] == 1) @734
+objBgMove (83, 16, 66)
+
+  @734
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @735
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @735
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu turns around. '
+gosub @761
+pause
+bgmFadeOut (1200)
+koePlay (606171)
+'\s{strS[1901]}'
+strS[1900] = '__Hey, Misuzu. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @736
+intF[1107] = 0
+msgHide
+
+  @736
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @740
+goto_unless (!intF[4]) @737
+strS[1003] = 'SDT07'
+goto @738
+
+  @737
+goto_unless (intF[4] == 1) @738
+strS[1003] = 'SDT08'
+
+  @738
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @739
+objBgMove (83, 16, 16)
+goto @740
+
+  @739
+goto_unless (intB[2] == 1) @740
+objBgMove (83, 16, 66)
+
+  @740
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @741
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @741
+bgrMulti (strS[1000], 60, copy('CGMZ10SN', 61))
+koePlay (606172)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuHm? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu looks over her shoulder. '
+gosub @761
+pause
+koePlay (606173)
+'\s{strS[1901]}'
+strS[1900] = '__The summer holidays are still far from over, so... '
+gosub @761
+pause
+koePlay (606174)
+'\s{strS[1901]}'
+strS[1900] = '__Let\'s play as much as you want. '
+gosub @761
+pause
+bgmLoop ('BGM05')
+goto_unless (intF[1107] == 1) @742
+intF[1107] = 0
+msgHide
+
+  @742
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @746
+goto_unless (!intF[4]) @743
+strS[1003] = 'SDT07'
+goto @744
+
+  @743
+goto_unless (intF[4] == 1) @744
+strS[1003] = 'SDT08'
+
+  @744
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @745
+objBgMove (83, 16, 16)
+goto @746
+
+  @745
+goto_unless (intB[2] == 1) @746
+objBgMove (83, 16, 66)
+
+  @746
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @747
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @747
+bgrMulti (strS[1000], 60, copy('CGMZ26SN', 61))
+koePlay (606175)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuOkay! '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She smiles and nods. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Have I grown to enjoy having Misuzu by my side? '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I think I might\'ve. '
+gosub @761
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG061', 0)
+'\s{strS[1901]}'
+strS[1900] = 'I look at the night sky as I follow behind her. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The moon\'s starting to wane. '
+gosub @761
+pause
+koePlay (606176)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYou know, the sky I saw in my dreams... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Misuzu brings up that topic. '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It feels like a topic I\'ve always wanted to hear about, but only got the chance just recently. '
+gosub @761
+pause
+koePlay (606177)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThe dream keeps going. '
+gosub @761
+pause
+koePlay (606178)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI don\'t just see it once or twice, it keeps going every night. '
+gosub @761
+pause
+koePlay (606179)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuEver since the summer holidays started. '
+gosub @761
+pause
+koePlay (606180)
+'\s{strS[1901]}'
+strS[1900] = '__I see... '
+gosub @761
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I try to hide my excitement. '
+gosub @761
+pause
+koePlay (606181)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuAnd in those dreams I\'m going back to the past. '
+gosub @761
+pause
+koePlay (606182)
+'\s{strS[1901]}'
+strS[1900] = '__The past? '
+gosub @761
+pause
+koePlay (606183)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThey\'re going back in time. '
+gosub @761
+pause
+koePlay (606184)
+'\s{strS[1901]}'
+strS[1900] = '__What do you mean by that...? '
+gosub @761
+pause
+koePlay (606185)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuUmm... '
+gosub @761
+pause
+koePlay (606186)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI can\'t explain it very well. I can just tell. '
+gosub @761
+pause
+koePlay (606187)
+'\s{strS[1901]}'
+strS[1900] = '__Does the sky change? '
+gosub @761
+pause
+koePlay (606188)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuNo, the sky doesn\'t change. It\'s always the same. '
+gosub @761
+pause
+koePlay (606189)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI can tell from the way the wind feels and the breeze smells. '
+gosub @761
+pause
+koePlay (606190)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuThe flow of the air and the changing of seasons... '
+gosub @761
+pause
+koePlay (606191)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuI\'m going back in time. '
+gosub @761
+pause
+koePlay (606192)
+'\s{strS[1901]}'
+strS[1900] = '__What the hell... '
+gosub @761
+pause
+intF[1107] = 1
+strS[1000] = 'BG003N'
+goto_unless (intF[1107] == 1) @748
+intF[1107] = 0
+msgHide
+
+  @748
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @752
+goto_unless (!intF[4]) @749
+strS[1003] = 'SDT07'
+goto @750
+
+  @749
+goto_unless (intF[4] == 1) @750
+strS[1003] = 'SDT08'
+
+  @750
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @751
+objBgMove (83, 16, 16)
+goto @752
+
+  @751
+goto_unless (intB[2] == 1) @752
+objBgMove (83, 16, 66)
+
+  @752
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @753
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @753
+bgrMulti (strS[1000], 0)
+koePlay (606193)
+'\s{strS[1901]}'
+strS[1900] = '__I\'ve never heard of a dream like that. '
+gosub @761
+pause
+koePlay (606194)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuYou\'re right, neither have I. '
+gosub @761
+pause
+goto_unless (intF[1107] == 1) @754
+intF[1107] = 0
+msgHide
+
+  @754
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @758
+goto_unless (!intF[4]) @755
+strS[1003] = 'SDT07'
+goto @756
+
+  @755
+goto_unless (intF[4] == 1) @756
+strS[1003] = 'SDT08'
+
+  @756
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @757
+objBgMove (83, 16, 16)
+goto @758
+
+  @757
+goto_unless (intB[2] == 1) @758
+objBgMove (83, 16, 66)
+
+  @758
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @759
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @759
+bgrMulti (strS[1000], 60, copy('CGMZ24SN', 61))
+koePlay (606195)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuSo, __-san. '
+gosub @761
+pause
+koePlay (606196)
+'\s{strS[1901]}'
+strS[1900] = 'MisuzuWhere do you think my dream\'s going? '
+gosub @761
+pause
+intF[367] = 1
+
+  @760
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+wait (3000)
+bgmStop
+jump (241)
+halt
+CallDLL (0, 10, intC[1] | 1179648)
+goto @762
+
+  @761
+CallDLL (0, 10, 1181548)
+
+  @762
+DisableAutoSavepoints
+store = 8
+strS[1900] = '        '
+
+  @763
+goto_unless (store < 512) @764
+strS[1900] += strS[1900]
+store *= 2
+goto @763
+
+  @764
+CallDLL (0, 12, 1181548, 131073)
+goto_on store {  @771, @772, @770, @765, @766, @767, @768, @769 }
+goto @772
+
+  @765
+br
+goto @764
+
+  @766
+page
+TextPos (0, 0)
+CallDLL (0, 13, 1181548)
+goto @764
+
+  @767
+SetIndent
+goto @764
+
+  @768
+ClearIndent
+goto @764
+
+  @769
+FontColour (6)
+CallDLL (0, 21)
+intC[0] += 1
+
+  @770
+'\s{strS[1900]}\posx{intC[1]}'
+goto @764
+
+  @771
+strS[1901] = strS[1900]
+strS[1900] = 'Error: '
+strS[1900] += strS[1901]
+strS[1900] += '. Unable to format text.'
+strclear (strS[1901])
+FastText
+'\s{strS[1900]}'
+NormalText
+
+  @772
+EnableAutoSavepoints
+ret
+goto @764
+eof

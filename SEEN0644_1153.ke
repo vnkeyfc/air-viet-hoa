@@ -1,0 +1,9376 @@
+{-# cp utf8 #- Disassembled with Kprl 1.40 -}
+
+#file 'SEEN0644.TXT'
+
+#kidoku_type 2
+#character 'Minagi'
+#character '＊Ａ'
+#character 'Michiru'
+#entrypoint 000
+title ('   Dreams and Reality ')
+intF[2] = 0
+intF[1107] = 1
+strS[1000] = 'BG026'
+goto_unless (intF[1107] == 1) @1
+intF[1107] = 0
+msgHide
+
+  @1
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @5
+goto_unless (!intF[4]) @2
+strS[1003] = 'SDT07'
+goto @3
+
+  @2
+goto_unless (intF[4] == 1) @3
+strS[1003] = 'SDT08'
+
+  @3
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @4
+objBgMove (83, 16, 16)
+goto @5
+
+  @4
+goto_unless (intB[2] == 1) @5
+objBgMove (83, 16, 66)
+
+  @5
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @6
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @6
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Tohno mutters her name, as though reflecting upon it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And then, she lowers her head and begins thinking. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A long time passes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Is this how long it takes to relive all the childhood days she spent in that home? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Youthful days. Happy days. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And other days that may not have been happy... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even if there\'s nothing but sadness left in there, it\'s still her home... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @7
+intF[1107] = 0
+msgHide
+
+  @7
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @11
+goto_unless (!intF[4]) @8
+strS[1003] = 'SDT07'
+goto @9
+
+  @8
+goto_unless (intF[4] == 1) @9
+strS[1003] = 'SDT08'
+
+  @9
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @10
+objBgMove (83, 16, 16)
+goto @11
+
+  @10
+goto_unless (intB[2] == 1) @11
+objBgMove (83, 16, 66)
+
+  @11
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @12
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @12
+bgrMulti (strS[1000], 60, copy('CGMG10S', 61))
+koePlay (1515462)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...__-san... I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno looks at me with meaningful eyes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I silently nod. '
+gosub @595
+pause
+koePlay (1515463)
+'\s{strS[1901]}'
+strS[1900] = '__Go. Find the thing you\'ve forgotten.  '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @13
+intF[1107] = 0
+msgHide
+
+  @13
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @17
+goto_unless (!intF[4]) @14
+strS[1003] = 'SDT07'
+goto @15
+
+  @14
+goto_unless (intF[4] == 1) @15
+strS[1003] = 'SDT08'
+
+  @15
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @16
+objBgMove (83, 16, 16)
+goto @17
+
+  @16
+goto_unless (intB[2] == 1) @17
+objBgMove (83, 16, 66)
+
+  @17
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @18
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @18
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I push her forwards. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This is what Michiru and I silently promised each other. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'What the young girl entrusted to me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This might be the only thing I can do, but it\'s also the one thing no one else can do. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I only push her gently. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But she lurches really far forward, her hair fluttering behind her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her skirt twirls. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 0)
+'\s{strS[1901]}'
+strS[1900] = '...She quietly turns around. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The wind gently brushes her back. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her clothes flap, the sound resembling footsteps. '
+gosub @595
+pause
+koePlay (1515464)
+'\s{strS[1901]}'
+strS[1900] = '...Is there any meaning in wings that can\'t fly? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s what Tohno told me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Wings that can\'t fly. Something which can\'t perform its duty. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But you can\'t throw them away. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Because they\'re always attached to your back. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A mere memory of the time when you could fly. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look up at the sky, and see a bird flying towards an unknown destination. '
+gosub @595
+pause
+koePlay (1515465)
+'\s{strS[1901]}'
+strS[1900] = '__(You\'ll be able to fly again someday...) '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As long as we wish for that... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We\'ll struggle, and suffer. We might get even more hurt. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It might be a grim path. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But we\'d definitely get your wings back. The day when you can fly again will definitely come. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As long as you wish for it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As long as that\'s what you want. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s what the endlessly high sky makes me think. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And so... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @595
+pause
+intF[1107] = 1
+strS[1000] = 'BG026'
+goto_unless (intF[1107] == 1) @19
+intF[1107] = 0
+msgHide
+
+  @19
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @23
+goto_unless (!intF[4]) @20
+strS[1003] = 'SDT07'
+goto @21
+
+  @20
+goto_unless (intF[4] == 1) @21
+strS[1003] = 'SDT08'
+
+  @21
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @22
+objBgMove (83, 16, 16)
+goto @23
+
+  @22
+goto_unless (intB[2] == 1) @23
+objBgMove (83, 16, 66)
+
+  @23
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @24
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @24
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I\'m not needed here anymore. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I close my eyes firmly. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And take a step forward. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG051', 0)
+'\s{strS[1901]}'
+strS[1900] = 'Into the choking summer weather. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sun slowly bakes my skin. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The cicadas incessantly scream into my ears. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I feel like summer might go on forever. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But it\'ll still have to end someday. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'No, a new season will start. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even now, at this moment... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s starting... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...I can smell the tide in the wind. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...It\'s strong. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = 'It\'s ending. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It has to end. '
+gosub @595
+pause
+bgmFadeOutEx
+bgmLoop ('BGM19')
+intF[1107] = 1
+strS[1000] = 'BG026'
+goto_unless (intF[1107] == 1) @25
+intF[1107] = 0
+msgHide
+
+  @25
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @29
+goto_unless (!intF[4]) @26
+strS[1003] = 'SDT07'
+goto @27
+
+  @26
+goto_unless (intF[4] == 1) @27
+strS[1003] = 'SDT08'
+
+  @27
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @28
+objBgMove (83, 16, 16)
+goto @29
+
+  @28
+goto_unless (intB[2] == 1) @29
+objBgMove (83, 16, 66)
+
+  @29
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @30
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @30
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'A sound like footsteps approach my ears. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sound of a skirt swaying in the wind. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Long hair tickles my neck. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her existence. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Behind me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Right behind me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Proof that she\'s here. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s so faint I wouldn\'t know she was there otherwise. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'So weak she might disappear any moment. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Hollow like the wind when it stops blowing... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s... what Tohno feels like right now. '
+gosub @595
+pause
+koePlay (1515466)
+'\s{strS[1901]}'
+strS[1900] = '__...Why? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My throat shakes. '
+gosub @595
+pause
+koePlay (1515467)
+'\s{strS[1901]}'
+strS[1900] = '__Isn\'t the place you belong... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The wind grows faster. '
+gosub @595
+pause
+koePlay (1515468)
+'\s{strS[1901]}'
+strS[1900] = '__Right... in front of you...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My words are blown away. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her clothes and hair shake in the breeze. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her flowing hair. Her long skirt. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__ __ and... Tohno Minagi. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The wind is strong, as though trying to break the ground beneath our feet.  '
+gosub @595
+pause
+koePlay (1515469)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s words fly away on the breeze. '
+gosub @595
+pause
+koePlay (1515470)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Light streams down. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Blowing in the wind, bathed in the sun... several shining lights. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They\'re tears. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her sadness pools in her eyes. '
+gosub @595
+pause
+koePlay (1515471)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI...! '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 0)
+'\s{strS[1901]}'
+strS[1900] = '...She wails. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'ve never heard Tohno\'s voice like that before. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her large drops of light blow into the wind. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her tears won\'t stop. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s biting her lips. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She clenches her fist and bows her head. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She was supposed to take a step forward, carried by the wind. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That was supposed to be the thing only I could do. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That was supposed to be her wish. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But Tohno... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The dream she\'s seeing is... '
+gosub @595
+pause
+koePlay (1515472)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi__...-san...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She calls my name, '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'With such a sad voice. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Like a puppy whimpering in the cold rain. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her arms are shaking. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I want to turn around, '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And hold her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'ve been desperately resisting the urge to reach for her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s happiness. Tohno\'s smile. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'On the other side of the wind...  '
+gosub @595
+pause
+koePlay (1515473)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi__-san...! '
+gosub @595
+pause
+koePlay (1515474)
+'\s{strS[1901]}'
+strS[1900] = '__...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My heart shakes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her scream moves me, more than the strong wind. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I bite my lips, to the point where I draw blood. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My fingernails dig into my palms. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I have to endure this. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I swore I would. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s what I believed my duty was. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But this is... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can feel her hair tickle the nape of my neck, and soon... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s shadow will soon... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Disappear from this place... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Leaving only tears behind... '
+gosub @595
+pause
+intF[1107] = 1
+strS[1000] = 'BG026'
+goto_unless (intF[1107] == 1) @31
+intF[1107] = 0
+msgHide
+
+  @31
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @35
+goto_unless (!intF[4]) @32
+strS[1003] = 'SDT07'
+goto @33
+
+  @32
+goto_unless (intF[4] == 1) @33
+strS[1003] = 'SDT08'
+
+  @33
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @34
+objBgMove (83, 16, 16)
+goto @35
+
+  @34
+goto_unless (intB[2] == 1) @35
+objBgMove (83, 16, 66)
+
+  @35
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @36
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @36
+bgrMulti (strS[1000], 0)
+koePlay (1515475)
+'\s{strS[1901]}'
+strS[1900] = '__Tohno! '
+gosub @595
+pause
+koePlay (1515476)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiHyuu... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her wrists feel brittle as I grab them. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Two shadows holding hands. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her glossy hair flutters in the wind. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her tears spill over and fall. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her clothes look fragile as they sway in the wind. '
+gosub @595
+pause
+koePlay (1515477)
+'\s{strS[1901]}'
+strS[1900] = '__Where... are you going? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The direction she\'s trying to run away. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s nothing there but more road... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A scary, lonely road... '
+gosub @595
+pause
+koePlay (1515478)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiHii... kuu... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno sobs and shakes her head... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m unable to hold her like that... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t push her forward anymore... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t do anything... but keep her right here... '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 0)
+'\s{strS[1901]}'
+strS[1900] = 'The dream will end someday. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'When night fades and morning arrives, the dreams will come to an end. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m sure many people long for it to continue. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But even so, they have to return to reality. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Because dreams are just dreams. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It might be a harsh choice. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But they naturally open their eyes again, and return to reality. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It might be a brave thing to do. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But... people do it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And Tohno too... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Was supposed... to do it... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'All I could do was call her name, and pat her shoulder. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She should\'ve walked forward. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She should\'ve ridden on the wind once more. '
+gosub @595
+pause
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = 'That\'s what... I thought she wanted... '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @595
+pause
+koePlay (1515479)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi__-san... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her mouth has been tightly shut for a while. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'By the time she speaks again... the sun\'s already set. '
+gosub @595
+pause
+wavStop
+wavLoop ('MUSHI', 0)
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG061', 0)
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s lying on the bench. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m watching the stars next to her. '
+gosub @595
+pause
+koePlay (1515480)
+'\s{strS[1901]}'
+strS[1900] = '__Why didn\'t you go...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t turn away from the sky. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515481)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...When I... saw my mother... '
+gosub @595
+pause
+koePlay (1515482)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...My feet... just wouldn\'t move... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno struggles to voice her thoughts. '
+gosub @595
+pause
+intF[1107] = 1
+strS[1000] = 'BG018n'
+goto_unless (intF[1107] == 1) @37
+intF[1107] = 0
+msgHide
+
+  @37
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @41
+goto_unless (!intF[4]) @38
+strS[1003] = 'SDT07'
+goto @39
+
+  @38
+goto_unless (intF[4] == 1) @39
+strS[1003] = 'SDT08'
+
+  @39
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @40
+objBgMove (83, 16, 16)
+goto @41
+
+  @40
+goto_unless (intB[2] == 1) @41
+objBgMove (83, 16, 66)
+
+  @41
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @42
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @42
+bgrMulti (strS[1000], 0)
+koePlay (1515483)
+'\s{strS[1901]}'
+strS[1900] = '__But Tohno... '
+gosub @595
+pause
+koePlay (1515484)
+'\s{strS[1901]}'
+strS[1900] = '__Isn\'t this dream... already...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Someone that\'s meant to be here. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s a small space between myself and Tohno. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s supposed to be someone sitting there. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That small, noisy, irritating person is already... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @43
+intF[1107] = 0
+msgHide
+
+  @43
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @47
+goto_unless (!intF[4]) @44
+strS[1003] = 'SDT07'
+goto @45
+
+  @44
+goto_unless (intF[4] == 1) @45
+strS[1003] = 'SDT08'
+
+  @45
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @46
+objBgMove (83, 16, 16)
+goto @47
+
+  @46
+goto_unless (intB[2] == 1) @47
+objBgMove (83, 16, 66)
+
+  @47
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @48
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @48
+bgrMulti (strS[1000], 60, copy('CGMG13SN', 61))
+koePlay (1515485)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I under... stand... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s voice sounds like it could vanish any minute. '
+gosub @595
+pause
+koePlay (1515486)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Because... '
+gosub @595
+pause
+koePlay (1515487)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I was always... beside her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her voice quivers. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And her tears return. '
+gosub @595
+pause
+koePlay (1515488)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI understand... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @49
+intF[1107] = 0
+msgHide
+
+  @49
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @53
+goto_unless (!intF[4]) @50
+strS[1003] = 'SDT07'
+goto @51
+
+  @50
+goto_unless (intF[4] == 1) @51
+strS[1003] = 'SDT08'
+
+  @51
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @52
+objBgMove (83, 16, 16)
+goto @53
+
+  @52
+goto_unless (intB[2] == 1) @53
+objBgMove (83, 16, 66)
+
+  @53
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @54
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @54
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Her whisper melts into the night. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno knows. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'About the dream she\'s been having. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'About the girl who gave her a place to belong. '
+gosub @595
+pause
+koePlay (1515489)
+'\s{strS[1901]}'
+strS[1900] = '__Then why did you...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She has nothing to say. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She can only desperately endure her own weeping. '
+gosub @595
+pause
+koePlay (1515490)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI\'m sorry... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She cries out with tear-stained cheeks. '
+gosub @595
+pause
+koePlay (1515491)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI\'m so sorry...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Is she apologising to me? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Or maybe... '
+gosub @595
+pause
+bgmLoop ('BGM16')
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG061', 0)
+'\s{strS[1901]}'
+strS[1900] = 'All the stars in the sky glitter above our heads. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The midday heat is completely gone. In fact, it\'s nice and cool now. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The insects chirp as usual. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Occasionally the wind will make a few trees rustle, as though reflecting the mood. '
+gosub @595
+pause
+intF[1107] = 1
+strS[1000] = 'BG018n'
+goto_unless (intF[1107] == 1) @55
+intF[1107] = 0
+msgHide
+
+  @55
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @59
+goto_unless (!intF[4]) @56
+strS[1003] = 'SDT07'
+goto @57
+
+  @56
+goto_unless (intF[4] == 1) @57
+strS[1003] = 'SDT08'
+
+  @57
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @58
+objBgMove (83, 16, 16)
+goto @59
+
+  @58
+goto_unless (intB[2] == 1) @59
+objBgMove (83, 16, 66)
+
+  @59
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @60
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @60
+bgrMulti (strS[1000], 0)
+goto_unless (intF[1107] == 1) @61
+intF[1107] = 0
+msgHide
+
+  @61
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @65
+goto_unless (!intF[4]) @62
+strS[1003] = 'SDT07'
+goto @63
+
+  @62
+goto_unless (intF[4] == 1) @63
+strS[1003] = 'SDT08'
+
+  @63
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @64
+objBgMove (83, 16, 16)
+goto @65
+
+  @64
+goto_unless (intB[2] == 1) @65
+objBgMove (83, 16, 66)
+
+  @65
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @66
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @66
+bgrMulti (strS[1000], 60, copy('CGMG32SN', 61))
+koePlay (1515492)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...__-san... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'After calming down, Tohno calls my name again. '
+gosub @595
+pause
+koePlay (1515493)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiWhat are you going to do... from now on, __-san? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t know how to answer her question. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'No, I can\'t answer it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My heart won\'t keep still. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s right next to me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s shivering, all alone. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I try... to open my mouth. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I try to speak... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But... I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...I won\'t be able to say anything. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @67
+intF[1107] = 0
+msgHide
+
+  @67
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @71
+goto_unless (!intF[4]) @68
+strS[1003] = 'SDT07'
+goto @69
+
+  @68
+goto_unless (intF[4] == 1) @69
+strS[1003] = 'SDT08'
+
+  @69
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @70
+objBgMove (83, 16, 16)
+goto @71
+
+  @70
+goto_unless (intB[2] == 1) @71
+objBgMove (83, 16, 66)
+
+  @71
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @72
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @72
+bgrMulti (strS[1000], 60, copy('CGMG13SN', 61))
+koePlay (1515494)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiAh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She catches her breath. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'You could call it a voice of loss and despair. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then, silence. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It gouges deeply into my heart. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @73
+intF[1107] = 0
+msgHide
+
+  @73
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @77
+goto_unless (!intF[4]) @74
+strS[1003] = 'SDT07'
+goto @75
+
+  @74
+goto_unless (intF[4] == 1) @75
+strS[1003] = 'SDT08'
+
+  @75
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @76
+objBgMove (83, 16, 16)
+goto @77
+
+  @76
+goto_unless (intB[2] == 1) @77
+objBgMove (83, 16, 66)
+
+  @77
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @78
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @78
+bgrMulti (strS[1000], 60, copy('CGMG16SN', 61))
+koePlay (1515495)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiUmm... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But she has to cling to something. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno nervously begins to talk again. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @79
+intF[1107] = 0
+msgHide
+
+  @79
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @83
+goto_unless (!intF[4]) @80
+strS[1003] = 'SDT07'
+goto @81
+
+  @80
+goto_unless (intF[4] == 1) @81
+strS[1003] = 'SDT08'
+
+  @81
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @82
+objBgMove (83, 16, 16)
+goto @83
+
+  @82
+goto_unless (intB[2] == 1) @83
+objBgMove (83, 16, 66)
+
+  @83
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @84
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @84
+bgrMulti (strS[1000], 60, copy('CGMG32SN', 61))
+koePlay (1515496)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...__... -san... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515497)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Umm... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515498)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...U... Umm... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @85
+intF[1107] = 0
+msgHide
+
+  @85
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @89
+goto_unless (!intF[4]) @86
+strS[1003] = 'SDT07'
+goto @87
+
+  @86
+goto_unless (intF[4] == 1) @87
+strS[1003] = 'SDT08'
+
+  @87
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @88
+objBgMove (83, 16, 16)
+goto @89
+
+  @88
+goto_unless (intB[2] == 1) @89
+objBgMove (83, 16, 66)
+
+  @89
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @90
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @90
+bgrMulti (strS[1000], 60, copy('CGMG13SN', 61))
+koePlay (1515499)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Would you... like to...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515500)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Would you like... to rest your head in my lap...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515501)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...__... -san...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515502)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Your head... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515503)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiYour... head... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @91
+intF[1107] = 0
+msgHide
+
+  @91
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @95
+goto_unless (!intF[4]) @92
+strS[1003] = 'SDT07'
+goto @93
+
+  @92
+goto_unless (intF[4] == 1) @93
+strS[1003] = 'SDT08'
+
+  @93
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @94
+objBgMove (83, 16, 16)
+goto @95
+
+  @94
+goto_unless (intB[2] == 1) @95
+objBgMove (83, 16, 66)
+
+  @95
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @96
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @96
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'And again... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno... begins to cry. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'How many tears has she shed today? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Can a girl\'s body really produce so many tears? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s so sad. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s so painful. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look away. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This is the first time I\'ve seen Tohno lying on the bench. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s so small. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Small, and fragile. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @97
+intF[1107] = 0
+msgHide
+
+  @97
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @101
+goto_unless (!intF[4]) @98
+strS[1003] = 'SDT07'
+goto @99
+
+  @98
+goto_unless (intF[4] == 1) @99
+strS[1003] = 'SDT08'
+
+  @99
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @100
+objBgMove (83, 16, 16)
+goto @101
+
+  @100
+goto_unless (intB[2] == 1) @101
+objBgMove (83, 16, 66)
+
+  @101
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @102
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @102
+bgrMulti (strS[1000], 60, copy('CGMG33SN', 61))
+koePlay (1515504)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiAh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I stroke her hair. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Gently, gently. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This is all I can do. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+wavStopAll
+'\s{strS[1901]}'
+strS[1900] = 'Because I was still hesitating back then. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I didn\'t manage to find an answer. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'What can I do now? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'What can I do to help Tohno? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'What should I be doing to help her? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I didn\'t know at the time. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And this was the result... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'If I could\'ve... '
+gosub @595
+pause
+koePlay (1515505)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi__...-san...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I hold my hand against Tohno\'s cheek. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I keep silently stroking her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her soft cheek. Her warm body heat. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My hand becomes wet with her tears. '
+gosub @595
+pause
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '... '
+gosub @595
+pause
+intF[3] = 10
+intF[4] = 1
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t sleep that night. '
+gosub @595
+pause
+bgmFadeOutEx
+bgmLoop ('BGM19')
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 0)
+'\s{strS[1901]}'
+strS[1900] = 'I just think. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'About the dream ending. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'About Tohno Minagi. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'No, I already know the answer. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'ve only been in this town for a short while. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'In retrospect, it was obvious what I was going to do. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But for that same reason... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'When I thought about her other smile, when I met her at this station... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...I couldn\'t take that step. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Is that really what she wanted? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Is that what she wished for? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And is her happiness... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...I wanted to know for sure. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wanted to ask her, since she\'s been watching over Tohno this whole time... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The dream will end soon. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s what she said. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But is it completely finished? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Or is there still a little time...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sky is so blue, despite the gloom in the air. '
+gosub @595
+pause
+intF[1107] = 1
+strS[1000] = 'BG018'
+goto_unless (intF[1107] == 1) @103
+intF[1107] = 0
+msgHide
+
+  @103
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @107
+goto_unless (!intF[4]) @104
+strS[1003] = 'SDT07'
+goto @105
+
+  @104
+goto_unless (intF[4] == 1) @105
+strS[1003] = 'SDT08'
+
+  @105
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @106
+objBgMove (83, 16, 16)
+goto @107
+
+  @106
+goto_unless (intB[2] == 1) @107
+objBgMove (83, 16, 66)
+
+  @107
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @108
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @108
+bgrMulti (strS[1000], 0)
+goto_unless (intF[1107] == 1) @109
+intF[1107] = 0
+msgHide
+
+  @109
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @113
+goto_unless (!intF[4]) @110
+strS[1003] = 'SDT07'
+goto @111
+
+  @110
+goto_unless (intF[4] == 1) @111
+strS[1003] = 'SDT08'
+
+  @111
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @112
+objBgMove (83, 16, 16)
+goto @113
+
+  @112
+goto_unless (intB[2] == 1) @113
+objBgMove (83, 16, 66)
+
+  @113
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @114
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @114
+bgrMulti (strS[1000], 60, copy('CGMG32', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno comes out of the station building. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She gently sits next to me, her skirt swaying. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her hair is still a little wet. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can smell her shampoo. '
+gosub @595
+pause
+koePlay (1515506)
+'\s{strS[1901]}'
+strS[1900] = '__You had a shower? '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @115
+intF[1107] = 0
+msgHide
+
+  @115
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @119
+goto_unless (!intF[4]) @116
+strS[1003] = 'SDT07'
+goto @117
+
+  @116
+goto_unless (intF[4] == 1) @117
+strS[1003] = 'SDT08'
+
+  @117
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @118
+objBgMove (83, 16, 16)
+goto @119
+
+  @118
+goto_unless (intB[2] == 1) @119
+objBgMove (83, 16, 66)
+
+  @119
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @120
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @120
+bgrMulti (strS[1000], 60, copy('CGMG10', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She nods. '
+gosub @595
+pause
+koePlay (1515507)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...My hair... was a mess. '
+gosub @595
+pause
+koePlay (1515508)
+'\s{strS[1901]}'
+strS[1900] = '__A mess? '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @121
+intF[1107] = 0
+msgHide
+
+  @121
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @125
+goto_unless (!intF[4]) @122
+strS[1003] = 'SDT07'
+goto @123
+
+  @122
+goto_unless (intF[4] == 1) @123
+strS[1003] = 'SDT08'
+
+  @123
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @124
+objBgMove (83, 16, 16)
+goto @125
+
+  @124
+goto_unless (intB[2] == 1) @125
+objBgMove (83, 16, 66)
+
+  @125
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @126
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @126
+bgrMulti (strS[1000], 60, copy('CGMG32', 61))
+koePlay (1515509)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes... a mess... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'At first glance, Tohno\'s quite calm. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But her eyes are still swollen with the colour of sadness... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s no way she can hide it even if she tries. '
+gosub @595
+pause
+koePlay (1515510)
+'\s{strS[1901]}'
+strS[1900] = '__Why the school uniform? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @127
+intF[1107] = 0
+msgHide
+
+  @127
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @131
+goto_unless (!intF[4]) @128
+strS[1003] = 'SDT07'
+goto @129
+
+  @128
+goto_unless (intF[4] == 1) @129
+strS[1003] = 'SDT08'
+
+  @129
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @130
+objBgMove (83, 16, 16)
+goto @131
+
+  @130
+goto_unless (intB[2] == 1) @131
+objBgMove (83, 16, 66)
+
+  @131
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @132
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @132
+bgrMulti (strS[1000], 60, copy('CGMG30', 61))
+koePlay (1515511)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I still... have summer school. '
+gosub @595
+pause
+koePlay (1515512)
+'\s{strS[1901]}'
+strS[1900] = '__...Okay. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s just like Tohno to still go to school, even at a time like this. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s still going at her own pace. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s decided to keep doing things the way she\'s always done. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As though... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As though to make sure she\'s where she thinks she is. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @133
+intF[1107] = 0
+msgHide
+
+  @133
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @137
+goto_unless (!intF[4]) @134
+strS[1003] = 'SDT07'
+goto @135
+
+  @134
+goto_unless (intF[4] == 1) @135
+strS[1003] = 'SDT08'
+
+  @135
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @136
+objBgMove (83, 16, 16)
+goto @137
+
+  @136
+goto_unless (intB[2] == 1) @137
+objBgMove (83, 16, 66)
+
+  @137
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @138
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @138
+bgrMulti (strS[1000], 60, copy('CGMG10', 61))
+koePlay (1515513)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...So, I... '
+gosub @595
+pause
+koePlay (1515514)
+'\s{strS[1901]}'
+strS[1900] = '__You\'re going already? '
+gosub @595
+pause
+koePlay (1515515)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes... Otherwise I\'ll be late. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @139
+intF[1107] = 0
+msgHide
+
+  @139
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @143
+goto_unless (!intF[4]) @140
+strS[1003] = 'SDT07'
+goto @141
+
+  @140
+goto_unless (intF[4] == 1) @141
+strS[1003] = 'SDT08'
+
+  @141
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @142
+objBgMove (83, 16, 16)
+goto @143
+
+  @142
+goto_unless (intB[2] == 1) @143
+objBgMove (83, 16, 66)
+
+  @143
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @144
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @144
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'She bows quickly and turns around. '
+gosub @595
+pause
+koePlay (1515516)
+'\s{strS[1901]}'
+strS[1900] = '__Tohno. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I call to her before she leaves. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @145
+intF[1107] = 0
+msgHide
+
+  @145
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @149
+goto_unless (!intF[4]) @146
+strS[1003] = 'SDT07'
+goto @147
+
+  @146
+goto_unless (intF[4] == 1) @147
+strS[1003] = 'SDT08'
+
+  @147
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @148
+objBgMove (83, 16, 16)
+goto @149
+
+  @148
+goto_unless (intB[2] == 1) @149
+objBgMove (83, 16, 66)
+
+  @149
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @150
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @150
+bgrMulti (strS[1000], 60, copy('CGMG11', 61))
+koePlay (1515517)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes? '
+gosub @595
+pause
+koePlay (1515518)
+'\s{strS[1901]}'
+strS[1900] = '__When will you get out of school today? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @151
+intF[1107] = 0
+msgHide
+
+  @151
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @155
+goto_unless (!intF[4]) @152
+strS[1003] = 'SDT07'
+goto @153
+
+  @152
+goto_unless (intF[4] == 1) @153
+strS[1003] = 'SDT08'
+
+  @153
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @154
+objBgMove (83, 16, 16)
+goto @155
+
+  @154
+goto_unless (intB[2] == 1) @155
+objBgMove (83, 16, 66)
+
+  @155
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @156
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @156
+bgrMulti (strS[1000], 60, copy('CGMG30', 61))
+koePlay (1515519)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Just after midday, but... '
+gosub @595
+pause
+koePlay (1515520)
+'\s{strS[1901]}'
+strS[1900] = '__Then can you wait for me? '
+gosub @595
+pause
+koePlay (1515521)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Wait... you say? '
+gosub @595
+pause
+koePlay (1515522)
+'\s{strS[1901]}'
+strS[1900] = '__I\'ll meet you afterwards, so can you? '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @157
+intF[1107] = 0
+msgHide
+
+  @157
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @161
+goto_unless (!intF[4]) @158
+strS[1003] = 'SDT07'
+goto @159
+
+  @158
+goto_unless (intF[4] == 1) @159
+strS[1003] = 'SDT08'
+
+  @159
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @160
+objBgMove (83, 16, 16)
+goto @161
+
+  @160
+goto_unless (intB[2] == 1) @161
+objBgMove (83, 16, 66)
+
+  @161
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @162
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @162
+bgrMulti (strS[1000], 60, copy('CGMG32', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515523)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks up at me and nods. '
+gosub @595
+pause
+koePlay (1515524)
+'\s{strS[1901]}'
+strS[1900] = '__I might be late though. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @163
+intF[1107] = 0
+msgHide
+
+  @163
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @167
+goto_unless (!intF[4]) @164
+strS[1003] = 'SDT07'
+goto @165
+
+  @164
+goto_unless (intF[4] == 1) @165
+strS[1003] = 'SDT08'
+
+  @165
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @166
+objBgMove (83, 16, 16)
+goto @167
+
+  @166
+goto_unless (intB[2] == 1) @167
+objBgMove (83, 16, 66)
+
+  @167
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @168
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @168
+bgrMulti (strS[1000], 60, copy('CGMG14', 61))
+koePlay (1515525)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...That\'s fine. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She shakes her head. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @169
+intF[1107] = 0
+msgHide
+
+  @169
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @173
+goto_unless (!intF[4]) @170
+strS[1003] = 'SDT07'
+goto @171
+
+  @170
+goto_unless (intF[4] == 1) @171
+strS[1003] = 'SDT08'
+
+  @171
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @172
+objBgMove (83, 16, 16)
+goto @173
+
+  @172
+goto_unless (intB[2] == 1) @173
+objBgMove (83, 16, 66)
+
+  @173
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @174
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @174
+bgrMulti (strS[1000], 60, copy('CGMG11', 61))
+koePlay (1515526)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'m composed... '
+gosub @595
+pause
+koePlay (1515527)
+'\s{strS[1901]}'
+strS[1900] = '__...Really? '
+gosub @595
+pause
+koePlay (1515528)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes... composed... '
+gosub @595
+pause
+koePlay (1515529)
+'\s{strS[1901]}'
+strS[1900] = '__Sorry. '
+gosub @595
+pause
+koePlay (1515530)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...It\'s fine. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @175
+intF[1107] = 0
+msgHide
+
+  @175
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @179
+goto_unless (!intF[4]) @176
+strS[1003] = 'SDT07'
+goto @177
+
+  @176
+goto_unless (intF[4] == 1) @177
+strS[1003] = 'SDT08'
+
+  @177
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @178
+objBgMove (83, 16, 16)
+goto @179
+
+  @178
+goto_unless (intB[2] == 1) @179
+objBgMove (83, 16, 66)
+
+  @179
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @180
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @180
+bgrMulti (strS[1000], 60, copy('CGMG10', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @181
+intF[1107] = 0
+msgHide
+
+  @181
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @185
+goto_unless (!intF[4]) @182
+strS[1003] = 'SDT07'
+goto @183
+
+  @182
+goto_unless (intF[4] == 1) @183
+strS[1003] = 'SDT08'
+
+  @183
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @184
+objBgMove (83, 16, 16)
+goto @185
+
+  @184
+goto_unless (intB[2] == 1) @185
+objBgMove (83, 16, 66)
+
+  @185
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @186
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @186
+bgrMulti (strS[1000], 60, copy('CGMG13', 61))
+koePlay (1515531)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...But... if you can... '
+gosub @595
+pause
+koePlay (1515532)
+'\s{strS[1901]}'
+strS[1900] = '__...Yeah. You\'d better get going. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @187
+intF[1107] = 0
+msgHide
+
+  @187
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @191
+goto_unless (!intF[4]) @188
+strS[1003] = 'SDT07'
+goto @189
+
+  @188
+goto_unless (intF[4] == 1) @189
+strS[1003] = 'SDT08'
+
+  @189
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @190
+objBgMove (83, 16, 16)
+goto @191
+
+  @190
+goto_unless (intB[2] == 1) @191
+objBgMove (83, 16, 66)
+
+  @191
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @192
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @192
+bgrMulti (strS[1000], 60, copy('CGMG30', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515533)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @193
+intF[1107] = 0
+msgHide
+
+  @193
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @197
+goto_unless (!intF[4]) @194
+strS[1003] = 'SDT07'
+goto @195
+
+  @194
+goto_unless (intF[4] == 1) @195
+strS[1003] = 'SDT08'
+
+  @195
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @196
+objBgMove (83, 16, 16)
+goto @197
+
+  @196
+goto_unless (intB[2] == 1) @197
+objBgMove (83, 16, 66)
+
+  @197
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @198
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @198
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'She bows again before finally leaving. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I watch her until her figure disappears. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then I slump against the wall. '
+gosub @595
+pause
+koePlay (1515534)
+'\s{strS[1901]}'
+strS[1900] = '__(Okay...) '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The wind blows. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her hair and clothes flutter. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG052', 0)
+'\s{strS[1901]}'
+strS[1900] = 'I wonder where she went, riding on the wind? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I shouldn\'t think like that. I\'m sure we still have time. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her wish. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her happiness. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I want to make sure I know what they are. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There might not be any real need to do that. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It may be that I simply need to make my decision as soon as possible. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I still want to make sure. I can\'t stand not knowing. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Because that small girl has been supporting Tohno for as long as she can remember. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'So I want to meet her one last time. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m sure there\'s only one answer she could possibly give, but I still want to hear it from her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The courage to step forward? No, not that. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'All I have to do is gently push her forward. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'If I don\'t, I\'m sure I\'ll regret it. '
+gosub @595
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'I wait. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The dream hasn\'t ended yet. I\'m sure of it. '
+gosub @595
+pause
+koePlay (1515535)
+'\s{strS[1901]}'
+strS[1900] = '__(...Isn\'t that right...) '
+gosub @595
+pause
+koePlay (1515536)
+'\s{strS[1901]}'
+strS[1900] = '__(Michiru...?) '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '... '
+gosub @595
+pause
+bgmFadeOutEx
+bgmLoop ('BGM16')
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG056', 0)
+'\s{strS[1901]}'
+strS[1900] = 'The sun rises, lingers overhead... then falls to the west. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The evening breeze surrounds me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s summer school was supposed to end just after midday. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'How many hours has it been since then? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I stand here, just staring at the sky. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s too early to go looking for her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'So I keep staring upwards. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'For endless hours. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But, I\'ll believe. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The trees\' shadows stretch along the ground. The sunlight is orange. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They take form together within the twilight. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We\'ll meet again. '
+gosub @595
+pause
+intF[1107] = 1
+strS[1000] = 'BG018Y'
+goto_unless (intF[1107] == 1) @199
+intF[1107] = 0
+msgHide
+
+  @199
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @203
+goto_unless (!intF[4]) @200
+strS[1003] = 'SDT07'
+goto @201
+
+  @200
+goto_unless (intF[4] == 1) @201
+strS[1003] = 'SDT08'
+
+  @201
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @202
+objBgMove (83, 16, 16)
+goto @203
+
+  @202
+goto_unless (intB[2] == 1) @203
+objBgMove (83, 16, 66)
+
+  @203
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @204
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @204
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'We\'ll watch the sunset. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s very red... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Very big... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It seems like it could disappear at any moment... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...It\'s that kind of evening. '
+gosub @595
+pause
+koePlay (1515537)
+'\s{strS[1901]}'
+strS[1900] = '__...You\'re late. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look to my side. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @205
+intF[1107] = 0
+msgHide
+
+  @205
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @209
+goto_unless (!intF[4]) @206
+strS[1003] = 'SDT07'
+goto @207
+
+  @206
+goto_unless (intF[4] == 1) @207
+strS[1003] = 'SDT08'
+
+  @207
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @208
+objBgMove (83, 16, 16)
+goto @209
+
+  @208
+goto_unless (intB[2] == 1) @209
+objBgMove (83, 16, 66)
+
+  @209
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @210
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @210
+bgrMulti (strS[1000], 60, copy('CGMC21', 61))
+koePlay (1515538)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruMmhni... sorry. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She sits down on the bench next to me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She sounds apologetic. '
+gosub @595
+pause
+koePlay (1515539)
+'\s{strS[1901]}'
+strS[1900] = '__Where have you been? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Michiru......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @211
+intF[1107] = 0
+msgHide
+
+  @211
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @215
+goto_unless (!intF[4]) @212
+strS[1003] = 'SDT07'
+goto @213
+
+  @212
+goto_unless (intF[4] == 1) @213
+strS[1003] = 'SDT08'
+
+  @213
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @214
+objBgMove (83, 16, 16)
+goto @215
+
+  @214
+goto_unless (intB[2] == 1) @215
+objBgMove (83, 16, 66)
+
+  @215
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @216
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @216
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Her sorrowful eyes dart around for a bit, before settling on the sky. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @217
+intF[1107] = 0
+msgHide
+
+  @217
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @221
+goto_unless (!intF[4]) @218
+strS[1003] = 'SDT07'
+goto @219
+
+  @218
+goto_unless (intF[4] == 1) @219
+strS[1003] = 'SDT08'
+
+  @219
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @220
+objBgMove (83, 16, 16)
+goto @221
+
+  @220
+goto_unless (intB[2] == 1) @221
+objBgMove (83, 16, 66)
+
+  @221
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @222
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @222
+bgrMulti (strS[1000], 60, copy('CGMC20', 61))
+koePlay (1515540)
+'\s{strS[1901]}'
+strS[1900] = 'Michiru...The truth is... '
+gosub @595
+pause
+koePlay (1515541)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruI... have to go home now. '
+gosub @595
+pause
+koePlay (1515542)
+'\s{strS[1901]}'
+strS[1900] = '__...Home? '
+gosub @595
+pause
+koePlay (1515543)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruYeah... '
+gosub @595
+pause
+koePlay (1515544)
+'\s{strS[1901]}'
+strS[1900] = '__...Okay. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t know where that is for her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I get the feeling it\'s... a really sad place. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @223
+intF[1107] = 0
+msgHide
+
+  @223
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @227
+goto_unless (!intF[4]) @224
+strS[1003] = 'SDT07'
+goto @225
+
+  @224
+goto_unless (intF[4] == 1) @225
+strS[1003] = 'SDT08'
+
+  @225
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @226
+objBgMove (83, 16, 16)
+goto @227
+
+  @226
+goto_unless (intB[2] == 1) @227
+objBgMove (83, 16, 66)
+
+  @227
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @228
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @228
+bgrMulti (strS[1000], 60, copy('CGMC51', 61))
+koePlay (1515545)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruThe dream should have ended already... but... '
+gosub @595
+pause
+koePlay (1515546)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruMichiru\'s... selfish. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @229
+intF[1107] = 0
+msgHide
+
+  @229
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @233
+goto_unless (!intF[4]) @230
+strS[1003] = 'SDT07'
+goto @231
+
+  @230
+goto_unless (intF[4] == 1) @231
+strS[1003] = 'SDT08'
+
+  @231
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @232
+objBgMove (83, 16, 16)
+goto @233
+
+  @232
+goto_unless (intB[2] == 1) @233
+objBgMove (83, 16, 66)
+
+  @233
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @234
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @234
+bgrMulti (strS[1000], 60, copy('CGMC12', 61))
+koePlay (1515547)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruSo I asked for something unreasonable. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She laughs like usual. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But it\'s a really sad laugh. '
+gosub @595
+pause
+koePlay (1515548)
+'\s{strS[1901]}'
+strS[1900] = '__...Not that. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @235
+intF[1107] = 0
+msgHide
+
+  @235
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @239
+goto_unless (!intF[4]) @236
+strS[1003] = 'SDT07'
+goto @237
+
+  @236
+goto_unless (intF[4] == 1) @237
+strS[1003] = 'SDT08'
+
+  @237
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @238
+objBgMove (83, 16, 16)
+goto @239
+
+  @238
+goto_unless (intB[2] == 1) @239
+objBgMove (83, 16, 66)
+
+  @239
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @240
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @240
+bgrMulti (strS[1000], 60, copy('CGMC51', 61))
+'\s{strS[1901]}'
+strS[1900] = 'I spit those words out. '
+gosub @595
+pause
+koePlay (1515549)
+'\s{strS[1901]}'
+strS[1900] = '__You aren\'t being... unreasonable to anyone. '
+gosub @595
+pause
+koePlay (1515550)
+'\s{strS[1901]}'
+strS[1900] = '__Except... yourself... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @241
+intF[1107] = 0
+msgHide
+
+  @241
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @245
+goto_unless (!intF[4]) @242
+strS[1003] = 'SDT07'
+goto @243
+
+  @242
+goto_unless (intF[4] == 1) @243
+strS[1003] = 'SDT08'
+
+  @243
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @244
+objBgMove (83, 16, 16)
+goto @245
+
+  @244
+goto_unless (intB[2] == 1) @245
+objBgMove (83, 16, 66)
+
+  @245
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @246
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @246
+bgrMulti (strS[1000], 60, copy('CGMC21', 61))
+koePlay (1515551)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruMmhni... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Michiru falters. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @247
+intF[1107] = 0
+msgHide
+
+  @247
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @251
+goto_unless (!intF[4]) @248
+strS[1003] = 'SDT07'
+goto @249
+
+  @248
+goto_unless (intF[4] == 1) @249
+strS[1003] = 'SDT08'
+
+  @249
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @250
+objBgMove (83, 16, 16)
+goto @251
+
+  @250
+goto_unless (intB[2] == 1) @251
+objBgMove (83, 16, 66)
+
+  @251
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @252
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @252
+bgrMulti (strS[1000], 60, copy('CGMC20', 61))
+koePlay (1515552)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruSo you did... understand... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her voice is so quiet it might disappear. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her sad voice stabs my chest. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A girl who\'ll soon go home to a sad place. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And her final wish. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Which I couldn\'t... '
+gosub @595
+pause
+koePlay (1515553)
+'\s{strS[1901]}'
+strS[1900] = '__...Sorry... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I grip my arms wrapped around my knees. '
+gosub @595
+pause
+koePlay (1515554)
+'\s{strS[1901]}'
+strS[1900] = '__You entrusted her to me... '
+gosub @595
+pause
+koePlay (1515555)
+'\s{strS[1901]}'
+strS[1900] = '__I promised you I\'d... but... '
+gosub @595
+pause
+koePlay (1515556)
+'\s{strS[1901]}'
+strS[1900] = 'Michiru...Don\'t worry. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She shakes her head. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And speaks to me in a voice that makes it clear she blames herself. '
+gosub @595
+pause
+koePlay (1515557)
+'\s{strS[1901]}'
+strS[1900] = 'Michiru...You don\'t have to apologise. '
+gosub @595
+pause
+koePlay (1515558)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruIt\'s not your fault, __ __... '
+gosub @595
+pause
+koePlay (1515559)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruAnd Minagi isn\'t at fault either, of course... '
+gosub @595
+pause
+koePlay (1515560)
+'\s{strS[1901]}'
+strS[1900] = '__Michiru... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @253
+intF[1107] = 0
+msgHide
+
+  @253
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @257
+goto_unless (!intF[4]) @254
+strS[1003] = 'SDT07'
+goto @255
+
+  @254
+goto_unless (intF[4] == 1) @255
+strS[1003] = 'SDT08'
+
+  @255
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @256
+objBgMove (83, 16, 16)
+goto @257
+
+  @256
+goto_unless (intB[2] == 1) @257
+objBgMove (83, 16, 66)
+
+  @257
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @258
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @258
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Michiru......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @259
+intF[1107] = 0
+msgHide
+
+  @259
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @263
+goto_unless (!intF[4]) @260
+strS[1003] = 'SDT07'
+goto @261
+
+  @260
+goto_unless (intF[4] == 1) @261
+strS[1003] = 'SDT08'
+
+  @261
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @262
+objBgMove (83, 16, 16)
+goto @263
+
+  @262
+goto_unless (intB[2] == 1) @263
+objBgMove (83, 16, 66)
+
+  @263
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @264
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @264
+bgrMulti (strS[1000], 60, copy('CGMC10', 61))
+koePlay (1515561)
+'\s{strS[1901]}'
+strS[1900] = 'Michiru...Minagi\'s waiting. '
+gosub @595
+pause
+koePlay (1515562)
+'\s{strS[1901]}'
+strS[1900] = '__...You know about that? '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @265
+intF[1107] = 0
+msgHide
+
+  @265
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @269
+goto_unless (!intF[4]) @266
+strS[1003] = 'SDT07'
+goto @267
+
+  @266
+goto_unless (intF[4] == 1) @267
+strS[1003] = 'SDT08'
+
+  @267
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @268
+objBgMove (83, 16, 16)
+goto @269
+
+  @268
+goto_unless (intB[2] == 1) @269
+objBgMove (83, 16, 66)
+
+  @269
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @270
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @270
+bgrMulti (strS[1000], 60, copy('CGMC12', 61))
+koePlay (1515563)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruI know, because Michiru... '
+gosub @595
+pause
+koePlay (1515564)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruWas always there... '
+gosub @595
+pause
+koePlay (1515565)
+'\s{strS[1901]}'
+strS[1900] = '__Yeah... You\'re right. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @271
+intF[1107] = 0
+msgHide
+
+  @271
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @275
+goto_unless (!intF[4]) @272
+strS[1003] = 'SDT07'
+goto @273
+
+  @272
+goto_unless (intF[4] == 1) @273
+strS[1003] = 'SDT08'
+
+  @273
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @274
+objBgMove (83, 16, 16)
+goto @275
+
+  @274
+goto_unless (intB[2] == 1) @275
+objBgMove (83, 16, 66)
+
+  @275
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @276
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @276
+bgrMulti (strS[1000], 60, copy('CGMC10', 61))
+koePlay (1515566)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruMm... So you need to get going. '
+gosub @595
+pause
+koePlay (1515567)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruMinagi\'s... lonely right now. '
+gosub @595
+pause
+koePlay (1515568)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruI\'ll ask you... one more time. '
+gosub @595
+pause
+koePlay (1515569)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruHelp Minagi wake up... __ __. '
+gosub @595
+pause
+koePlay (1515570)
+'\s{strS[1901]}'
+strS[1900] = '__But are... '
+gosub @595
+pause
+koePlay (1515571)
+'\s{strS[1901]}'
+strS[1900] = '__Are you... all right with that? '
+gosub @595
+pause
+koePlay (1515572)
+'\s{strS[1901]}'
+strS[1900] = '__Your wish is... '
+gosub @595
+pause
+koePlay (1515573)
+'\s{strS[1901]}'
+strS[1900] = '__Your happiness... is... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @277
+intF[1107] = 0
+msgHide
+
+  @277
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @281
+goto_unless (!intF[4]) @278
+strS[1003] = 'SDT07'
+goto @279
+
+  @278
+goto_unless (intF[4] == 1) @279
+strS[1003] = 'SDT08'
+
+  @279
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @280
+objBgMove (83, 16, 16)
+goto @281
+
+  @280
+goto_unless (intB[2] == 1) @281
+objBgMove (83, 16, 66)
+
+  @281
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @282
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @282
+bgrMulti (strS[1000], 60, copy('CGMC51', 61))
+koePlay (1515574)
+'\s{strS[1901]}'
+strS[1900] = 'Michiru...It\'s fine. '
+gosub @595
+pause
+koePlay (1515575)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruBecause... there\'s no time left. '
+gosub @595
+pause
+koePlay (1515576)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruBecause the dream... is ending... '
+gosub @595
+pause
+koePlay (1515577)
+'\s{strS[1901]}'
+strS[1900] = '__But... Michiru. '
+gosub @595
+pause
+koePlay (1515578)
+'\s{strS[1901]}'
+strS[1900] = '__Won\'t that mean... you\'ll...? '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @283
+intF[1107] = 0
+msgHide
+
+  @283
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @287
+goto_unless (!intF[4]) @284
+strS[1003] = 'SDT07'
+goto @285
+
+  @284
+goto_unless (intF[4] == 1) @285
+strS[1003] = 'SDT08'
+
+  @285
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @286
+objBgMove (83, 16, 16)
+goto @287
+
+  @286
+goto_unless (intB[2] == 1) @287
+objBgMove (83, 16, 66)
+
+  @287
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @288
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @288
+bgrMulti (strS[1000], 60, copy('CGMC52', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Michiru......... '
+gosub @595
+pause
+koePlay (1515579)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruIf I don\'t do this right now... '
+gosub @595
+pause
+koePlay (1515580)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruMinagi... will be stuck here forever... '
+gosub @595
+pause
+koePlay (1515581)
+'\s{strS[1901]}'
+strS[1900] = '__But are you really...? '
+gosub @595
+pause
+koePlay (1515582)
+'\s{strS[1901]}'
+strS[1900] = '__All right... with that...? '
+gosub @595
+pause
+koePlay (1515583)
+'\s{strS[1901]}'
+strS[1900] = 'Michiru...Michiru... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @289
+intF[1107] = 0
+msgHide
+
+  @289
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @293
+goto_unless (!intF[4]) @290
+strS[1003] = 'SDT07'
+goto @291
+
+  @290
+goto_unless (intF[4] == 1) @291
+strS[1003] = 'SDT08'
+
+  @291
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @292
+objBgMove (83, 16, 16)
+goto @293
+
+  @292
+goto_unless (intB[2] == 1) @293
+objBgMove (83, 16, 66)
+
+  @293
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @294
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @294
+bgrMulti (strS[1000], 60, copy('CGMC12', 61))
+koePlay (1515584)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruMichiru... will be fine. '
+gosub @595
+pause
+koePlay (1515585)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruI don\'t want to see Minagi sad. '
+gosub @595
+pause
+koePlay (1515586)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruMinagi\'s much cuter when she smiles. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @295
+intF[1107] = 0
+msgHide
+
+  @295
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @299
+goto_unless (!intF[4]) @296
+strS[1003] = 'SDT07'
+goto @297
+
+  @296
+goto_unless (intF[4] == 1) @297
+strS[1003] = 'SDT08'
+
+  @297
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @298
+objBgMove (83, 16, 16)
+goto @299
+
+  @298
+goto_unless (intB[2] == 1) @299
+objBgMove (83, 16, 66)
+
+  @299
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @300
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @300
+bgrMulti (strS[1000], 60, copy('CGMC10', 61))
+koePlay (1515587)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruSo you need to get going. '
+gosub @595
+pause
+koePlay (1515588)
+'\s{strS[1901]}'
+strS[1900] = 'MichiruMinagi... '
+gosub @595
+pause
+koePlay (1515589)
+'\s{strS[1901]}'
+strS[1900] = 'Michiru...Is waiting for you, __ __... '
+gosub @595
+pause
+koePlay (1515590)
+'\s{strS[1901]}'
+strS[1900] = '__Michiru... '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG056', 0)
+'\s{strS[1901]}'
+strS[1900] = 'The evening calm ends. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A new wind blows, carrying the chill of the night. '
+gosub @595
+pause
+intF[1107] = 1
+strS[1000] = 'BG018Y'
+goto_unless (intF[1107] == 1) @301
+intF[1107] = 0
+msgHide
+
+  @301
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @305
+goto_unless (!intF[4]) @302
+strS[1003] = 'SDT07'
+goto @303
+
+  @302
+goto_unless (intF[4] == 1) @303
+strS[1003] = 'SDT08'
+
+  @303
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @304
+objBgMove (83, 16, 16)
+goto @305
+
+  @304
+goto_unless (intB[2] == 1) @305
+objBgMove (83, 16, 66)
+
+  @305
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @306
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @306
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I sit on the bench, looking beside me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s... no one there anymore. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Michiru, who longed only for her friend\'s happiness... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Isn\'t... there anymore. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Only the setting sun\'s rays... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A small bottle rolls across the bench. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I pick it up, and see it\'s full of stardust. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s warm. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Because until just now, someone was holding it... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Michiru\'s wish. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Michiru\'s happiness. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She was always happy whenever Tohno was happy, right? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Our memories together. All that time the three of us spent together... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Was Michiru... really happy? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I have no way of knowing anymore. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Because the dream ended. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The stardust. The happiness Michiru yearned for. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can see it running. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'A single tear is running down the side of the bottle. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sun sinks behind the mountains. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The clouds cover it up. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And, as if in response to our feelings... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As if they\'re crying with us... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It starts to drizzle. '
+gosub @595
+pause
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '... '
+gosub @595
+pause
+bgmFadeOutEx
+bgmLoop ('BGM14')
+'\s{strS[1901]}'
+strS[1900] = 'The mud stains my trouser sleeves. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The rain\'s really strong, as though displaying deep grief. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I rush to find Tohno, my hair and shoulders drenched. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bottle of stardust is in my hand. Michiru\'s wish. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I run. I have to find Tohno. '
+gosub @595
+pause
+intF[1107] = 1
+strS[1000] = 'BG019YA'
+goto_unless (intF[1107] == 1) @307
+intF[1107] = 0
+msgHide
+
+  @307
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @311
+goto_unless (!intF[4]) @308
+strS[1003] = 'SDT07'
+goto @309
+
+  @308
+goto_unless (intF[4] == 1) @309
+strS[1003] = 'SDT08'
+
+  @309
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @310
+objBgMove (83, 16, 16)
+goto @311
+
+  @310
+goto_unless (intB[2] == 1) @311
+objBgMove (83, 16, 66)
+
+  @311
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @312
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @312
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I open the door to the roof. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Water pours down the eaves. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The wind chills me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The rain finishes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The stars come out. '
+gosub @595
+pause
+koePlay (1515591)
+'\s{strS[1901]}'
+strS[1900] = '__...So you were here. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I speak to the girl beside the fence. '
+gosub @595
+pause
+koePlay (1515592)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'m sorry. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @313
+intF[1107] = 0
+msgHide
+
+  @313
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @317
+goto_unless (!intF[4]) @314
+strS[1003] = 'SDT07'
+goto @315
+
+  @314
+goto_unless (intF[4] == 1) @315
+strS[1003] = 'SDT08'
+
+  @315
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @316
+objBgMove (83, 16, 16)
+goto @317
+
+  @316
+goto_unless (intB[2] == 1) @317
+objBgMove (83, 16, 66)
+
+  @317
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @318
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @318
+bgrMulti (strS[1000], 60, copy('CGMG14N', 61))
+'\s{strS[1901]}'
+strS[1900] = 'She turns around, smiling. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s just as drenched as I am. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Raindrops are dripping from the tips of her hair. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @319
+intF[1107] = 0
+msgHide
+
+  @319
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @323
+goto_unless (!intF[4]) @320
+strS[1003] = 'SDT07'
+goto @321
+
+  @320
+goto_unless (intF[4] == 1) @321
+strS[1003] = 'SDT08'
+
+  @321
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @322
+objBgMove (83, 16, 16)
+goto @323
+
+  @322
+goto_unless (intB[2] == 1) @323
+objBgMove (83, 16, 66)
+
+  @323
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @324
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @324
+bgrMulti (strS[1000], 60, copy('CGMG32N', 61))
+koePlay (1515593)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Were you looking for me? '
+gosub @595
+pause
+koePlay (1515594)
+'\s{strS[1901]}'
+strS[1900] = '__No... '
+gosub @595
+pause
+koePlay (1515595)
+'\s{strS[1901]}'
+strS[1900] = '__I knew... right away. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515596)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Really? '
+gosub @595
+pause
+koePlay (1515597)
+'\s{strS[1901]}'
+strS[1900] = '__Yeah, I figured you\'d be here. '
+gosub @595
+pause
+koePlay (1515598)
+'\s{strS[1901]}'
+strS[1900] = '__Were you having a club meeting? '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @325
+intF[1107] = 0
+msgHide
+
+  @325
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @329
+goto_unless (!intF[4]) @326
+strS[1003] = 'SDT07'
+goto @327
+
+  @326
+goto_unless (intF[4] == 1) @327
+strS[1003] = 'SDT08'
+
+  @327
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @328
+objBgMove (83, 16, 16)
+goto @329
+
+  @328
+goto_unless (intB[2] == 1) @329
+objBgMove (83, 16, 66)
+
+  @329
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @330
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @330
+bgrMulti (strS[1000], 60, copy('CGMG10N', 61))
+koePlay (1515599)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes. '
+gosub @595
+pause
+koePlay (1515600)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...It\'s night... so the club... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515601)
+'\s{strS[1901]}'
+strS[1900] = '__But weren\'t the stars hidden until now? '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @331
+intF[1107] = 0
+msgHide
+
+  @331
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @335
+goto_unless (!intF[4]) @332
+strS[1003] = 'SDT07'
+goto @333
+
+  @332
+goto_unless (intF[4] == 1) @333
+strS[1003] = 'SDT08'
+
+  @333
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @334
+objBgMove (83, 16, 16)
+goto @335
+
+  @334
+goto_unless (intB[2] == 1) @335
+objBgMove (83, 16, 66)
+
+  @335
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @336
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @336
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+koePlay (1515602)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Indeed. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515603)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...It was raining until recently. '
+gosub @595
+pause
+koePlay (1515604)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...So... '
+gosub @595
+pause
+koePlay (1515605)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...The stars... wouldn\'t come out. '
+gosub @595
+pause
+koePlay (1515606)
+'\s{strS[1901]}'
+strS[1900] = '__...Then your club can\'t do anything, can they? '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @337
+intF[1107] = 0
+msgHide
+
+  @337
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @341
+goto_unless (!intF[4]) @338
+strS[1003] = 'SDT07'
+goto @339
+
+  @338
+goto_unless (intF[4] == 1) @339
+strS[1003] = 'SDT08'
+
+  @339
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @340
+objBgMove (83, 16, 16)
+goto @341
+
+  @340
+goto_unless (intB[2] == 1) @341
+objBgMove (83, 16, 66)
+
+  @341
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @342
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @342
+bgrMulti (strS[1000], 60, copy('CGMG17N', 61))
+koePlay (1515607)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...They can\'t... '
+gosub @595
+pause
+koePlay (1515608)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I wasn\'t... telling the truth earlier. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @343
+intF[1107] = 0
+msgHide
+
+  @343
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @347
+goto_unless (!intF[4]) @344
+strS[1003] = 'SDT07'
+goto @345
+
+  @344
+goto_unless (intF[4] == 1) @345
+strS[1003] = 'SDT08'
+
+  @345
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @346
+objBgMove (83, 16, 16)
+goto @347
+
+  @346
+goto_unless (intB[2] == 1) @347
+objBgMove (83, 16, 66)
+
+  @347
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @348
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @348
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515609)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I really did want to have a club meeting tonight. '
+gosub @595
+pause
+koePlay (1515610)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...But... '
+gosub @595
+pause
+koePlay (1515611)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I couldn\'t... hold one... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @349
+intF[1107] = 0
+msgHide
+
+  @349
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @353
+goto_unless (!intF[4]) @350
+strS[1003] = 'SDT07'
+goto @351
+
+  @350
+goto_unless (intF[4] == 1) @351
+strS[1003] = 'SDT08'
+
+  @351
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @352
+objBgMove (83, 16, 16)
+goto @353
+
+  @352
+goto_unless (intB[2] == 1) @353
+objBgMove (83, 16, 66)
+
+  @353
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @354
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @354
+bgrMulti (strS[1000], 60, copy('CGMG17N', 61))
+koePlay (1515612)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I wanted to look at the stars... but I could only look down at the ground. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515613)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I can see it... very well from here. '
+gosub @595
+pause
+koePlay (1515614)
+'\s{strS[1901]}'
+strS[1900] = '__See what? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @355
+intF[1107] = 0
+msgHide
+
+  @355
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @359
+goto_unless (!intF[4]) @356
+strS[1003] = 'SDT07'
+goto @357
+
+  @356
+goto_unless (intF[4] == 1) @357
+strS[1003] = 'SDT08'
+
+  @357
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @358
+objBgMove (83, 16, 16)
+goto @359
+
+  @358
+goto_unless (intB[2] == 1) @359
+objBgMove (83, 16, 66)
+
+  @359
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @360
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @360
+bgrMulti (strS[1000], 60, copy('CGMG10N', 61))
+koePlay (1515615)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...The gate... '
+gosub @595
+pause
+koePlay (1515616)
+'\s{strS[1901]}'
+strS[1900] = '__...Were you... waiting? '
+gosub @595
+pause
+koePlay (1515617)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes. '
+gosub @595
+pause
+koePlay (1515618)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I was waiting the entire time. '
+gosub @595
+pause
+koePlay (1515619)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Wondering... when you\'d arrive... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @361
+intF[1107] = 0
+msgHide
+
+  @361
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @365
+goto_unless (!intF[4]) @362
+strS[1003] = 'SDT07'
+goto @363
+
+  @362
+goto_unless (intF[4] == 1) @363
+strS[1003] = 'SDT08'
+
+  @363
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @364
+objBgMove (83, 16, 16)
+goto @365
+
+  @364
+goto_unless (intB[2] == 1) @365
+objBgMove (83, 16, 66)
+
+  @365
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @366
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @366
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515620)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I thought... '
+gosub @595
+pause
+koePlay (1515621)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...You might not come at all... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @367
+intF[1107] = 0
+msgHide
+
+  @367
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @371
+goto_unless (!intF[4]) @368
+strS[1003] = 'SDT07'
+goto @369
+
+  @368
+goto_unless (intF[4] == 1) @369
+strS[1003] = 'SDT08'
+
+  @369
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @370
+objBgMove (83, 16, 16)
+goto @371
+
+  @370
+goto_unless (intB[2] == 1) @371
+objBgMove (83, 16, 66)
+
+  @371
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @372
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @372
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = '...Tohno\'s eyes blur with tears. '
+gosub @595
+pause
+koePlay (1515622)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiHic... Uuu... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Large drops fall from her eyes and run down her cheeks. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She turns around, rubbing her tears away with the back of her hand. '
+gosub @595
+pause
+koePlay (1515623)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiUuuh...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And she bursts into tears. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her shoulders shake. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She wipes her tears over and over. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But they won\'t stop. Her cheeks are streaked with sadness over and over. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno cries under the starlight, her voice stifled. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I step towards her, my foot throwing up some water with a small splash. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I put my hand in my pocket, '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And search for the bottle of stardust. '
+gosub @595
+pause
+koePlay (1515624)
+'\s{strS[1901]}'
+strS[1900] = '__I... '
+gosub @595
+pause
+koePlay (1515625)
+'\s{strS[1901]}'
+strS[1900] = '__Met... her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I speak to her back. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The stardust shakes as I pull it out of my pocket. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I touch her shoulder. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And give her the bottle. '
+gosub @595
+pause
+koePlay (1515626)
+'\s{strS[1901]}'
+strS[1900] = '__I met Michiru... '
+gosub @595
+pause
+koePlay (1515627)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiOh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And Tohno, '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Was lost for words. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her slender fingers shake as she reaches out. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her fingertips touch my hand. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They\'re still a little wet. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Water covers the bottle\'s transparent glass. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We grip hands, and stare at it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then, I softly embrace her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her shoulders shake. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And Tohno starts crying again. '
+gosub @595
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '... '
+gosub @595
+pause
+bgmFadeOutEx
+bgmLoop ('BGM19')
+intF[1107] = 1
+strS[1000] = 'BG019YA'
+goto_unless (intF[1107] == 1) @373
+intF[1107] = 0
+msgHide
+
+  @373
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @377
+goto_unless (!intF[4]) @374
+strS[1003] = 'SDT07'
+goto @375
+
+  @374
+goto_unless (intF[4] == 1) @375
+strS[1003] = 'SDT08'
+
+  @375
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @376
+objBgMove (83, 16, 16)
+goto @377
+
+  @376
+goto_unless (intB[2] == 1) @377
+objBgMove (83, 16, 66)
+
+  @377
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @378
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @378
+bgrMulti (strS[1000], 0)
+goto_unless (intF[1107] == 1) @379
+intF[1107] = 0
+msgHide
+
+  @379
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @383
+goto_unless (!intF[4]) @380
+strS[1003] = 'SDT07'
+goto @381
+
+  @380
+goto_unless (intF[4] == 1) @381
+strS[1003] = 'SDT08'
+
+  @381
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @382
+objBgMove (83, 16, 16)
+goto @383
+
+  @382
+goto_unless (intB[2] == 1) @383
+objBgMove (83, 16, 66)
+
+  @383
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @384
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @384
+bgrMulti (strS[1000], 60, copy('CGMG32N', 61))
+koePlay (1515628)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Did... '
+gosub @595
+pause
+koePlay (1515629)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Did Michiru... say anything...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno doesn\'t bother wiping her tears away anymore. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Instead she grips the bottle as she speaks. '
+gosub @595
+pause
+koePlay (1515630)
+'\s{strS[1901]}'
+strS[1900] = '__She wants you to wake up from the dream... '
+gosub @595
+pause
+koePlay (1515631)
+'\s{strS[1901]}'
+strS[1900] = '__That\'s... all she said. '
+gosub @595
+pause
+koePlay (1515632)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...My... dream... '
+gosub @595
+pause
+koePlay (1515633)
+'\s{strS[1901]}'
+strS[1900] = '__...That\'s right. '
+gosub @595
+pause
+koePlay (1515634)
+'\s{strS[1901]}'
+strS[1900] = '__Your long dream is over. '
+gosub @595
+pause
+koePlay (1515635)
+'\s{strS[1901]}'
+strS[1900] = '__It... just ended. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s shoulders twitch. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @385
+intF[1107] = 0
+msgHide
+
+  @385
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @389
+goto_unless (!intF[4]) @386
+strS[1003] = 'SDT07'
+goto @387
+
+  @386
+goto_unless (intF[4] == 1) @387
+strS[1003] = 'SDT08'
+
+  @387
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @388
+objBgMove (83, 16, 16)
+goto @389
+
+  @388
+goto_unless (intB[2] == 1) @389
+objBgMove (83, 16, 66)
+
+  @389
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @390
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @390
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Her grip on the bottle tightens. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s body is surprisingly small as she curls up. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The dream she was having has already ended. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She... Michiru has already gone back to where she came from. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She just wishes for Tohno\'s happiness. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Because she said that\'s the same as her own happiness. '
+gosub @595
+pause
+koePlay (1515636)
+'\s{strS[1901]}'
+strS[1900] = '__...And you have to go back to reality. '
+gosub @595
+pause
+koePlay (1515637)
+'\s{strS[1901]}'
+strS[1900] = '__No... you should\'ve done that by now. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @391
+intF[1107] = 0
+msgHide
+
+  @391
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @395
+goto_unless (!intF[4]) @392
+strS[1003] = 'SDT07'
+goto @393
+
+  @392
+goto_unless (intF[4] == 1) @393
+strS[1003] = 'SDT08'
+
+  @393
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @394
+objBgMove (83, 16, 16)
+goto @395
+
+  @394
+goto_unless (intB[2] == 1) @395
+objBgMove (83, 16, 66)
+
+  @395
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @396
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @396
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515638)
+'\s{strS[1901]}'
+strS[1900] = '__To where you truly belong. '
+gosub @595
+pause
+koePlay (1515639)
+'\s{strS[1901]}'
+strS[1900] = '__Even if it\'s painful, even if it\'s sad... '
+gosub @595
+pause
+koePlay (1515640)
+'\s{strS[1901]}'
+strS[1900] = '__You have to... return to the place you belong. '
+gosub @595
+pause
+koePlay (1515641)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes... '
+gosub @595
+pause
+bgmFadeOut (1200)
+koePlay (1515642)
+'\s{strS[1901]}'
+strS[1900] = '__But, you... '
+gosub @595
+pause
+koePlay (1515643)
+'\s{strS[1901]}'
+strS[1900] = '__Back then, you... '
+gosub @595
+pause
+bgmFadeOutEx
+bgmLoop ('BGM14')
+goto_unless (intF[1107] == 1) @397
+intF[1107] = 0
+msgHide
+
+  @397
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @401
+goto_unless (!intF[4]) @398
+strS[1003] = 'SDT07'
+goto @399
+
+  @398
+goto_unless (intF[4] == 1) @399
+strS[1003] = 'SDT08'
+
+  @399
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @400
+objBgMove (83, 16, 16)
+goto @401
+
+  @400
+goto_unless (intB[2] == 1) @401
+objBgMove (83, 16, 66)
+
+  @401
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @402
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @402
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = '...Your mother was right in front of you. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even though you knew that was Michiru\'s wish. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even though I said your name. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even though I pushed your shoulders. '
+gosub @595
+pause
+koePlay (1515644)
+'\s{strS[1901]}'
+strS[1900] = '__You couldn\'t... take that one step forward. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @403
+intF[1107] = 0
+msgHide
+
+  @403
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @407
+goto_unless (!intF[4]) @404
+strS[1003] = 'SDT07'
+goto @405
+
+  @404
+goto_unless (intF[4] == 1) @405
+strS[1003] = 'SDT08'
+
+  @405
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @406
+objBgMove (83, 16, 16)
+goto @407
+
+  @406
+goto_unless (intB[2] == 1) @407
+objBgMove (83, 16, 66)
+
+  @407
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @408
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @408
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+koePlay (1515645)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...That\'s... right... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno quivers on the wet concrete. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her uniform clings to her skin. Her hair drips. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Water drops run down her face like tears. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The lights from the town glimmer through the fence. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The stars twinkle off in the distance. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @409
+intF[1107] = 0
+msgHide
+
+  @409
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @413
+goto_unless (!intF[4]) @410
+strS[1003] = 'SDT07'
+goto @411
+
+  @410
+goto_unless (intF[4] == 1) @411
+strS[1003] = 'SDT08'
+
+  @411
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @412
+objBgMove (83, 16, 16)
+goto @413
+
+  @412
+goto_unless (intB[2] == 1) @413
+objBgMove (83, 16, 66)
+
+  @413
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @414
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @414
+bgrMulti (strS[1000], 60, copy('CGMG10N', 61))
+koePlay (1515646)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'m... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She sounds like she\'s groaning in agony. '
+gosub @595
+pause
+koePlay (1515647)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'m... utterly pathetic... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515648)
+'\s{strS[1901]}'
+strS[1900] = '__...Yeah. '
+gosub @595
+pause
+koePlay (1515649)
+'\s{strS[1901]}'
+strS[1900] = '__You are really pathetic. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @415
+intF[1107] = 0
+msgHide
+
+  @415
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @419
+goto_unless (!intF[4]) @416
+strS[1003] = 'SDT07'
+goto @417
+
+  @416
+goto_unless (intF[4] == 1) @417
+strS[1003] = 'SDT08'
+
+  @417
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @418
+objBgMove (83, 16, 16)
+goto @419
+
+  @418
+goto_unless (intB[2] == 1) @419
+objBgMove (83, 16, 66)
+
+  @419
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @420
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @420
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+koePlay (1515650)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes... '
+gosub @595
+pause
+koePlay (1515651)
+'\s{strS[1901]}'
+strS[1900] = '__A pathetic... weak human. '
+gosub @595
+pause
+koePlay (1515652)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiYes... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The wire mesh creaks as Tohno slips her fingers through it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She hangs her head, and her tears make ripples in the water at our feet. '
+gosub @595
+pause
+koePlay (1515653)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I couldn\'t... '
+gosub @595
+pause
+koePlay (1515654)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Wake up... from my own dream... '
+gosub @595
+pause
+koePlay (1515655)
+'\s{strS[1901]}'
+strS[1900] = '__...That\'s right. '
+gosub @595
+pause
+koePlay (1515656)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I couldn\'t grant... Michiru\'s wish... '
+gosub @595
+pause
+koePlay (1515657)
+'\s{strS[1901]}'
+strS[1900] = '__You couldn\'t see the end... for yourself. '
+gosub @595
+pause
+koePlay (1515658)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes... '
+gosub @595
+pause
+koePlay (1515659)
+'\s{strS[1901]}'
+strS[1900] = '__Did you not want to see it? '
+gosub @595
+pause
+koePlay (1515660)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... didn\'t... '
+gosub @595
+pause
+koePlay (1515661)
+'\s{strS[1901]}'
+strS[1900] = '__Were you scared of facing your sadness? '
+gosub @595
+pause
+koePlay (1515662)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She grips the fence tighter. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s white hands dig painfully into the wire. '
+gosub @595
+pause
+koePlay (1515663)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I was... terrified... '
+gosub @595
+pause
+koePlay (1515664)
+'\s{strS[1901]}'
+strS[1900] = '__So... you didn\'t get to see the end of your dream... '
+gosub @595
+pause
+koePlay (1515665)
+'\s{strS[1901]}'
+strS[1900] = '__Or face your mother... '
+gosub @595
+pause
+koePlay (1515666)
+'\s{strS[1901]}'
+strS[1900] = '__...You couldn\'t do it. '
+gosub @595
+pause
+koePlay (1515667)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiThat\'s exactly... right... '
+gosub @595
+pause
+koePlay (1515668)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I couldn\'t... '
+gosub @595
+pause
+koePlay (1515669)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I couldn\'t... do any of it... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @421
+intF[1107] = 0
+msgHide
+
+  @421
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @425
+goto_unless (!intF[4]) @422
+strS[1003] = 'SDT07'
+goto @423
+
+  @422
+goto_unless (intF[4] == 1) @423
+strS[1003] = 'SDT08'
+
+  @423
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @424
+objBgMove (83, 16, 16)
+goto @425
+
+  @424
+goto_unless (intB[2] == 1) @425
+objBgMove (83, 16, 66)
+
+  @425
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @426
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @426
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Her shoulders soak in the droplets from her hair. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her hands have red lines in them from the wire fence. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @427
+intF[1107] = 0
+msgHide
+
+  @427
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @431
+goto_unless (!intF[4]) @428
+strS[1003] = 'SDT07'
+goto @429
+
+  @428
+goto_unless (intF[4] == 1) @429
+strS[1003] = 'SDT08'
+
+  @429
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @430
+objBgMove (83, 16, 16)
+goto @431
+
+  @430
+goto_unless (intB[2] == 1) @431
+objBgMove (83, 16, 66)
+
+  @431
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @432
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @432
+bgrMulti (strS[1000], 60, copy('CGMG10N', 61))
+koePlay (1515670)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I couldn\'t even work out... '
+gosub @595
+pause
+koePlay (1515671)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Where it was I belonged... '
+gosub @595
+pause
+koePlay (1515672)
+'\s{strS[1901]}'
+strS[1900] = '__...That\'s right. '
+gosub @595
+pause
+koePlay (1515673)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I couldn\'t find it... '
+gosub @595
+pause
+koePlay (1515674)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I didn\'t even try to look for it... '
+gosub @595
+pause
+koePlay (1515675)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... '
+gosub @595
+pause
+koePlay (1515676)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... just... '
+gosub @595
+pause
+koePlay (1515677)
+'\s{strS[1901]}'
+strS[1900] = '__Yeah... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @433
+intF[1107] = 0
+msgHide
+
+  @433
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @437
+goto_unless (!intF[4]) @434
+strS[1003] = 'SDT07'
+goto @435
+
+  @434
+goto_unless (intF[4] == 1) @435
+strS[1003] = 'SDT08'
+
+  @435
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @436
+objBgMove (83, 16, 16)
+goto @437
+
+  @436
+goto_unless (intB[2] == 1) @437
+objBgMove (83, 16, 66)
+
+  @437
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @438
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @438
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'The fence shakes again. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno presses her forehead against it. '
+gosub @595
+pause
+koePlay (1515678)
+'\s{strS[1901]}'
+strS[1900] = '__...No matter how heavy your burden is... '
+gosub @595
+pause
+koePlay (1515679)
+'\s{strS[1901]}'
+strS[1900] = '__Or what kind of cruel reality you\'re facing... '
+gosub @595
+pause
+koePlay (1515680)
+'\s{strS[1901]}'
+strS[1900] = '__You have to open your eyes and accept it... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @439
+intF[1107] = 0
+msgHide
+
+  @439
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @443
+goto_unless (!intF[4]) @440
+strS[1003] = 'SDT07'
+goto @441
+
+  @440
+goto_unless (intF[4] == 1) @441
+strS[1003] = 'SDT08'
+
+  @441
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @442
+objBgMove (83, 16, 16)
+goto @443
+
+  @442
+goto_unless (intB[2] == 1) @443
+objBgMove (83, 16, 66)
+
+  @443
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @444
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @444
+bgrMulti (strS[1000], 60, copy('CGMG32N', 61))
+koePlay (1515681)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... know... '
+gosub @595
+pause
+koePlay (1515682)
+'\s{strS[1901]}'
+strS[1900] = '__...Especially when... '
+gosub @595
+pause
+koePlay (1515683)
+'\s{strS[1901]}'
+strS[1900] = '__...It involves your family. '
+gosub @595
+pause
+koePlay (1515684)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiYes...! '
+gosub @595
+pause
+koePlay (1515685)
+'\s{strS[1901]}'
+strS[1900] = '__But you, Tohno... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @445
+intF[1107] = 0
+msgHide
+
+  @445
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @449
+goto_unless (!intF[4]) @446
+strS[1003] = 'SDT07'
+goto @447
+
+  @446
+goto_unless (intF[4] == 1) @447
+strS[1003] = 'SDT08'
+
+  @447
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @448
+objBgMove (83, 16, 16)
+goto @449
+
+  @448
+goto_unless (intB[2] == 1) @449
+objBgMove (83, 16, 66)
+
+  @449
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @450
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @450
+bgrMulti (strS[1000], 60, copy('CGMG35N', 61))
+koePlay (1515686)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... '
+gosub @595
+pause
+koePlay (1515687)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI... rejected... '
+gosub @595
+pause
+koePlay (1515688)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...My mother... '
+gosub @595
+pause
+koePlay (1515689)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... rejected my mother... '
+gosub @595
+pause
+koePlay (1515690)
+'\s{strS[1901]}'
+strS[1900] = '__...Yes. '
+gosub @595
+pause
+koePlay (1515691)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Because I was scared... '
+gosub @595
+pause
+koePlay (1515692)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I didn\'t want to go back... '
+gosub @595
+pause
+koePlay (1515693)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I turned away... '
+gosub @595
+pause
+koePlay (1515694)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...And clung... to my dream... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515695)
+'\s{strS[1901]}'
+strS[1900] = '__Michiru... did everything she could. '
+gosub @595
+pause
+koePlay (1515696)
+'\s{strS[1901]}'
+strS[1900] = '__So that you wouldn\'t be lonely. '
+gosub @595
+pause
+koePlay (1515697)
+'\s{strS[1901]}'
+strS[1900] = '__And you\'d smile. '
+gosub @595
+pause
+koePlay (1515698)
+'\s{strS[1901]}'
+strS[1900] = '__She was always supporting you. '
+gosub @595
+pause
+koePlay (1515699)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Michi... ru... '
+gosub @595
+pause
+koePlay (1515700)
+'\s{strS[1901]}'
+strS[1900] = '__But despite all she did... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @451
+intF[1107] = 0
+msgHide
+
+  @451
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @455
+goto_unless (!intF[4]) @452
+strS[1003] = 'SDT07'
+goto @453
+
+  @452
+goto_unless (intF[4] == 1) @453
+strS[1003] = 'SDT08'
+
+  @453
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @454
+objBgMove (83, 16, 16)
+goto @455
+
+  @454
+goto_unless (intB[2] == 1) @455
+objBgMove (83, 16, 66)
+
+  @455
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @456
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @456
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+koePlay (1515701)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Despite... that... '
+gosub @595
+pause
+koePlay (1515702)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Despite that... I... '
+gosub @595
+pause
+koePlay (1515703)
+'\s{strS[1901]}'
+strS[1900] = '__Couldn\'t do anything... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515704)
+'\s{strS[1901]}'
+strS[1900] = '__Correct...? '
+gosub @595
+pause
+koePlay (1515705)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She doesn\'t look up at me. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @457
+intF[1107] = 0
+msgHide
+
+  @457
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @461
+goto_unless (!intF[4]) @458
+strS[1003] = 'SDT07'
+goto @459
+
+  @458
+goto_unless (intF[4] == 1) @459
+strS[1003] = 'SDT08'
+
+  @459
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @460
+objBgMove (83, 16, 16)
+goto @461
+
+  @460
+goto_unless (intB[2] == 1) @461
+objBgMove (83, 16, 66)
+
+  @461
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @462
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @462
+bgrMulti (strS[1000], 60, copy('CGMG14N', 61))
+koePlay (1515706)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s half laughing at herself. '
+gosub @595
+pause
+koePlay (1515707)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI... '
+gosub @595
+pause
+koePlay (1515708)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Really am... pathetic... '
+gosub @595
+pause
+koePlay (1515709)
+'\s{strS[1901]}'
+strS[1900] = '__...That\'s right. '
+gosub @595
+pause
+koePlay (1515710)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiMichiru... '
+gosub @595
+pause
+koePlay (1515711)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Must be laughing at me... '
+gosub @595
+pause
+koePlay (1515712)
+'\s{strS[1901]}'
+strS[1900] = '__...She\'s... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Millions of stars glitter above us. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I gaze at them as I speak. '
+gosub @595
+pause
+koePlay (1515713)
+'\s{strS[1901]}'
+strS[1900] = '__She\'s not... laughing at you. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @463
+intF[1107] = 0
+msgHide
+
+  @463
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @467
+goto_unless (!intF[4]) @464
+strS[1003] = 'SDT07'
+goto @465
+
+  @464
+goto_unless (intF[4] == 1) @465
+strS[1003] = 'SDT08'
+
+  @465
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @466
+objBgMove (83, 16, 16)
+goto @467
+
+  @466
+goto_unless (intB[2] == 1) @467
+objBgMove (83, 16, 66)
+
+  @467
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @468
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @468
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+koePlay (1515714)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...That... can\'t be true. '
+gosub @595
+pause
+koePlay (1515715)
+'\s{strS[1901]}'
+strS[1900] = '__She\'s just... '
+gosub @595
+pause
+koePlay (1515716)
+'\s{strS[1901]}'
+strS[1900] = '__Sad... that\'s all... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @469
+intF[1107] = 0
+msgHide
+
+  @469
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @473
+goto_unless (!intF[4]) @470
+strS[1003] = 'SDT07'
+goto @471
+
+  @470
+goto_unless (intF[4] == 1) @471
+strS[1003] = 'SDT08'
+
+  @471
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @472
+objBgMove (83, 16, 16)
+goto @473
+
+  @472
+goto_unless (intB[2] == 1) @473
+objBgMove (83, 16, 66)
+
+  @473
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @474
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @474
+bgrMulti (strS[1000], 0)
+koePlay (1515717)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiUuu... '
+gosub @595
+pause
+koePlay (1515718)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Hi... uhhh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She holds the small bottle to her heart. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s as though... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...She\'s begging for forgiveness. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGMG14A', 0)
+koePlay (1515719)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I really am... '
+gosub @595
+pause
+koePlay (1515720)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI\'m... '
+gosub @595
+pause
+koePlay (1515721)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiSo... pathetic...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515722)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I couldn\'t do it...! '
+gosub @595
+pause
+koePlay (1515723)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I tried so hard... but I couldn\'t do anything...! '
+gosub @595
+pause
+koePlay (1515724)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I didn\'t wake up from my dream...! '
+gosub @595
+pause
+koePlay (1515725)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I didn\'t find where I belonged...! '
+gosub @595
+pause
+koePlay (1515726)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI didn\'t even... '
+gosub @595
+pause
+koePlay (1515727)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Get my wings back...! '
+gosub @595
+pause
+koePlay (1515728)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI couldn\'t do any of it...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+koePlay (1515729)
+'\s{strS[1901]}'
+strS[1900] = '__...That\'s right... '
+gosub @595
+pause
+koePlay (1515730)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiUuu... Uuu...! '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @475
+intF[1107] = 0
+msgHide
+
+  @475
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @479
+goto_unless (!intF[4]) @476
+strS[1003] = 'SDT07'
+goto @477
+
+  @476
+goto_unless (intF[4] == 1) @477
+strS[1003] = 'SDT08'
+
+  @477
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @478
+objBgMove (83, 16, 16)
+goto @479
+
+  @478
+goto_unless (intB[2] == 1) @479
+objBgMove (83, 16, 66)
+
+  @479
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @480
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @480
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Tohno crouches. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The stardust. The happiness Michiru prayed for. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno crouches as she clutches it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...Sobbing the whole time. '
+gosub @595
+pause
+koePlay (1515731)
+'\s{strS[1901]}'
+strS[1900] = '__But you know... Tohno... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her arms are wrapped around her legs. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks like a fetus. '
+gosub @595
+pause
+koePlay (1515732)
+'\s{strS[1901]}'
+strS[1900] = '__The dream... has already ended. '
+gosub @595
+pause
+koePlay (1515733)
+'\s{strS[1901]}'
+strS[1900] = '__And as for the place you\'re going... '
+gosub @595
+pause
+koePlay (1515734)
+'\s{strS[1901]}'
+strS[1900] = '__After what\'s happened... '
+gosub @595
+pause
+koePlay (1515735)
+'\s{strS[1901]}'
+strS[1900] = '__There\'s only one... place left for you. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @481
+intF[1107] = 0
+msgHide
+
+  @481
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @485
+goto_unless (!intF[4]) @482
+strS[1003] = 'SDT07'
+goto @483
+
+  @482
+goto_unless (intF[4] == 1) @483
+strS[1003] = 'SDT08'
+
+  @483
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @484
+objBgMove (83, 16, 16)
+goto @485
+
+  @484
+goto_unless (intB[2] == 1) @485
+objBgMove (83, 16, 66)
+
+  @485
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @486
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @486
+bgrMulti (strS[1000], 60, copy('CGMG32N', 61))
+koePlay (1515736)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Oh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno raises her head, as though I\'d flicked a switch. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then she slowly looks towards me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'From the wet ground, she looks up at me with red, blurry eyes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She opens her eyes wide. Her tears have stopped for now. '
+gosub @595
+pause
+koePlay (1515737)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi__... -san... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But they soon spill out again. '
+gosub @595
+pause
+koePlay (1515738)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi__-san...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her eyes speak volumes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She stares straight at my face, making me unable to look away... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s desperately appealing to me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I silently look at her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Our eyes meet. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s crying, crouching as the rain hits her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her shoulders are shaking gently. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She almost looks down several times.  '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But she never quite tears her eyes away from mine. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Anxiety and hope. Her eyes are dyed with those colours as she faces me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno... can\'t stop doing that. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'While I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Continue to look down on her... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The girl isolated on the wet concrete... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I never blink, constantly keeping my eyes on her... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look deep into her eyes as she clings to me... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I open my mouth... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My throat shakes... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And I declare to her: '
+gosub @595
+pause
+bgmStop
+koePlay (1515739)
+'\s{strS[1901]}'
+strS[1900] = '__...You\'re acting like a spoilt child. '
+gosub @595
+pause
+bgmLoop ('BGM12')
+goto_unless (intF[1107] == 1) @487
+intF[1107] = 0
+msgHide
+
+  @487
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @491
+goto_unless (!intF[4]) @488
+strS[1003] = 'SDT07'
+goto @489
+
+  @488
+goto_unless (intF[4] == 1) @489
+strS[1003] = 'SDT08'
+
+  @489
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @490
+objBgMove (83, 16, 16)
+goto @491
+
+  @490
+goto_unless (intB[2] == 1) @491
+objBgMove (83, 16, 66)
+
+  @491
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @492
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @492
+bgrMulti (strS[1000], 60, copy('CGMG30N', 61))
+koePlay (1515740)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiAh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She cowers. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her eyes fill with terror and expectation. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then quickly turn the colour of despair... '
+gosub @595
+pause
+koePlay (1515741)
+'\s{strS[1901]}'
+strS[1900] = '__...What were you expecting? '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @493
+intF[1107] = 0
+msgHide
+
+  @493
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @497
+goto_unless (!intF[4]) @494
+strS[1003] = 'SDT07'
+goto @495
+
+  @494
+goto_unless (intF[4] == 1) @495
+strS[1003] = 'SDT08'
+
+  @495
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @496
+objBgMove (83, 16, 16)
+goto @497
+
+  @496
+goto_unless (intB[2] == 1) @497
+objBgMove (83, 16, 66)
+
+  @497
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @498
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @498
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+koePlay (1515742)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI... just... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She avoids my gaze and looks back at the concrete. '
+gosub @595
+pause
+koePlay (1515743)
+'\s{strS[1901]}'
+strS[1900] = '__Were you hoping I\'d make it all better? '
+gosub @595
+pause
+koePlay (1515744)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... just... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She slides her hand through her hair, then grips it. '
+gosub @595
+pause
+koePlay (1515745)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI just...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She almost shouts. '
+gosub @595
+pause
+koePlay (1515746)
+'\s{strS[1901]}'
+strS[1900] = '__...You didn\'t do anything. '
+gosub @595
+pause
+koePlay (1515747)
+'\s{strS[1901]}'
+strS[1900] = '__You didn\'t wake up from your own dream. '
+gosub @595
+pause
+koePlay (1515748)
+'\s{strS[1901]}'
+strS[1900] = '__Or return to where you belong. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @499
+intF[1107] = 0
+msgHide
+
+  @499
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @503
+goto_unless (!intF[4]) @500
+strS[1003] = 'SDT07'
+goto @501
+
+  @500
+goto_unless (intF[4] == 1) @501
+strS[1003] = 'SDT08'
+
+  @501
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @502
+objBgMove (83, 16, 16)
+goto @503
+
+  @502
+goto_unless (intB[2] == 1) @503
+objBgMove (83, 16, 66)
+
+  @503
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @504
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @504
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Tohno quivers. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s curled up, confused, and shaking. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She can\'t even cry now. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She just shakes, as though she\'s forgotten how to do anything else. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @505
+intF[1107] = 0
+msgHide
+
+  @505
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @509
+goto_unless (!intF[4]) @506
+strS[1003] = 'SDT07'
+goto @507
+
+  @506
+goto_unless (intF[4] == 1) @507
+strS[1003] = 'SDT08'
+
+  @507
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @508
+objBgMove (83, 16, 16)
+goto @509
+
+  @508
+goto_unless (intB[2] == 1) @509
+objBgMove (83, 16, 66)
+
+  @509
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @510
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @510
+bgrMulti (strS[1000], 60, copy('CGMG16N', 61))
+koePlay (1515749)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...But... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Yet she still tries to speak. '
+gosub @595
+pause
+koePlay (1515750)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiBut... I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She frowns. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s searching for a way to respond to me. '
+gosub @595
+pause
+koePlay (1515751)
+'\s{strS[1901]}'
+strS[1900] = '__...But. '
+gosub @595
+pause
+koePlay (1515752)
+'\s{strS[1901]}'
+strS[1900] = '__But... at least... '
+gosub @595
+pause
+koePlay (1515753)
+'\s{strS[1901]}'
+strS[1900] = '__Say it... yourself. '
+gosub @595
+pause
+koePlay (1515754)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Ah... '
+gosub @595
+pause
+koePlay (1515755)
+'\s{strS[1901]}'
+strS[1900] = '__If you can\'t even do that... '
+gosub @595
+pause
+koePlay (1515756)
+'\s{strS[1901]}'
+strS[1900] = '__...Then I\'m not going. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @511
+intF[1107] = 0
+msgHide
+
+  @511
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @515
+goto_unless (!intF[4]) @512
+strS[1003] = 'SDT07'
+goto @513
+
+  @512
+goto_unless (intF[4] == 1) @513
+strS[1003] = 'SDT08'
+
+  @513
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @514
+objBgMove (83, 16, 16)
+goto @515
+
+  @514
+goto_unless (intB[2] == 1) @515
+objBgMove (83, 16, 66)
+
+  @515
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @516
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @516
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = '...A long silence. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s overwhelmed. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It takes a long time for her to put strength back into her body. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s water drops on her ribbon, the cuff of her dress, and on her cheeks. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @517
+intF[1107] = 0
+msgHide
+
+  @517
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @521
+goto_unless (!intF[4]) @518
+strS[1003] = 'SDT07'
+goto @519
+
+  @518
+goto_unless (intF[4] == 1) @519
+strS[1003] = 'SDT08'
+
+  @519
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @520
+objBgMove (83, 16, 16)
+goto @521
+
+  @520
+goto_unless (intB[2] == 1) @521
+objBgMove (83, 16, 66)
+
+  @521
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @522
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @522
+bgrMulti (strS[1000], 60, copy('CGMG10N', 61))
+koePlay (1515757)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... I really... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno stands up. '
+gosub @595
+pause
+koePlay (1515758)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I, just... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her unsteady legs gain strength. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She stands up through her own will. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her hair drapes over her shoulders. '
+gosub @595
+pause
+koePlay (1515759)
+'\s{strS[1901]}'
+strS[1900] = '__Are you... sure? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I ask just to check. '
+gosub @595
+pause
+koePlay (1515760)
+'\s{strS[1901]}'
+strS[1900] = '__You won\'t be able to go back after you say it. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @523
+intF[1107] = 0
+msgHide
+
+  @523
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @527
+goto_unless (!intF[4]) @524
+strS[1003] = 'SDT07'
+goto @525
+
+  @524
+goto_unless (intF[4] == 1) @525
+strS[1003] = 'SDT08'
+
+  @525
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @526
+objBgMove (83, 16, 16)
+goto @527
+
+  @526
+goto_unless (intB[2] == 1) @527
+objBgMove (83, 16, 66)
+
+  @527
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @528
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @528
+bgrMulti (strS[1000], 60, copy('CGMG13N', 61))
+koePlay (1515761)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I don\'t... mind... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno shakes her head. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Water drops fly off her hair around the area. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wonder if her tears are among them. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @529
+intF[1107] = 0
+msgHide
+
+  @529
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @533
+goto_unless (!intF[4]) @530
+strS[1003] = 'SDT07'
+goto @531
+
+  @530
+goto_unless (intF[4] == 1) @531
+strS[1003] = 'SDT08'
+
+  @531
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @532
+objBgMove (83, 16, 16)
+goto @533
+
+  @532
+goto_unless (intB[2] == 1) @533
+objBgMove (83, 16, 66)
+
+  @533
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @534
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @534
+bgrMulti (strS[1000], 60, copy('CGMG30N', 61))
+koePlay (1515762)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...__-san... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno looks up at me with wet eyes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @535
+intF[1107] = 0
+msgHide
+
+  @535
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @539
+goto_unless (!intF[4]) @536
+strS[1003] = 'SDT07'
+goto @537
+
+  @536
+goto_unless (intF[4] == 1) @537
+strS[1003] = 'SDT08'
+
+  @537
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @538
+objBgMove (83, 16, 16)
+goto @539
+
+  @538
+goto_unless (intB[2] == 1) @539
+objBgMove (83, 16, 66)
+
+  @539
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @540
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @540
+bgrMulti (strS[1000], 60, copy('CGMG32N', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She purses her lips. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks down, as though hesitating and thinking. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But only for an instant. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno stares at me earnestly, her gaze weak and fragile. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @541
+intF[1107] = 0
+msgHide
+
+  @541
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @545
+goto_unless (!intF[4]) @542
+strS[1003] = 'SDT07'
+goto @543
+
+  @542
+goto_unless (intF[4] == 1) @543
+strS[1003] = 'SDT08'
+
+  @543
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @544
+objBgMove (83, 16, 16)
+goto @545
+
+  @544
+goto_unless (intB[2] == 1) @545
+objBgMove (83, 16, 66)
+
+  @545
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @546
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @546
+bgrMulti (strS[1000], 60, copy('CGMG30N', 61))
+koePlay (1515763)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...__...-san... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She calls my name again. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The stars glimmer behind her. '
+gosub @595
+pause
+koePlay (1515764)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Please... '
+gosub @595
+pause
+koePlay (1515765)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiPlease... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @547
+intF[1107] = 0
+msgHide
+
+  @547
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @551
+goto_unless (!intF[4]) @548
+strS[1003] = 'SDT07'
+goto @549
+
+  @548
+goto_unless (intF[4] == 1) @549
+strS[1003] = 'SDT08'
+
+  @549
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @550
+objBgMove (83, 16, 16)
+goto @551
+
+  @550
+goto_unless (intB[2] == 1) @551
+objBgMove (83, 16, 66)
+
+  @551
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @552
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @552
+bgrMulti (strS[1000], 0)
+koePlay (1515766)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Let me fly away. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...Her hair flutters. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her tears draw lines down her cheeks before blowing behind her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I embrace her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno throws herself into my chest. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As though to never let me go. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As though she\'s completely covered in sadness. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I hold her tight. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '... '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGMG23', 26)
+koePlay (1515767)
+'\s{strS[1901]}'
+strS[1900] = '__...Tohno. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her uniform\'s still wet. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'ve been holding her under the starlight this whole time. '
+gosub @595
+pause
+koePlay (1515768)
+'\s{strS[1901]}'
+strS[1900] = '__...I\'ll say it again. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I feel her body temperature as I whisper into her ear. '
+gosub @595
+pause
+koePlay (1515769)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Please... do... '
+gosub @595
+pause
+koePlay (1515770)
+'\s{strS[1901]}'
+strS[1900] = '__Come on a journey with me. '
+gosub @595
+pause
+koePlay (1515771)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I will. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno doesn\'t hesitate anymore. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She just nods. '
+gosub @595
+pause
+koePlay (1515772)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'ll go... '
+gosub @595
+pause
+koePlay (1515773)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiWith you... __-san. '
+gosub @595
+pause
+koePlay (1515774)
+'\s{strS[1901]}'
+strS[1900] = '__...You won\'t regret it? '
+gosub @595
+pause
+koePlay (1515775)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I won\'t... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She squeezes her hands tighter against her chest. '
+gosub @595
+pause
+koePlay (1515776)
+'\s{strS[1901]}'
+strS[1900] = '__Okay... '
+gosub @595
+pause
+koePlay (1515777)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Umm. '
+gosub @595
+pause
+koePlay (1515778)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiBut... what about you, __-san...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks into my eyes. '
+gosub @595
+pause
+koePlay (1515779)
+'\s{strS[1901]}'
+strS[1900] = '__I... '
+gosub @595
+pause
+koePlay (1515780)
+'\s{strS[1901]}'
+strS[1900] = '__I... What do you mean? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She doesn\'t reply. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I just hug her tighter. '
+gosub @595
+pause
+koePlay (1515781)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Nothing. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She understands. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s giving herself to me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her cold, rain-soaked self. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I accept her, and she becomes warm. '
+gosub @595
+pause
+koePlay (1515782)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Umm... '
+gosub @595
+pause
+koePlay (1515783)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiWould you like... to rest your head in my lap? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She closes her eyes and smiles gently. '
+gosub @595
+pause
+koePlay (1515784)
+'\s{strS[1901]}'
+strS[1900] = '__...I can\'t do that. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515785)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Please... don\'t be cruel... '
+gosub @595
+pause
+koePlay (1515786)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'d like it if you... rested your head in my lap... '
+gosub @595
+pause
+koePlay (1515787)
+'\s{strS[1901]}'
+strS[1900] = '__I\'m not trying to be cruel or anything. '
+gosub @595
+pause
+koePlay (1515788)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Then... why can\'t you? '
+gosub @595
+pause
+koePlay (1515789)
+'\s{strS[1901]}'
+strS[1900] = '__...It\'s not enough. '
+gosub @595
+pause
+koePlay (1515790)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiOh... umm... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks troubled, unsure what I\'m talking about. '
+gosub @595
+pause
+koePlay (1515791)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiWhat do you mean, exactly...? '
+gosub @595
+pause
+koePlay (1515792)
+'\s{strS[1901]}'
+strS[1900] = '__Like I said, just resting my head in your lap... isn\'t enough. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno blushes lightly. '
+gosub @595
+pause
+koePlay (1515793)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Then... what do you...? '
+gosub @595
+pause
+koePlay (1515794)
+'\s{strS[1901]}'
+strS[1900] = '__...I... '
+gosub @595
+pause
+koePlay (1515795)
+'\s{strS[1901]}'
+strS[1900] = '__Want more of you, Tohno... '
+gosub @595
+pause
+koePlay (1515796)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiOh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her voice catches. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then we fall into silence for what feels like an eternity. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We\'re holding each other in our arms. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We\'re staring at each other. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Our hearts beat. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They\'re very loud. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The colour of hesitation. '
+gosub @595
+pause
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = 'I gulp. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+bgmFadeOutEx
+bgmLoop ('BGM16')
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t wait for an answer. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno lifts her head, flustered, as I approach her lips. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Our foreheads touch. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Our wet fringes intertwine. '
+gosub @595
+pause
+koePlay (1515797)
+'\s{strS[1901]}'
+strS[1900] = '__Please... lift your head. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I talk so only she can hear me. '
+gosub @595
+pause
+koePlay (1515798)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiAh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s voice trembles. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks down in embarrassment. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We can feel each other\'s body heat through our foreheads. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'So I can tell her temperature\'s rising. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A long time passes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Our hair makes a gentle sound as it moves together. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We nervously close the distance between our lips. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And they awkwardly come together. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wrap my arms around her lower back, and search for her rain-soaked blouse. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno doesn\'t resist. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Our bodies grow tense as we continue kissing. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I unfasten the buttons to her blouse one by one. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Soon, her heavy mounds are let loose... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her rough breath brushes my cheeks. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGMG08', 0)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiAh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They\'re exposed to the air. They\'re soft. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As I wrap my hands around them, I finally break our kiss. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My fingertips slowly caress the smooth skin over her protuberances. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her big breasts change shape as I play with them. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I gently squeeze them, and Tohno reflexively brings her own fingers up to them. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But not to stop me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As though following me touch her body. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her fingertips against mine. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I watch her as she blushes, and looks uneasy... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I cherish her like that for a long time... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Eventually I move my hands lower. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Umm... that\'s... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks at me, worried. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My hands stop at the opening of her skirt. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...Is it embarrassing? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes, it\'s... embarrassing... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__Should I... stop? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s eyes swim. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She seems lost for words for a while, but eventually she raises her head. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'m... fine... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...Okay. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I pull her close, as though to try and reduce her anxiety. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And reach into her skirt. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My fingers brush her plain underwear. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The rain water had drenched even that. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I try to remove it, but it\'s sticking to her thighs... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s expression changes every time I tug it. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGMG09', 0)
+'\s{strS[1901]}'
+strS[1900] = '__...Are you scared? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s shaking, and not from the cold. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'m fine... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She shakes her head. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'m perfectly... composed... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I let go of Tohno, preparing for the act we\'re about to commence. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It feels sinful to back away from her for even a moment. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But Tohno\'s smiling. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m asking her to do something unreasonable, but she\'s smiling clearly...  '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her uniform\'s coming off. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It doesn\'t reveal, or hide too much... She half hides her body with her arms. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s made her decision. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno has decided to walk alongside me. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGMG10', 0)
+'\s{strS[1901]}'
+strS[1900] = 'She rolls up her long skirt and exposes the lower part of her body. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My fingers crawl along it, and I discover a wetness different to water drops. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I feel something cling to my fingers. Slowly, I slide them inside her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'MinagiAh...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s face is tinged with shame. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her body twitches when my fingers move into her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m only responding to her determination. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I want to accept all of it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'So I hold Tohno from behind. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And move myself into her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Ow... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She speaks in pain. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I just move in deeper. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...Are you okay? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'MinagiYes...! '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno squeezes her eyes shut and bears with it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'m composed... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She says that while shaking her head. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I gently stroke her hair. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wrap my arms around her tighter and hold her close. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'MinagiI\'m... composed... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And like that... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We... became one. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We return to the station afterwards. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We change out of our wet clothes, and have a shower. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG061', 0)
+'\s{strS[1901]}'
+strS[1900] = 'Then Tohno and I sit on the bench, and look up at the clear, starry sky. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno asks me to rest my head in her lap again. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This time I let her lie in my lap, not saying a thing. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I stroke her newly dried hair over and over. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno closes her eyes, and gives herself up to me with a gentle expression. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then she opens them a little. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Doing it this way is better, she says bashfully. '
+gosub @595
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+wait (3000)
+intF[3] = 11
+intF[4] = 1
+intF[2] = 0
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+bgmFadeOutEx
+bgmLoop ('BGM03')
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 26)
+'\s{strS[1901]}'
+strS[1900] = 'Black exhaust fumes pollute the summer atmosphere. '
+gosub @595
+pause
+intF[1107] = 1
+strS[1000] = 'BG008'
+goto_unless (intF[1107] == 1) @553
+intF[1107] = 0
+msgHide
+
+  @553
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @557
+goto_unless (!intF[4]) @554
+strS[1003] = 'SDT07'
+goto @555
+
+  @554
+goto_unless (intF[4] == 1) @555
+strS[1003] = 'SDT08'
+
+  @555
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @556
+objBgMove (83, 16, 16)
+goto @557
+
+  @556
+goto_unless (intB[2] == 1) @557
+objBgMove (83, 16, 66)
+
+  @557
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @558
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @558
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'A figure sways to and fro on the hazy pavement. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bus is about to arrive. '
+gosub @595
+pause
+koePlay (1515799)
+'\s{strS[1901]}'
+strS[1900] = '__...It\'s here. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I stand up from the bench, slinging my luggage over my shoulder. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @559
+intF[1107] = 0
+msgHide
+
+  @559
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @563
+goto_unless (!intF[4]) @560
+strS[1003] = 'SDT07'
+goto @561
+
+  @560
+goto_unless (intF[4] == 1) @561
+strS[1003] = 'SDT08'
+
+  @561
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @562
+objBgMove (83, 16, 16)
+goto @563
+
+  @562
+goto_unless (intB[2] == 1) @563
+objBgMove (83, 16, 66)
+
+  @563
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @564
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @564
+bgrMulti (strS[1000], 60, copy('CGMG30S', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515800)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...It arrived... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno slowly gets up, copying me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She picks up a large sports bag at her feet. '
+gosub @595
+pause
+koePlay (1515801)
+'\s{strS[1901]}'
+strS[1900] = '__Come on. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bag\'s too heavy for Tohno\'s slender arms. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I hold out my empty hand to her. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @565
+intF[1107] = 0
+msgHide
+
+  @565
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @569
+goto_unless (!intF[4]) @566
+strS[1003] = 'SDT07'
+goto @567
+
+  @566
+goto_unless (intF[4] == 1) @567
+strS[1003] = 'SDT08'
+
+  @567
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @568
+objBgMove (83, 16, 16)
+goto @569
+
+  @568
+goto_unless (intB[2] == 1) @569
+objBgMove (83, 16, 66)
+
+  @569
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @570
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @570
+bgrMulti (strS[1000], 60, copy('CGMG32S', 61))
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515802)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Your lifeline... is long. '
+gosub @595
+pause
+koePlay (1515803)
+'\s{strS[1901]}'
+strS[1900] = '__...I don\'t believe in palm reading. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @571
+intF[1107] = 0
+msgHide
+
+  @571
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @575
+goto_unless (!intF[4]) @572
+strS[1003] = 'SDT07'
+goto @573
+
+  @572
+goto_unless (intF[4] == 1) @573
+strS[1003] = 'SDT08'
+
+  @573
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @574
+objBgMove (83, 16, 16)
+goto @575
+
+  @574
+goto_unless (intB[2] == 1) @575
+objBgMove (83, 16, 66)
+
+  @575
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @576
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @576
+bgrMulti (strS[1000], 60, copy('CGMG30S', 61))
+koePlay (1515804)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Excuse me. '
+gosub @595
+pause
+koePlay (1515805)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I just... felt like doing it. '
+gosub @595
+pause
+koePlay (1515806)
+'\s{strS[1901]}'
+strS[1900] = '__...It\'s fine, come on. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @577
+intF[1107] = 0
+msgHide
+
+  @577
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @581
+goto_unless (!intF[4]) @578
+strS[1003] = 'SDT07'
+goto @579
+
+  @578
+goto_unless (intF[4] == 1) @579
+strS[1003] = 'SDT08'
+
+  @579
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @580
+objBgMove (83, 16, 16)
+goto @581
+
+  @580
+goto_unless (intB[2] == 1) @581
+objBgMove (83, 16, 66)
+
+  @581
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @582
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @582
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'I take one step forward and take the bag off her. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then we turn back to the road. '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @583
+intF[1107] = 0
+msgHide
+
+  @583
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @587
+goto_unless (!intF[4]) @584
+strS[1003] = 'SDT07'
+goto @585
+
+  @584
+goto_unless (intF[4] == 1) @585
+strS[1003] = 'SDT08'
+
+  @585
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @586
+objBgMove (83, 16, 16)
+goto @587
+
+  @586
+goto_unless (intB[2] == 1) @587
+objBgMove (83, 16, 66)
+
+  @587
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @588
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @588
+bgrMulti (strS[1000], 60, copy('CGMG31S', 61))
+koePlay (1515807)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Thank you very much... '
+gosub @595
+pause
+koePlay (1515808)
+'\s{strS[1901]}'
+strS[1900] = '__Yeah. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We hear the sound of an air brake. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bus comes to a stop. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Its door opens, and the cool air inside instantly melts into the summer heat. '
+gosub @595
+pause
+koePlay (1515809)
+'\s{strS[1901]}'
+strS[1900] = '__Tohno. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I urge her forwards. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+goto_unless (intF[1107] == 1) @589
+intF[1107] = 0
+msgHide
+
+  @589
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @593
+goto_unless (!intF[4]) @590
+strS[1003] = 'SDT07'
+goto @591
+
+  @590
+goto_unless (intF[4] == 1) @591
+strS[1003] = 'SDT08'
+
+  @591
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @592
+objBgMove (83, 16, 16)
+goto @593
+
+  @592
+goto_unless (intB[2] == 1) @593
+objBgMove (83, 16, 66)
+
+  @593
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @594
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @594
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'She bows, then steps into the bus. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I get on right behind her. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG051', 26)
+koePlay (1515810)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...It\'s just us... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There are no other passengers inside. '
+gosub @595
+pause
+koePlay (1515811)
+'\s{strS[1901]}'
+strS[1900] = '__You\'re right... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look around, then head towards a random seat. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I put the luggage on the rack overhead, then gesture for Tohno to sit. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno shakes her head. '
+gosub @595
+pause
+koePlay (1515812)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...This time... you should go first, __-san. '
+gosub @595
+pause
+koePlay (1515813)
+'\s{strS[1901]}'
+strS[1900] = '__It\'s fine, sit wherever you like. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515814)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I surrendered myself to you earlier. '
+gosub @595
+pause
+koePlay (1515815)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...And you... carried my luggage too. '
+gosub @595
+pause
+koePlay (1515816)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...So... __-san should- '
+gosub @595
+pause
+koePlay (1515817)
+'\s{strS[1901]}'
+strS[1900] = '__...Okay. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I nod, and sit next to the window. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We sit together, our shoulders naturally touching. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Eventually the door closes, and the engine starts to hum. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bus is already leaving. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Outside the window is the same old sea and sky. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As I gaze at the unchanging scene, Tohno tugs at my t-shirt sleeve a few times. '
+gosub @595
+pause
+koePlay (1515818)
+'\s{strS[1901]}'
+strS[1900] = '__What is it? '
+gosub @595
+pause
+koePlay (1515819)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Could I... '
+gosub @595
+pause
+koePlay (1515820)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Borrow... your shoulder? '
+gosub @595
+pause
+koePlay (1515821)
+'\s{strS[1901]}'
+strS[1900] = '__My shoulder...? '
+gosub @595
+pause
+koePlay (1515822)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes... '
+gosub @595
+pause
+koePlay (1515823)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...It\'s just... more comfortable... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '__......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She glances at my face a few times. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her tone is timid, and her cheeks are blushing. '
+gosub @595
+pause
+koePlay (1515824)
+'\s{strS[1901]}'
+strS[1900] = '__...Here. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I pull her close, brushing her hair with my hand. '
+gosub @595
+pause
+koePlay (1515825)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiAh... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno rests her head gently on my shoulder. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515826)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Thank you... very much... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno leans, as though entrusting herself to me. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 26)
+'\s{strS[1901]}'
+strS[1900] = 'The scenery through the window still hasn\'t changed. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But... the town where I met Tohno will soon disappear from view. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look at her again. '
+gosub @595
+pause
+koePlay (1515827)
+'\s{strS[1901]}'
+strS[1900] = '__...Tohno. '
+gosub @595
+pause
+koePlay (1515828)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She opens her eyes slowly, as though she\'d just been sleeping. '
+gosub @595
+pause
+koePlay (1515829)
+'\s{strS[1901]}'
+strS[1900] = '__Do you still have... the stardust? '
+gosub @595
+pause
+koePlay (1515830)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I have it. '
+gosub @595
+pause
+koePlay (1515831)
+'\s{strS[1901]}'
+strS[1900] = '__...Can you get it out? '
+gosub @595
+pause
+koePlay (1515832)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Umm... do you mean... '
+gosub @595
+pause
+koePlay (1515833)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...My... stardust...? '
+gosub @595
+pause
+koePlay (1515834)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiOr do you mean...? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Michiru\'s stardust... but Tohno stops herself before saying that. '
+gosub @595
+pause
+koePlay (1515835)
+'\s{strS[1901]}'
+strS[1900] = '__...I mean both. '
+gosub @595
+pause
+koePlay (1515836)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Both...? '
+gosub @595
+pause
+koePlay (1515837)
+'\s{strS[1901]}'
+strS[1900] = '__Yeah, get them both out. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She slowly reaches into her skirt pocket. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And pulls out two bottles. '
+gosub @595
+pause
+koePlay (1515838)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...This one is mine. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She points to it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I reach into my pocket and get my own bottle out. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Three batches of stardust. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The light glittering on the sea\'s surface rebounds off the smooth glass. '
+gosub @595
+pause
+koePlay (1515839)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...What are you going to do...? '
+gosub @595
+pause
+koePlay (1515840)
+'\s{strS[1901]}'
+strS[1900] = '__Up until now we\'ve had three bottles, so... '
+gosub @595
+pause
+koePlay (1515841)
+'\s{strS[1901]}'
+strS[1900] = '__I was thinking... of mixing them together. '
+gosub @595
+pause
+koePlay (1515842)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiTogether... '
+gosub @595
+pause
+koePlay (1515843)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...As in... pour them all into the same bottle? '
+gosub @595
+pause
+koePlay (1515844)
+'\s{strS[1901]}'
+strS[1900] = '__...Yeah, that\'s right. That way... '
+gosub @595
+pause
+koePlay (1515845)
+'\s{strS[1901]}'
+strS[1900] = '__They\'ll always be together... from now on. '
+gosub @595
+pause
+koePlay (1515846)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Ah. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She glances down. '
+gosub @595
+pause
+koePlay (1515847)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Okay. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then she nods happily. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Minagi......... '
+gosub @595
+pause
+koePlay (1515848)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...But. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But she soon looks gloomy again. '
+gosub @595
+pause
+koePlay (1515849)
+'\s{strS[1901]}'
+strS[1900] = '__But what? '
+gosub @595
+pause
+koePlay (1515850)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Well... '
+gosub @595
+pause
+koePlay (1515851)
+'\s{strS[1901]}'
+strS[1900] = 'MinagiMichiru isn\'t... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s a bottle that isn\'t mine or Tohno\'s. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks at it with a complicated expression. '
+gosub @595
+pause
+koePlay (1515852)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Michiru isn\'t... here... '
+gosub @595
+pause
+koePlay (1515853)
+'\s{strS[1901]}'
+strS[1900] = '__...That\'s right. '
+gosub @595
+pause
+koePlay (1515854)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...So... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She reaches out. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And slowly puts Michiru\'s bottle away. '
+gosub @595
+pause
+koePlay (1515855)
+'\s{strS[1901]}'
+strS[1900] = '__...Yeah. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I just nod. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We only mix ours together. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno silently watches. '
+gosub @595
+pause
+koePlay (1515856)
+'\s{strS[1901]}'
+strS[1900] = '__I\'ll... keep hold of this. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I put the lid back on the bottle as I say that. It\'s much heavier now. '
+gosub @595
+pause
+koePlay (1515857)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...Yes. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno\'s face tells me she agrees. '
+gosub @595
+pause
+koePlay (1515858)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I\'d like you to keep it, __-san. '
+gosub @595
+pause
+koePlay (1515859)
+'\s{strS[1901]}'
+strS[1900] = 'Minagi...I... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She grips Michiru\'s bottle of stardust. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She opens her hand at one point, and looks at it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then closes her palm again, and holds the bottle to her chest. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She closes her eyes, and embraces it. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As though saying she\'ll never forget those memories. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGMG24', 26)
+'\s{strS[1901]}'
+strS[1900] = 'I look out the window, and see a seagull flying parallel to the bus. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I watch it for a while. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Eventually I open the window. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Our hair sways. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I breathe in the summer air. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A single feather flies past from somewhere. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It dances before Tohno and me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then it leaves as soon as it arrived, flying off somewhere. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bus continues forward. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Separating us from the town where we both... no, where the three of us met. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = '...Is this really for the best? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Is this really... what she wanted? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Would Michiru be happy with this? '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The familiar sea is suddenly hidden by a thick forest of trees. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Tohno has surrendered herself to me. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I just feel the summer wind blow against me. '
+gosub @595
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG052', 26)
+'\s{strS[1901]}'
+strS[1900] = 'Within the light filtering through the trees, '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bus continues forwards. '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And even now... '
+gosub @595
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We\'re still in the wind. '
+gosub @595
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+wait (5000)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+wait (3000)
+bgmStop
+ReturnMenu
+halt
+CallDLL (0, 10, intC[1] | 1179648)
+goto @596
+
+  @595
+CallDLL (0, 10, 1181548)
+
+  @596
+DisableAutoSavepoints
+store = 8
+strS[1900] = '        '
+
+  @597
+goto_unless (store < 512) @598
+strS[1900] += strS[1900]
+store *= 2
+goto @597
+
+  @598
+CallDLL (0, 12, 1181548, 131073)
+goto_on store {  @605, @606, @604, @599, @600, @601, @602, @603 }
+goto @606
+
+  @599
+br
+goto @598
+
+  @600
+page
+TextPos (0, 0)
+CallDLL (0, 13, 1181548)
+goto @598
+
+  @601
+SetIndent
+goto @598
+
+  @602
+ClearIndent
+goto @598
+
+  @603
+FontColour (6)
+CallDLL (0, 21)
+intC[0] += 1
+
+  @604
+'\s{strS[1900]}\posx{intC[1]}'
+goto @598
+
+  @605
+strS[1901] = strS[1900]
+strS[1900] = 'Error: '
+strS[1900] += strS[1901]
+strS[1900] += '. Unable to format text.'
+strclear (strS[1901])
+FastText
+'\s{strS[1900]}'
+NormalText
+
+  @606
+EnableAutoSavepoints
+ret
+goto @598
+eof

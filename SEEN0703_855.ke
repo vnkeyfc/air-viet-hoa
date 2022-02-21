@@ -1,0 +1,7832 @@
+{-# cp utf8 #- Disassembled with Kprl 1.40 -}
+
+#file 'SEEN0703.TXT'
+
+#kidoku_type 2
+#character 'Monk'
+#character 'Ryuuya'
+#character 'Uraha'
+#character 'Old Monk'
+#character 'Chitoku'
+#character 'Kanna'
+#entrypoint 000
+title ('A Dream of the Sky / Ryuuya  ')
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+msgHide
+intF[1107] = 1
+grpOpenBg ('KDAY_04', 26)
+farcall (9070, 0)
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 0)
+bgmLoop ('BGM13')
+'\s{strS[1901]}'
+strS[1900] = 'Then... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We leave Mt Kouya. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My wound refuses to heal, so Uraha has to help me walk as we flee. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'People talk to each other about that night in hushed voices. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A winged demon descended from Kouya and burnt down the temples with lightning. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Imperial troops tried to kill a demon but couldn\'t even touch it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A famous onmyouji used his power to send the demon back to the sky. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'No one seems to know where the winged demon disappeared to. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG052', 0)
+'\s{strS[1901]}'
+strS[1900] = 'Half a year passes. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We live in the capital. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We pretend to be married peddlers as we search for information about what happened that night. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Gathering rumours is entirely up to Uraha. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Eventually, we learn what was really going on. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Apparently it all started with an internal conflict in the imperial court. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A group of court onmyouji joined with another family to try and seize power. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'To make that happen, they had to get rid of the winged ones that Emperor Kazan worshipped. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But the eastern mercenaries they employed to do the dirty work betrayed them when they saw the winged one\'s power... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'None of that matters to me now. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We never learn where Kanna went, and the fatigue builds. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Once in a while Uraha says she can hear Kanna\'s voice. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s the only thing keeping me alive. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG051', 0)
+'\s{strS[1901]}'
+strS[1900] = 'Then, a year passes. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A tiny rumour in the capital sends us on a new journey. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Somewhere in the west is a group of diviners who oppose the Mt Kouya monks and the imperial court onmyouji. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'If those techniques can seal winged ones away, can they also be used to release them? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We head west. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My body never fully recovered, so I walk with a staff. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My inability to walk properly causes endless trouble for Uraha. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But she doesn\'t complain once. '
+gosub @556
+pause
+intF[1107] = 1
+strS[1000] = 'BG027'
+goto_unless (intF[1107] == 1) @1
+intF[1107] = 0
+msgHide
+
+  @1
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @5
+goto_unless (!intF[4]) @2
+strS[1003] = 'SDT07'
+goto @3
+
+  @2
+goto_unless (intF[4] == 1) @3
+strS[1003] = 'SDT08'
+
+  @3
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @4
+objBgMove (83, 16, 16)
+goto @5
+
+  @4
+goto_unless (intB[2] == 1) @5
+objBgMove (83, 16, 66)
+
+  @5
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @6
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @6
+bgrMulti (strS[1000], 0)
+wavStop
+wavLoop ('ABURA', 0)
+'\s{strS[1901]}'
+strS[1900] = 'As we walk along a difficult seaside path... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A travelling monk calls to me. '
+gosub @556
+pause
+koePlay (2727402)
+'\s{strS[1901]}'
+strS[1900] = 'MonkIf my eyes do not deceive me, you are Ryuuya-dono, protector of Kannabi no Mikoto. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s been a very long time since I heard anyone say the names Ryuuya and Kanna. '
+gosub @556
+pause
+koePlay (2727403)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWhat\'s your name? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I remain wary and ask in a low voice. '
+gosub @556
+pause
+koePlay (2727404)
+'\s{strS[1901]}'
+strS[1900] = 'MonkSomeone is waiting for you. '
+gosub @556
+pause
+koePlay (2727405)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWho? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'He says nothing, merely gesturing for us to follow him. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'He leads us to a run-down temple deep in the mountains. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can tell Uraha feels something as we pass through the gates. '
+gosub @556
+pause
+koePlay (2727406)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...There is a barrier here. '
+gosub @556
+pause
+koePlay (2727407)
+'\s{strS[1901]}'
+strS[1900] = 'MonkSo you were able to sense it. '
+gosub @556
+pause
+koePlay (2727408)
+'\s{strS[1901]}'
+strS[1900] = 'MonkThis is a hidden temple, so uninvited guests cannot even see the path leading to it. '
+gosub @556
+pause
+wavStopAll
+'\s{strS[1901]}'
+strS[1900] = 'We head into the main building, still in our travelling clothes. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A short old man sits down like the Buddha in the middle of an empty hall. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'His dark black clothes make it clear he\'s the leader of this temple. '
+gosub @556
+pause
+koePlay (2727409)
+'\s{strS[1901]}'
+strS[1900] = 'MonkI have brought them. '
+gosub @556
+pause
+koePlay (2727410)
+'\s{strS[1901]}'
+strS[1900] = 'Old MonkWell done, Ryouei-dono. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The monk bows and heads out. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then the elder monk slowly turns towards us. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I gulp. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The man\'s pupils have no light in them, as if they\'ve been gouged out. '
+gosub @556
+pause
+koePlay (2727411)
+'\s{strS[1901]}'
+strS[1900] = 'Old MonkMy name is Chitoku. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'His voice carries strangely well, as if the entire hall is speaking to us. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We tell him our names as well. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Chitoku is interested in Uraha. '
+gosub @556
+pause
+koePlay (2727412)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuAre you Uraha-dono? '
+gosub @556
+pause
+koePlay (2727413)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThe one who broke through Kouya\'s barrier all by herself...? '
+gosub @556
+pause
+koePlay (2727414)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou... know about that? '
+gosub @556
+pause
+koePlay (2727415)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuI have heard much about the events surrounding Kannabi no Mikoto. '
+gosub @556
+pause
+koePlay (2727416)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Do you know where Kanna-sama is now? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha moves closer, but the monk shakes his head. '
+gosub @556
+pause
+koePlay (2727417)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuShe is no longer in this world... '
+gosub @556
+pause
+bgmLoop ('BGM14')
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'Kanna\'s not in this world anymore. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m still refusing to accept that obvious truth. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha is just silent, listening to the monk. '
+gosub @556
+pause
+koePlay (2727418)
+'\s{strS[1901]}'
+strS[1900] = 'Chitoku...By the way, did you meet Yaobikuni? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'He asks, and I finally remember. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s what the monks on Mt Kouya called Kanna\'s mother. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'So I tell him about that. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'How she was shot by an arrow on the way down the mountain, and we watched her final moments... '
+gosub @556
+pause
+koePlay (2727419)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuSo that was what happened... '
+gosub @556
+pause
+koePlay (2727420)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThe Kouya monks believed her to be immortal. '
+gosub @556
+pause
+koePlay (2727421)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuInstead Kouya\'s mystical sealing techniques forced her to live longer than she really could... '
+gosub @556
+pause
+koePlay (2727422)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuFools. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Chitoku talks about Kanna\'s mother like an old acquaintance. '
+gosub @556
+pause
+koePlay (2727423)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuI cannot imagine how Bikuni-dono must have felt to be so horribly cursed... '
+gosub @556
+pause
+koePlay (2727424)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaDid you say... cursed? '
+gosub @556
+pause
+koePlay (2727425)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuWinged ones normally have pure souls. '
+gosub @556
+pause
+koePlay (2727426)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuAt some point, people started keeping them as weapons of war. '
+gosub @556
+pause
+koePlay (2727427)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuShe did not mean to kill them, but the spirits of all she slew gathered around her. '
+gosub @556
+pause
+koePlay (2727428)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuAny human would rot from such a curse, but a winged one like herself merely accumulated them. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I remember her words. '
+gosub @556
+pause
+koePlay (2727429)
+'\s{strS[1901]}'
+strS[1900] = 'This body is already tainted. '
+gosub @556
+pause
+koePlay (2727430)
+'\s{strS[1901]}'
+strS[1900] = 'Leave me here, without touching my body... '
+gosub @556
+pause
+koePlay (2727431)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...What are the winged ones? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I ask him before I realise my mouth is moving. '
+gosub @556
+pause
+koePlay (2727432)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuI do not know much detail either, but... '
+gosub @556
+pause
+koePlay (2727433)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuWinged ones are said to inherit dreams. '
+gosub @556
+pause
+koePlay (2727434)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThat is why they are pure and innocent. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'His answer is like a riddle. I can\'t understand it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They have pure souls. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And they inherit dreams... '
+gosub @556
+pause
+koePlay (2727435)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaChitoku-sama, I have a question as well. '
+gosub @556
+pause
+koePlay (2727436)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuWhat might that be? '
+gosub @556
+pause
+koePlay (2727437)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWhy are you interested in the winged ones, Chitoku-sama? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'No answer. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But there must be a reason he brought me and Uraha here. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Eventually, the monk stands up without a sound. '
+gosub @556
+pause
+koePlay (2727438)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThere is something I wish to show you. '
+gosub @556
+pause
+wavStopAll
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'There\'s a rough mountain trail behind the temple. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The monk climbs up the steep slope faster than any blind old man should be able to. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'With Uraha\'s help, I manage to follow. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Up there is an old cedar tree, its branches pointing to the heavens. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The cicada chirps have been replaced by the tweets of mountain birds. '
+gosub @556
+pause
+koePlay (2727439)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThis way. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The path finally smooths out. '
+gosub @556
+pause
+bgmFadeOut (1200)
+intF[1107] = 1
+strS[1000] = 'bg025'
+goto_unless (intF[1107] == 1) @7
+intF[1107] = 0
+msgHide
+
+  @7
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @11
+goto_unless (!intF[4]) @8
+strS[1003] = 'SDT07'
+goto @9
+
+  @8
+goto_unless (intF[4] == 1) @9
+strS[1003] = 'SDT08'
+
+  @9
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @10
+objBgMove (83, 16, 16)
+goto @11
+
+  @10
+goto_unless (intB[2] == 1) @11
+objBgMove (83, 16, 66)
+
+  @11
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @12
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @12
+bgrMulti (strS[1000], 0)
+koePlay (2727440)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaThis is... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A cave carved out of an enormous boulder. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'In the middle of the mossy rock is a thick oak door. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It looks like it hasn\'t been opened for a very long time. '
+gosub @556
+pause
+bgmLoop ('BGM13')
+goto_unless (intF[1107] == 1) @13
+intF[1107] = 0
+msgHide
+
+  @13
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @17
+goto_unless (!intF[4]) @14
+strS[1003] = 'SDT07'
+goto @15
+
+  @14
+goto_unless (intF[4] == 1) @15
+strS[1003] = 'SDT08'
+
+  @15
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @16
+objBgMove (83, 16, 16)
+goto @17
+
+  @16
+goto_unless (intB[2] == 1) @17
+objBgMove (83, 16, 66)
+
+  @17
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @18
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @18
+bgrMulti (strS[1000], 60, copy('CGUR10D', 70))
+koePlay (2727441)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAaah... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha rushes forward and touches her palm to the door. '
+gosub @556
+pause
+koePlay (2727442)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI feel something similar to Kanna-sama and her mother... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t feel it as easily as Uraha, but I can tell something\'s here. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This place is close to the sky. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @19
+intF[1107] = 0
+msgHide
+
+  @19
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @23
+goto_unless (!intF[4]) @20
+strS[1003] = 'SDT07'
+goto @21
+
+  @20
+goto_unless (intF[4] == 1) @21
+strS[1003] = 'SDT08'
+
+  @21
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @22
+objBgMove (83, 16, 16)
+goto @23
+
+  @22
+goto_unless (intB[2] == 1) @23
+objBgMove (83, 16, 66)
+
+  @23
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @24
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @24
+bgrMulti (strS[1000], 0)
+koePlay (2727443)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuIt is said that winged ones used to live in this cavern. '
+gosub @556
+pause
+koePlay (2727444)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThat was hundreds of years ago. '
+gosub @556
+pause
+koePlay (2727445)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWere they imprisoned here? '
+gosub @556
+pause
+koePlay (2727446)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuNo. '
+gosub @556
+pause
+koePlay (2727447)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThe winged ones are in no way demonic. '
+gosub @556
+pause
+koePlay (2727448)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThe ones living in this cavern were called the kumari. '
+gosub @556
+pause
+koePlay (2727449)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuIn ancient times, they gave humans a great deal of knowledge. '
+gosub @556
+pause
+koePlay (2727450)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuPart of which forms the basis of our mystical arts. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There Chitoku stops and looks up at the sky. '
+gosub @556
+pause
+koePlay (2727451)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuKannabi no Mikoto was probably the last winged one left in this world. '
+gosub @556
+pause
+koePlay (2727452)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWhat!? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'For a moment the weight of those words makes me feel dizzy. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Something high in the sky makes a noise. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A kite bird flies in circles, as if cutting out a piece of the clear blue sky. '
+gosub @556
+pause
+koePlay (2727453)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThe imperial army did not march on Mt Kouya merely to slaughter Yaobikuni-dono. '
+gosub @556
+pause
+koePlay (2727454)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuThey wished to bury all worship of winged ones. '
+gosub @556
+pause
+koePlay (2727455)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaBut why...? '
+gosub @556
+pause
+koePlay (2727456)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuLikely to concentrate worship on a single god. '
+gosub @556
+pause
+koePlay (2727457)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Just one god? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha can barely get those words out. '
+gosub @556
+pause
+koePlay (2727458)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuFor someone who rules a country, wings that reach the gods cannot be allowed to exist. '
+gosub @556
+pause
+koePlay (2727459)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuNo doubt they will take their pens to all manner of documents now. '
+gosub @556
+pause
+koePlay (2727460)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuChanging skies to seas, birds to fish and flame to water... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I know what he\'s trying to say. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The last winged one is gone. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Which means the court is afraid of winged ones living on as a legend. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They\'re going to do everything they can to wipe out their very existence. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Burning or rewriting documents until no mention of us remains. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And eventually they really will wipe it out. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The very existence of winged ones. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I notice I\'m clenching my fists. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t know what to do with this seething anger. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But then, Uraha speaks. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @25
+intF[1107] = 0
+msgHide
+
+  @25
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @29
+goto_unless (!intF[4]) @26
+strS[1003] = 'SDT07'
+goto @27
+
+  @26
+goto_unless (intF[4] == 1) @27
+strS[1003] = 'SDT08'
+
+  @27
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @28
+objBgMove (83, 16, 16)
+goto @29
+
+  @28
+goto_unless (intB[2] == 1) @29
+objBgMove (83, 16, 66)
+
+  @29
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @30
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @30
+bgrMulti (strS[1000], 60, copy('CGUR08D', 70))
+koePlay (2727461)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThat must not happen. '
+gosub @556
+pause
+koePlay (2727462)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAt this very moment I can hear Kanna-sama\'s voice. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @31
+intF[1107] = 0
+msgHide
+
+  @31
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @35
+goto_unless (!intF[4]) @32
+strS[1003] = 'SDT07'
+goto @33
+
+  @32
+goto_unless (intF[4] == 1) @33
+strS[1003] = 'SDT08'
+
+  @33
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @34
+objBgMove (83, 16, 16)
+goto @35
+
+  @34
+goto_unless (intB[2] == 1) @35
+objBgMove (83, 16, 66)
+
+  @35
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @36
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @36
+bgrMulti (strS[1000], 60, copy('CGUR13D', 70))
+koePlay (2727463)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaKanna-sama is crying right now. '
+gosub @556
+pause
+koePlay (2727464)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuWhat...? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The monk\'s face changes. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'His blind eyes stare intently at her. '
+gosub @556
+pause
+koePlay (2727465)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuYou can hear that voice as well...? '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @37
+intF[1107] = 0
+msgHide
+
+  @37
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @41
+goto_unless (!intF[4]) @38
+strS[1003] = 'SDT07'
+goto @39
+
+  @38
+goto_unless (intF[4] == 1) @39
+strS[1003] = 'SDT08'
+
+  @39
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @40
+objBgMove (83, 16, 16)
+goto @41
+
+  @40
+goto_unless (intB[2] == 1) @41
+objBgMove (83, 16, 66)
+
+  @41
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @42
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @42
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'The moment Uraha hears him say that voice, she sits down with respectful seiza posture. '
+gosub @556
+pause
+koePlay (2727466)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaChitoku-sama, I wish to ask you something. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She bows down so far her forehead touches the ground. '
+gosub @556
+pause
+koePlay (2727467)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaPlease teach me your mystical arts. '
+gosub @556
+pause
+koePlay (2727468)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuI am aware of your unusual talents, but... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @43
+intF[1107] = 0
+msgHide
+
+  @43
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @47
+goto_unless (!intF[4]) @44
+strS[1003] = 'SDT07'
+goto @45
+
+  @44
+goto_unless (intF[4] == 1) @45
+strS[1003] = 'SDT08'
+
+  @45
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @46
+objBgMove (83, 16, 16)
+goto @47
+
+  @46
+goto_unless (intB[2] == 1) @47
+objBgMove (83, 16, 66)
+
+  @47
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @48
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @48
+bgrMulti (strS[1000], 60, copy('CGUR13D', 70))
+koePlay (2727469)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIf I do have any power of my own... '
+gosub @556
+pause
+koePlay (2727470)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI want to use every last drop of it for Kanna-sama. '
+gosub @556
+pause
+koePlay (2727471)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaPlease... I beg of you to teach me how! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She begs with everything she has. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s clear Uraha isn\'t going to back down. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'After a long silence, Chitoku mutters to himself. '
+gosub @556
+pause
+koePlay (2727472)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuPerhaps you can... '
+gosub @556
+pause
+koePlay (2727473)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuUnderstood. '
+gosub @556
+pause
+koePlay (2727474)
+'\s{strS[1901]}'
+strS[1900] = 'ChitokuI will teach you. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'And then... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We begin living at the temple. '
+gosub @556
+pause
+intF[1107] = 1
+strS[1000] = 'BG025O'
+goto_unless (intF[1107] == 1) @49
+intF[1107] = 0
+msgHide
+
+  @49
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @53
+goto_unless (!intF[4]) @50
+strS[1003] = 'SDT07'
+goto @51
+
+  @50
+goto_unless (intF[4] == 1) @51
+strS[1003] = 'SDT08'
+
+  @51
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @52
+objBgMove (83, 16, 16)
+goto @53
+
+  @52
+goto_unless (intB[2] == 1) @53
+objBgMove (83, 16, 66)
+
+  @53
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @54
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @54
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'They offer us one of the rooms in the temple, but we choose to live in the cavern instead. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This place feels closer to Kanna, and there\'s something strangely calming about being inside it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha trains day and night. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She learns a wide variety of techniques, collectively referred to as Houjutsu. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Reading people\'s minds. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Making them have visions. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Moving objects without touching them. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Curing illness with the wave of a hand. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Making people forget what they heard. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even summoning the spirits of the dead. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'According to the monks, someone as talented as Uraha only appears once every hundred years. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha quickly learns countless techniques from Chitoku, like how sand absorbs water. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But Uraha takes no pride in it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She wears the same clothes as the men and helps the other monks with their work. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Over time the other monks start treating her like part of their family. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I simply spend every day in the cavern. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s getting more and more difficult for me to move at all. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'If that\'s the price of the wound I got on Mt Kouya, I have no regrets. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But spending all day doing nothing at all is worse than death. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I ask the monks heading out on pilgrimages if they could gather documents and legends about the winged ones. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I decided to look through all that information for myself. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s the only way I can resist the forces slowly eating away at me. '
+gosub @556
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 56)
+'\s{strS[1901]}'
+strS[1900] = 'And then... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Summer comes once again. '
+gosub @556
+pause
+bgmFadeOutEx
+bgmLoop ('BGM11')
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'A ritual Goma fire is in the centre of the stone room. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha and I are the only ones around it. '
+gosub @556
+pause
+koePlay (2727475)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...I\'ll begin. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha starts chanting. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her unique, high voice echoes within the rock. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Soul drawing. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A technique to draw another\'s soul close by bringing one\'s own soul towards it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Learning this was the sole objective of Uraha\'s two years of training. '
+gosub @556
+pause
+koePlay (2727476)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Aa ...Ku... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Sweat drops fall from Uraha\'s forehead. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha is currently taking into her body a piece of a soul floating in the void. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'If anything disturbs her focus, that soul could overpower her. '
+gosub @556
+pause
+koePlay (2727477)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Uu... Aaaaah... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her groaning gets louder. '
+gosub @556
+pause
+koePlay (2727478)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...No! '
+gosub @556
+pause
+koePlay (2727479)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaUraha? '
+gosub @556
+pause
+koePlay (2727480)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaNooooooooooooooooooooooooooooooooooo! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The shout of someone\'s soul being torn asunder. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The Goma fire burns out. '
+gosub @556
+pause
+koePlay (2727481)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaUraha! '
+gosub @556
+pause
+koePlay (2727482)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaUraha! Get a hold of yourself! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I reach for her in the darkness, and hold her. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can feel her sweat flowing like a waterfall. '
+gosub @556
+pause
+koePlay (2727483)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Uuh! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha lurches as she gasps. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I think she\'s back to normal. '
+gosub @556
+pause
+koePlay (2727484)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...Uraha? '
+gosub @556
+pause
+koePlay (2727485)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Ryuuya-sama... Ryuuya-sama... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then she lost consciousness. '
+gosub @556
+pause
+bgmFadeOut (1200)
+wavStop
+wavLoop ('MUSHI', 0)
+intF[1107] = 1
+strS[1000] = 'BG025NO'
+goto_unless (intF[1107] == 1) @55
+intF[1107] = 0
+msgHide
+
+  @55
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @59
+goto_unless (!intF[4]) @56
+strS[1003] = 'SDT07'
+goto @57
+
+  @56
+goto_unless (intF[4] == 1) @57
+strS[1003] = 'SDT08'
+
+  @57
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @58
+objBgMove (83, 16, 16)
+goto @59
+
+  @58
+goto_unless (intB[2] == 1) @59
+objBgMove (83, 16, 66)
+
+  @59
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @60
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @60
+bgrMulti (strS[1000], 0)
+koePlay (2727486)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou awake? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A few hours later. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha\'s eyes open. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even in this darkness, I can tell her face is pale. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wipe the sweat off her forehead. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @61
+intF[1107] = 0
+msgHide
+
+  @61
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @65
+goto_unless (!intF[4]) @62
+strS[1003] = 'SDT07'
+goto @63
+
+  @62
+goto_unless (intF[4] == 1) @63
+strS[1003] = 'SDT08'
+
+  @63
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @64
+objBgMove (83, 16, 16)
+goto @65
+
+  @64
+goto_unless (intB[2] == 1) @65
+objBgMove (83, 16, 66)
+
+  @65
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @66
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @66
+bgrMulti (strS[1000], 60, copy('CGUR10SN', 70))
+koePlay (2727487)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaRyuuya-sama... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She calls my name, reassured. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She slowly sits up. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She tries to tell me something, but she can\'t get the words out. '
+gosub @556
+pause
+koePlay (2727488)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWhat did you see? '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @67
+intF[1107] = 0
+msgHide
+
+  @67
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @71
+goto_unless (!intF[4]) @68
+strS[1003] = 'SDT07'
+goto @69
+
+  @68
+goto_unless (intF[4] == 1) @69
+strS[1003] = 'SDT08'
+
+  @69
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @70
+objBgMove (83, 16, 16)
+goto @71
+
+  @70
+goto_unless (intB[2] == 1) @71
+objBgMove (83, 16, 66)
+
+  @71
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @72
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @72
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727489)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha......... '
+gosub @556
+pause
+koePlay (2727490)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaDid you find Kanna? '
+gosub @556
+pause
+koePlay (2727491)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Yes. '
+gosub @556
+pause
+koePlay (2727492)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWhere is she? '
+gosub @556
+pause
+koePlay (2727493)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaKanna-sama is... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @73
+intF[1107] = 0
+msgHide
+
+  @73
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @77
+goto_unless (!intF[4]) @74
+strS[1003] = 'SDT07'
+goto @75
+
+  @74
+goto_unless (intF[4] == 1) @75
+strS[1003] = 'SDT08'
+
+  @75
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @76
+objBgMove (83, 16, 16)
+goto @77
+
+  @76
+goto_unless (intB[2] == 1) @77
+objBgMove (83, 16, 66)
+
+  @77
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @78
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @78
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Her words cut off as she looks up. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @79
+intF[1107] = 0
+msgHide
+
+  @79
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @83
+goto_unless (!intF[4]) @80
+strS[1003] = 'SDT07'
+goto @81
+
+  @80
+goto_unless (intF[4] == 1) @81
+strS[1003] = 'SDT08'
+
+  @81
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @82
+objBgMove (83, 16, 16)
+goto @83
+
+  @82
+goto_unless (intB[2] == 1) @83
+objBgMove (83, 16, 66)
+
+  @83
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @84
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @84
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727494)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaKanna-sama is still in the sky. '
+gosub @556
+pause
+koePlay (2727495)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...The sky? '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @85
+intF[1107] = 0
+msgHide
+
+  @85
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @89
+goto_unless (!intF[4]) @86
+strS[1003] = 'SDT07'
+goto @87
+
+  @86
+goto_unless (intF[4] == 1) @87
+strS[1003] = 'SDT08'
+
+  @87
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @88
+objBgMove (83, 16, 16)
+goto @89
+
+  @88
+goto_unless (intB[2] == 1) @89
+objBgMove (83, 16, 66)
+
+  @89
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @90
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @90
+bgrMulti (strS[1000], 60, copy('CGUR10SN', 70))
+koePlay (2727496)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaKanna-sama is still sad... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She bits her lip after saying that. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha must have seen Kanna\'s soul trapped in the void. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Just remembering it might be painful for her. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I have to ask. '
+gosub @556
+pause
+koePlay (2727497)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaCan you show me any of this? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She answers immediately. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @91
+intF[1107] = 0
+msgHide
+
+  @91
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @95
+goto_unless (!intF[4]) @92
+strS[1003] = 'SDT07'
+goto @93
+
+  @92
+goto_unless (intF[4] == 1) @93
+strS[1003] = 'SDT08'
+
+  @93
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @94
+objBgMove (83, 16, 16)
+goto @95
+
+  @94
+goto_unless (intB[2] == 1) @95
+objBgMove (83, 16, 66)
+
+  @95
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @96
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @96
+bgrMulti (strS[1000], 60, copy('CGUR06SN', 70))
+koePlay (2727498)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI cannot. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Not the same tone as usual. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I can easily see through it. '
+gosub @556
+pause
+koePlay (2727499)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou can, you just don\'t want me to see it. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @97
+intF[1107] = 0
+msgHide
+
+  @97
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @101
+goto_unless (!intF[4]) @98
+strS[1003] = 'SDT07'
+goto @99
+
+  @98
+goto_unless (intF[4] == 1) @99
+strS[1003] = 'SDT08'
+
+  @99
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @100
+objBgMove (83, 16, 16)
+goto @101
+
+  @100
+goto_unless (intB[2] == 1) @101
+objBgMove (83, 16, 66)
+
+  @101
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @102
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @102
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727500)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha......... '
+gosub @556
+pause
+koePlay (2727501)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaCould you please show me? '
+gosub @556
+pause
+koePlay (2727502)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI don\'t want to run away from this, no matter how bad it is. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @103
+intF[1107] = 0
+msgHide
+
+  @103
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @107
+goto_unless (!intF[4]) @104
+strS[1003] = 'SDT07'
+goto @105
+
+  @104
+goto_unless (intF[4] == 1) @105
+strS[1003] = 'SDT08'
+
+  @105
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @106
+objBgMove (83, 16, 16)
+goto @107
+
+  @106
+goto_unless (intB[2] == 1) @107
+objBgMove (83, 16, 66)
+
+  @107
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @108
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @108
+bgrMulti (strS[1000], 60, copy('CGUR10SN', 70))
+koePlay (2727503)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaBut... '
+gosub @556
+pause
+koePlay (2727504)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaPlease. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I just gaze into Uraha\'s eyes. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Eventually, she says... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @109
+intF[1107] = 0
+msgHide
+
+  @109
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @113
+goto_unless (!intF[4]) @110
+strS[1003] = 'SDT07'
+goto @111
+
+  @110
+goto_unless (intF[4] == 1) @111
+strS[1003] = 'SDT08'
+
+  @111
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @112
+objBgMove (83, 16, 16)
+goto @113
+
+  @112
+goto_unless (intB[2] == 1) @113
+objBgMove (83, 16, 66)
+
+  @113
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @114
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @114
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727505)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAll right. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @115
+intF[1107] = 0
+msgHide
+
+  @115
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @119
+goto_unless (!intF[4]) @116
+strS[1003] = 'SDT07'
+goto @117
+
+  @116
+goto_unless (intF[4] == 1) @117
+strS[1003] = 'SDT08'
+
+  @117
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @118
+objBgMove (83, 16, 16)
+goto @119
+
+  @118
+goto_unless (intB[2] == 1) @119
+objBgMove (83, 16, 66)
+
+  @119
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @120
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @120
+bgrMulti (strS[1000], 60, copy('CGUR06SN', 70))
+'\s{strS[1901]}'
+strS[1900] = 'Then, she sighs softly. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @121
+intF[1107] = 0
+msgHide
+
+  @121
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @125
+goto_unless (!intF[4]) @122
+strS[1003] = 'SDT07'
+goto @123
+
+  @122
+goto_unless (intF[4] == 1) @123
+strS[1003] = 'SDT08'
+
+  @123
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @124
+objBgMove (83, 16, 16)
+goto @125
+
+  @124
+goto_unless (intB[2] == 1) @125
+objBgMove (83, 16, 66)
+
+  @125
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @126
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @126
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+'\s{strS[1901]}'
+strS[1900] = 'The emotion leaves her eyes, leaving only willpower. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @127
+intF[1107] = 0
+msgHide
+
+  @127
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @131
+goto_unless (!intF[4]) @128
+strS[1003] = 'SDT07'
+goto @129
+
+  @128
+goto_unless (intF[4] == 1) @129
+strS[1003] = 'SDT08'
+
+  @129
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @130
+objBgMove (83, 16, 16)
+goto @131
+
+  @130
+goto_unless (intB[2] == 1) @131
+objBgMove (83, 16, 66)
+
+  @131
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @132
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @132
+bgrMulti (strS[1000], 60, copy('CGUR08SN', 70))
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaPlease calm your mind... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I clear my head as she speaks. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @133
+intF[1107] = 0
+msgHide
+
+  @133
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @137
+goto_unless (!intF[4]) @134
+strS[1003] = 'SDT07'
+goto @135
+
+  @134
+goto_unless (intF[4] == 1) @135
+strS[1003] = 'SDT08'
+
+  @135
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @136
+objBgMove (83, 16, 16)
+goto @137
+
+  @136
+goto_unless (intB[2] == 1) @137
+objBgMove (83, 16, 66)
+
+  @137
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @138
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @138
+bgrMulti (strS[1000], 60, copy('CGUR06SN', 70))
+'\s{strS[1901]}'
+strS[1900] = 'Uraha begins humming to herself. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This is another part of Houjutsu. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'An image of what Uraha felt is being displayed in my mind. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My mind is wrapped in a strange sensation, as if I\'m being stroked with cotton... '
+gosub @556
+pause
+wavStopAll
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 56)
+wavStop
+wavPlay ('MINMIN')
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG051', 0)
+'\s{strS[1901]}'
+strS[1900] = 'It\'s summer. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Rolling hills between the lush trees. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Up above is an endless sky. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A man lies on the side of the road. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It looks like he received a fatal sword strike to his back. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Someone\'s sobbing. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s clinging to the body that will never wake up again. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s Kanna. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her wings, torn apart by arrows, flicker like a heat haze. '
+gosub @556
+pause
+koePlay (2727506)
+'\s{strS[1901]}'
+strS[1900] = 'Kanna...Thou art my life... '
+gosub @556
+pause
+koePlay (2727507)
+'\s{strS[1901]}'
+strS[1900] = 'KannaWake up... wake up! '
+gosub @556
+pause
+koePlay (2727508)
+'\s{strS[1901]}'
+strS[1900] = 'KannaWherefore... wilt thou... not move... wherefore... wilt thine eyes not open... '
+gosub @556
+pause
+koePlay (2727509)
+'\s{strS[1901]}'
+strS[1900] = 'Kanna...I shall not forgive thee... '
+gosub @556
+pause
+koePlay (2727510)
+'\s{strS[1901]}'
+strS[1900] = 'KannaI shall not forgive thee... for leaving me... '
+gosub @556
+pause
+koePlay (2727511)
+'\s{strS[1901]}'
+strS[1900] = 'KannaWherefore... doth everyone... leave me behind... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She shakes the body. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She rolls it over, revealing its pale face. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My face. '
+gosub @556
+pause
+koePlay (2727512)
+'\s{strS[1901]}'
+strS[1900] = 'Kanna...Ryuuya-dono! Ryuuya-dono...! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna calls for me. '
+gosub @556
+pause
+koePlay (2727513)
+'\s{strS[1901]}'
+strS[1900] = 'Kanna...Ryuuya-dono! ...Ryuuya... -donooo... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She calls for me over and over as if she\'s lost her mind. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = '...No! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = '...Kanna, I\'m all right! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = '...I\'m right here! Over here! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My shout is drowned out by the cicadas. '
+gosub @556
+pause
+koePlay (2727514)
+'\s{strS[1901]}'
+strS[1900] = 'KannaUu... uaa... aaaaa... aa... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna sobs hysterically. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Crying all by herself... '
+gosub @556
+pause
+wavStopAll
+intF[1107] = 1
+strS[1000] = 'BG025NO'
+goto_unless (intF[1107] == 1) @139
+intF[1107] = 0
+msgHide
+
+  @139
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @143
+goto_unless (!intF[4]) @140
+strS[1003] = 'SDT07'
+goto @141
+
+  @140
+goto_unless (intF[4] == 1) @141
+strS[1003] = 'SDT08'
+
+  @141
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @142
+objBgMove (83, 16, 16)
+goto @143
+
+  @142
+goto_unless (intB[2] == 1) @143
+objBgMove (83, 16, 66)
+
+  @143
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @144
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @144
+bgrMulti (strS[1000], 0)
+wavStop
+wavLoop ('MUSHI', 0)
+koePlay (2727515)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaKanna...! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My shout echoes through the cavern. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @145
+intF[1107] = 0
+msgHide
+
+  @145
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @149
+goto_unless (!intF[4]) @146
+strS[1003] = 'SDT07'
+goto @147
+
+  @146
+goto_unless (intF[4] == 1) @147
+strS[1003] = 'SDT08'
+
+  @147
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @148
+objBgMove (83, 16, 16)
+goto @149
+
+  @148
+goto_unless (intB[2] == 1) @149
+objBgMove (83, 16, 66)
+
+  @149
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @150
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @150
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+'\s{strS[1901]}'
+strS[1900] = 'Uraha\'s gazing at me. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'All the feelings hidden in her eyes are covered by deep regret. '
+gosub @556
+pause
+koePlay (2727516)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaHas Kanna... been seeing this ever since then? '
+gosub @556
+pause
+koePlay (2727517)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes. '
+gosub @556
+pause
+koePlay (2727518)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaIs that why Kanna keeps crying? '
+gosub @556
+pause
+koePlay (2727519)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes...! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her words trail off with a faint sob. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @151
+intF[1107] = 0
+msgHide
+
+  @151
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @155
+goto_unless (!intF[4]) @152
+strS[1003] = 'SDT07'
+goto @153
+
+  @152
+goto_unless (intF[4] == 1) @153
+strS[1003] = 'SDT08'
+
+  @153
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @154
+objBgMove (83, 16, 16)
+goto @155
+
+  @154
+goto_unless (intB[2] == 1) @155
+objBgMove (83, 16, 66)
+
+  @155
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @156
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @156
+bgrMulti (strS[1000], 60, copy('CGUR10SN', 70))
+bgmLoop ('BGM14')
+wavStopAll
+koePlay (2727520)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThe curse directed at Kanna-sama that night was unparalleled. '
+gosub @556
+pause
+koePlay (2727521)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIt shattered her heart completely... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'What I just saw must be something Kanna cared deeply about. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A memory of us travelling together. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A memory of me telling her about my saddest day. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A memory of her kind, strong mother. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna flew off with all of those... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then ran out of strength. '
+gosub @556
+pause
+koePlay (2727522)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaIs that all you saw? '
+gosub @556
+pause
+koePlay (2727523)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @157
+intF[1107] = 0
+msgHide
+
+  @157
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @161
+goto_unless (!intF[4]) @158
+strS[1003] = 'SDT07'
+goto @159
+
+  @158
+goto_unless (intF[4] == 1) @159
+strS[1003] = 'SDT08'
+
+  @159
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @160
+objBgMove (83, 16, 16)
+goto @161
+
+  @160
+goto_unless (intB[2] == 1) @161
+objBgMove (83, 16, 66)
+
+  @161
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @162
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @162
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727524)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaA winged one\'s heart is far deeper than a human\'s. '
+gosub @556
+pause
+koePlay (2727525)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI can only glimpse a tiny part of it. '
+gosub @556
+pause
+koePlay (2727526)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaBut... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @163
+intF[1107] = 0
+msgHide
+
+  @163
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @167
+goto_unless (!intF[4]) @164
+strS[1003] = 'SDT07'
+goto @165
+
+  @164
+goto_unless (intF[4] == 1) @165
+strS[1003] = 'SDT08'
+
+  @165
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @166
+objBgMove (83, 16, 16)
+goto @167
+
+  @166
+goto_unless (intB[2] == 1) @167
+objBgMove (83, 16, 66)
+
+  @167
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @168
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @168
+bgrMulti (strS[1000], 60, copy('CGUR10SN', 70))
+koePlay (2727527)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThe curse is still making Kanna-sama suffer. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The curse. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'In retrospect, that word has always come up in the context of winged ones. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They say impurities of human nature turned the mother into a demon... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @169
+intF[1107] = 0
+msgHide
+
+  @169
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @173
+goto_unless (!intF[4]) @170
+strS[1003] = 'SDT07'
+goto @171
+
+  @170
+goto_unless (intF[4] == 1) @171
+strS[1003] = 'SDT08'
+
+  @171
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @172
+objBgMove (83, 16, 16)
+goto @173
+
+  @172
+goto_unless (intB[2] == 1) @173
+objBgMove (83, 16, 66)
+
+  @173
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @174
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @174
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727528)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThe curse on her mother was also an ancient and powerful one. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = ' I cannot imagine how Bikuni-dono must have felt... '
+gosub @556
+pause
+koePlay (2727529)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIt weakens all who grow attached to the winged one, until they die. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = ' You will fare no better than us if you do that... '
+gosub @556
+pause
+koePlay (2727530)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThe curse was inherited by Kanna-sama when we left her mother. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = ' Please forgive thy mother. '
+gosub @556
+pause
+koePlay (2727531)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAnd it will suck your life away, Ryuuya-sama. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = ' Ryuuya-dono, I do not want thee to die... '
+gosub @556
+pause
+koePlay (2727532)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaBecause Kanna-sama felt so strongly about you... '
+gosub @556
+pause
+koePlay (2727533)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI see. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I just nod. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'All because of what happened that night on Mt Kouya. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'ve been feeling something mysterious eat away at me ever since. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I had a hunch it had something to do with Kanna. '
+gosub @556
+pause
+koePlay (2727534)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWhen will I die? '
+gosub @556
+pause
+koePlay (2727535)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI doubt you will last more than a year... '
+gosub @556
+pause
+koePlay (2727536)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaAm I the only one who\'ll die? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha nods slightly. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @175
+intF[1107] = 0
+msgHide
+
+  @175
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @179
+goto_unless (!intF[4]) @176
+strS[1003] = 'SDT07'
+goto @177
+
+  @176
+goto_unless (intF[4] == 1) @177
+strS[1003] = 'SDT08'
+
+  @177
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @178
+objBgMove (83, 16, 16)
+goto @179
+
+  @178
+goto_unless (intB[2] == 1) @179
+objBgMove (83, 16, 66)
+
+  @179
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @180
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @180
+bgrMulti (strS[1000], 60, copy('CGUR06SN', 70))
+koePlay (2727537)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @181
+intF[1107] = 0
+msgHide
+
+  @181
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @185
+goto_unless (!intF[4]) @182
+strS[1003] = 'SDT07'
+goto @183
+
+  @182
+goto_unless (intF[4] == 1) @183
+strS[1003] = 'SDT08'
+
+  @183
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @184
+objBgMove (83, 16, 16)
+goto @185
+
+  @184
+goto_unless (intB[2] == 1) @185
+objBgMove (83, 16, 66)
+
+  @185
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @186
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @186
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727538)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaRyuuya-sama, you were always the object of Kanna-sama\'s feelings. '
+gosub @556
+pause
+koePlay (2727539)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI can use my Houjutsu to protect myself, but you... '
+gosub @556
+pause
+koePlay (2727540)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI see... '
+gosub @556
+pause
+koePlay (2727541)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaGood. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @187
+intF[1107] = 0
+msgHide
+
+  @187
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @191
+goto_unless (!intF[4]) @188
+strS[1003] = 'SDT07'
+goto @189
+
+  @188
+goto_unless (intF[4] == 1) @189
+strS[1003] = 'SDT08'
+
+  @189
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @190
+objBgMove (83, 16, 16)
+goto @191
+
+  @190
+goto_unless (intB[2] == 1) @191
+objBgMove (83, 16, 66)
+
+  @191
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @192
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @192
+bgrMulti (strS[1000], 60, copy('CGUR08SN', 70))
+koePlay (2727542)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThis is not good at all! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She twists her clothes with both hands. '
+gosub @556
+pause
+koePlay (2727543)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWhy must you be the one to die, Ryuuya-sama!? '
+gosub @556
+pause
+koePlay (2727544)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWhy does Kanna-sama have to suffer so!? '
+gosub @556
+pause
+koePlay (2727545)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWhy must I be the only... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @193
+intF[1107] = 0
+msgHide
+
+  @193
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @197
+goto_unless (!intF[4]) @194
+strS[1003] = 'SDT07'
+goto @195
+
+  @194
+goto_unless (intF[4] == 1) @195
+strS[1003] = 'SDT08'
+
+  @195
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @196
+objBgMove (83, 16, 16)
+goto @197
+
+  @196
+goto_unless (intB[2] == 1) @197
+objBgMove (83, 16, 66)
+
+  @197
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @198
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @198
+bgrMulti (strS[1000], 60, copy('CGUR13SN', 70))
+koePlay (2727546)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...the only one... to survive... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A groan leaks out of her throat as she holds back a wail. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I can\'t give up on this. '
+gosub @556
+pause
+koePlay (2727547)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaHow can we save Kanna? '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @199
+intF[1107] = 0
+msgHide
+
+  @199
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @203
+goto_unless (!intF[4]) @200
+strS[1003] = 'SDT07'
+goto @201
+
+  @200
+goto_unless (intF[4] == 1) @201
+strS[1003] = 'SDT08'
+
+  @201
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @202
+objBgMove (83, 16, 16)
+goto @203
+
+  @202
+goto_unless (intB[2] == 1) @203
+objBgMove (83, 16, 66)
+
+  @203
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @204
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @204
+bgrMulti (strS[1000], 60, copy('CGUR09SN', 70))
+koePlay (2727548)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha......... '
+gosub @556
+pause
+koePlay (2727549)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaAnswer me. '
+gosub @556
+pause
+koePlay (2727550)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI don\'t care what it takes. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @205
+intF[1107] = 0
+msgHide
+
+  @205
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @209
+goto_unless (!intF[4]) @206
+strS[1003] = 'SDT07'
+goto @207
+
+  @206
+goto_unless (intF[4] == 1) @207
+strS[1003] = 'SDT08'
+
+  @207
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @208
+objBgMove (83, 16, 16)
+goto @209
+
+  @208
+goto_unless (intB[2] == 1) @209
+objBgMove (83, 16, 66)
+
+  @209
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @210
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @210
+bgrMulti (strS[1000], 60, copy('CGUR10SN', 70))
+koePlay (2727551)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThere is no way to save Kanna-sama. '
+gosub @556
+pause
+koePlay (2727552)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaNot at all? '
+gosub @556
+pause
+koePlay (2727553)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaReally? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha nods clearly. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @211
+intF[1107] = 0
+msgHide
+
+  @211
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @215
+goto_unless (!intF[4]) @212
+strS[1003] = 'SDT07'
+goto @213
+
+  @212
+goto_unless (intF[4] == 1) @213
+strS[1003] = 'SDT08'
+
+  @213
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @214
+objBgMove (83, 16, 16)
+goto @215
+
+  @214
+goto_unless (intB[2] == 1) @215
+objBgMove (83, 16, 66)
+
+  @215
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @216
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @216
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727554)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThere will come a day when the curse sealing Kanna-sama in the sky wears down. '
+gosub @556
+pause
+koePlay (2727555)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaKanna-sama\'s soul will then return to the Earth and transmigrate for eternity. '
+gosub @556
+pause
+koePlay (2727556)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaHowever, the curse itself will never go away. '
+gosub @556
+pause
+koePlay (2727557)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWhy? '
+gosub @556
+pause
+koePlay (2727558)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWinged ones inherit dreams. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Between what I\'ve read and what the monks have told us... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We know a lot about how the winged ones inherit dreams. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Specifically, the term dreams probably refers to memories. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Somehow, they\'re capable of passing memories on to their descendants. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sum total of those memories must be vast. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It would probably contain knowledge and experiences no human could ever obtain. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And that\'s why they were capable of giving us knowledge. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s also the reason humans mistakenly thought they were immortal. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That night, after Kanna\'s mother was shot... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna received the entire history of her race. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Including her mother\'s memories. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As well as her mother\'s curse... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @217
+intF[1107] = 0
+msgHide
+
+  @217
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @221
+goto_unless (!intF[4]) @218
+strS[1003] = 'SDT07'
+goto @219
+
+  @218
+goto_unless (intF[4] == 1) @219
+strS[1003] = 'SDT08'
+
+  @219
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @220
+objBgMove (83, 16, 16)
+goto @221
+
+  @220
+goto_unless (intB[2] == 1) @221
+objBgMove (83, 16, 66)
+
+  @221
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @222
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @222
+bgrMulti (strS[1000], 60, copy('CGUR01SN', 70))
+koePlay (2727559)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaDo you remember what Chitoku-sama told us? '
+gosub @556
+pause
+koePlay (2727560)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAfter contacting her soul, I know it first-hand as well. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @223
+intF[1107] = 0
+msgHide
+
+  @223
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @227
+goto_unless (!intF[4]) @224
+strS[1003] = 'SDT07'
+goto @225
+
+  @224
+goto_unless (intF[4] == 1) @225
+strS[1003] = 'SDT08'
+
+  @225
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @226
+objBgMove (83, 16, 16)
+goto @227
+
+  @226
+goto_unless (intB[2] == 1) @227
+objBgMove (83, 16, 66)
+
+  @227
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @228
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @228
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727561)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaKanna-sama is the last winged one. '
+gosub @556
+pause
+koePlay (2727562)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaNo one in the world can ever inherit Kanna-sama\'s memories. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna\'s the only one left. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s something I\'ve been trying not to remember. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'For the first time in ages, the wound on my back aches. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A sign of impending defeat. '
+gosub @556
+pause
+koePlay (2727563)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaBut Kanna will return to Earth someday. '
+gosub @556
+pause
+koePlay (2727564)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaIf her soul is reborn into human bodies, eventually the curse should end. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @229
+intF[1107] = 0
+msgHide
+
+  @229
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @233
+goto_unless (!intF[4]) @230
+strS[1003] = 'SDT07'
+goto @231
+
+  @230
+goto_unless (intF[4] == 1) @231
+strS[1003] = 'SDT08'
+
+  @231
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @232
+objBgMove (83, 16, 16)
+goto @233
+
+  @232
+goto_unless (intB[2] == 1) @233
+objBgMove (83, 16, 66)
+
+  @233
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @234
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @234
+bgrMulti (strS[1000], 60, copy('CGUR10SN', 70))
+koePlay (2727565)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWinged ones and humans are different beings. '
+gosub @556
+pause
+koePlay (2727566)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaPutting Kanna-sama\'s soul inside a human is like transferring an ocean into a vase. '
+gosub @556
+pause
+koePlay (2727567)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThe vessel will shatter long before you finish. '
+gosub @556
+pause
+koePlay (2727568)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaKanna-sama\'s soul will merely wander for eternity without respite. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @235
+intF[1107] = 0
+msgHide
+
+  @235
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @239
+goto_unless (!intF[4]) @236
+strS[1003] = 'SDT07'
+goto @237
+
+  @236
+goto_unless (intF[4] == 1) @237
+strS[1003] = 'SDT08'
+
+  @237
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @238
+objBgMove (83, 16, 16)
+goto @239
+
+  @238
+goto_unless (intB[2] == 1) @239
+objBgMove (83, 16, 66)
+
+  @239
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @240
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @240
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727569)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAlso... '
+gosub @556
+pause
+koePlay (2727570)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaEven if Kanna-sama\'s soul does return to Earth someday... '
+gosub @556
+pause
+koePlay (2727571)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAt the earliest, it will be a hundred years from now. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @241
+intF[1107] = 0
+msgHide
+
+  @241
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @245
+goto_unless (!intF[4]) @242
+strS[1003] = 'SDT07'
+goto @243
+
+  @242
+goto_unless (intF[4] == 1) @243
+strS[1003] = 'SDT08'
+
+  @243
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @244
+objBgMove (83, 16, 16)
+goto @245
+
+  @244
+goto_unless (intB[2] == 1) @245
+objBgMove (83, 16, 66)
+
+  @245
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @246
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @246
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha finishes talking. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t say anything. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna\'s still in the sky. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And I have no wings. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I have no time left. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna will continue suffering for all eternity. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna will continue losing the one she loves in an unending summer. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look up at the ceiling. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can feel the weight of a century silently bearing down on me. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t save Kanna, and only death awaits me... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I can\'t let myself sink into despair. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Because Uraha\'s gazing at me now that she\'s wiped the tears out of her eyes. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @247
+intF[1107] = 0
+msgHide
+
+  @247
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @251
+goto_unless (!intF[4]) @248
+strS[1003] = 'SDT07'
+goto @249
+
+  @248
+goto_unless (intF[4] == 1) @249
+strS[1003] = 'SDT08'
+
+  @249
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @250
+objBgMove (83, 16, 16)
+goto @251
+
+  @250
+goto_unless (intB[2] == 1) @251
+objBgMove (83, 16, 66)
+
+  @251
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @252
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @252
+bgrMulti (strS[1000], 60, copy('CGUR01SN', 70))
+koePlay (2727572)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThere is one thing we can do. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can hear an unshakable conviction behind her voice. '
+gosub @556
+pause
+koePlay (2727573)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...There is? '
+gosub @556
+pause
+koePlay (2727574)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes. '
+gosub @556
+pause
+koePlay (2727575)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWhat is it? '
+gosub @556
+pause
+koePlay (2727576)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaSomething very simple. '
+gosub @556
+pause
+koePlay (2727577)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaLeave behind a child. '
+gosub @556
+pause
+koePlay (2727578)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...Huh? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'At first I don\'t believe my ears. '
+gosub @556
+pause
+koePlay (2727579)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAs I said, father a child. '
+gosub @556
+pause
+koePlay (2727580)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYour desire will live on in your children, will it not, Ryuuya-sama? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then I finally understand what Uraha\'s saying. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @253
+intF[1107] = 0
+msgHide
+
+  @253
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @257
+goto_unless (!intF[4]) @254
+strS[1003] = 'SDT07'
+goto @255
+
+  @254
+goto_unless (intF[4] == 1) @255
+strS[1003] = 'SDT08'
+
+  @255
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @256
+objBgMove (83, 16, 16)
+goto @257
+
+  @256
+goto_unless (intB[2] == 1) @257
+objBgMove (83, 16, 66)
+
+  @257
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @258
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @258
+bgrMulti (strS[1000], 60, copy('CGUR02SN', 70))
+koePlay (2727581)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaNot only that... '
+gosub @556
+pause
+koePlay (2727582)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIf that child tells his grandson, and that grandson tells his great-grandson, your desire will never die. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @259
+intF[1107] = 0
+msgHide
+
+  @259
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @263
+goto_unless (!intF[4]) @260
+strS[1003] = 'SDT07'
+goto @261
+
+  @260
+goto_unless (intF[4] == 1) @261
+strS[1003] = 'SDT08'
+
+  @261
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @262
+objBgMove (83, 16, 16)
+goto @263
+
+  @262
+goto_unless (intB[2] == 1) @263
+objBgMove (83, 16, 66)
+
+  @263
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @264
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @264
+bgrMulti (strS[1000], 60, copy('CGUR03SN', 70))
+koePlay (2727583)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThen one day, one of your descendants will be able to save Kanna-sama. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She puts her hands together as if this is a brilliant idea. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m still taken aback. '
+gosub @556
+pause
+koePlay (2727584)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWhere do you plan to get a kid from? '
+gosub @556
+pause
+koePlay (2727585)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaIt\'s not that easy to find orphans. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @265
+intF[1107] = 0
+msgHide
+
+  @265
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @269
+goto_unless (!intF[4]) @266
+strS[1003] = 'SDT07'
+goto @267
+
+  @266
+goto_unless (intF[4] == 1) @267
+strS[1003] = 'SDT08'
+
+  @267
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @268
+objBgMove (83, 16, 16)
+goto @269
+
+  @268
+goto_unless (intB[2] == 1) @269
+objBgMove (83, 16, 66)
+
+  @269
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @270
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @270
+bgrMulti (strS[1000], 60, copy('CGUR09SN', 70))
+koePlay (2727586)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaOh my, nothing like that. '
+gosub @556
+pause
+koePlay (2727587)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI meant for you to make your own. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She makes it sound so simple. '
+gosub @556
+pause
+koePlay (2727588)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...I\'m not skilled enough to make one by myself. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @271
+intF[1107] = 0
+msgHide
+
+  @271
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @275
+goto_unless (!intF[4]) @272
+strS[1003] = 'SDT07'
+goto @273
+
+  @272
+goto_unless (intF[4] == 1) @273
+strS[1003] = 'SDT08'
+
+  @273
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @274
+objBgMove (83, 16, 16)
+goto @275
+
+  @274
+goto_unless (intB[2] == 1) @275
+objBgMove (83, 16, 66)
+
+  @275
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @276
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @276
+bgrMulti (strS[1000], 60, copy('CGUR03SN', 70))
+koePlay (2727589)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI shall assist you. '
+gosub @556
+pause
+koePlay (2727590)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI see. '
+gosub @556
+pause
+koePlay (2727591)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...Wait, wait a minute! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I almost accept her proposal. '
+gosub @556
+pause
+koePlay (2727592)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaDo you know what you\'re saying? '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @277
+intF[1107] = 0
+msgHide
+
+  @277
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @281
+goto_unless (!intF[4]) @278
+strS[1003] = 'SDT07'
+goto @279
+
+  @278
+goto_unless (intF[4] == 1) @279
+strS[1003] = 'SDT08'
+
+  @279
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @280
+objBgMove (83, 16, 16)
+goto @281
+
+  @280
+goto_unless (intB[2] == 1) @281
+objBgMove (83, 16, 66)
+
+  @281
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @282
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @282
+bgrMulti (strS[1000], 60, copy('CGUR02SN', 70))
+koePlay (2727593)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI am not a child. '
+gosub @556
+pause
+koePlay (2727594)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI understand precisely how this works. '
+gosub @556
+pause
+koePlay (2727595)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaThat\'s not what I mean... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @283
+intF[1107] = 0
+msgHide
+
+  @283
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @287
+goto_unless (!intF[4]) @284
+strS[1003] = 'SDT07'
+goto @285
+
+  @284
+goto_unless (intF[4] == 1) @285
+strS[1003] = 'SDT08'
+
+  @285
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @286
+objBgMove (83, 16, 16)
+goto @287
+
+  @286
+goto_unless (intB[2] == 1) @287
+objBgMove (83, 16, 66)
+
+  @287
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @288
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @288
+bgrMulti (strS[1000], 60, copy('CGUR03SN', 70))
+koePlay (2727596)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaDo you have any other ideas? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She says bluntly. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s nothing I can say to that. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @289
+intF[1107] = 0
+msgHide
+
+  @289
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @293
+goto_unless (!intF[4]) @290
+strS[1003] = 'SDT07'
+goto @291
+
+  @290
+goto_unless (intF[4] == 1) @291
+strS[1003] = 'SDT08'
+
+  @291
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @292
+objBgMove (83, 16, 16)
+goto @293
+
+  @292
+goto_unless (intB[2] == 1) @293
+objBgMove (83, 16, 66)
+
+  @293
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @294
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @294
+bgrMulti (strS[1000], 60, copy('CGUR01SN', 70))
+koePlay (2727597)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWe have very little time left. '
+gosub @556
+pause
+koePlay (2727598)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIt would not be fair to Kanna-sama to waste our lives any longer. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @295
+intF[1107] = 0
+msgHide
+
+  @295
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @299
+goto_unless (!intF[4]) @296
+strS[1003] = 'SDT07'
+goto @297
+
+  @296
+goto_unless (intF[4] == 1) @297
+strS[1003] = 'SDT08'
+
+  @297
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @298
+objBgMove (83, 16, 16)
+goto @299
+
+  @298
+goto_unless (intB[2] == 1) @299
+objBgMove (83, 16, 66)
+
+  @299
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @300
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @300
+bgrMulti (strS[1000], 60, copy('CGUR03SN', 70))
+koePlay (2727599)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaBesides, I would be overjoyed. '
+gosub @556
+pause
+koePlay (2727600)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaTo be of use to you, Ryuuya-sama. '
+gosub @556
+pause
+koePlay (2727601)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAnd to help save Kanna-sama... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks directly into my eyes and speaks with passion. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha\'s selflessness has helped me countless times before. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But this time it\'s not that easy to take her offer. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As I desperately think, Uraha says something else. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @301
+intF[1107] = 0
+msgHide
+
+  @301
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @305
+goto_unless (!intF[4]) @302
+strS[1003] = 'SDT07'
+goto @303
+
+  @302
+goto_unless (intF[4] == 1) @303
+strS[1003] = 'SDT08'
+
+  @303
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @304
+objBgMove (83, 16, 16)
+goto @305
+
+  @304
+goto_unless (intB[2] == 1) @305
+objBgMove (83, 16, 66)
+
+  @305
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @306
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @306
+bgrMulti (strS[1000], 60, copy('CGUR02SN', 70))
+koePlay (2727602)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThere is one other reason. '
+gosub @556
+pause
+koePlay (2727603)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...What? '
+gosub @556
+pause
+koePlay (2727604)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAfter you die, Ryuuya-sama, I will be left alone. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @307
+intF[1107] = 0
+msgHide
+
+  @307
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @311
+goto_unless (!intF[4]) @308
+strS[1003] = 'SDT07'
+goto @309
+
+  @308
+goto_unless (intF[4] == 1) @309
+strS[1003] = 'SDT08'
+
+  @309
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @310
+objBgMove (83, 16, 16)
+goto @311
+
+  @310
+goto_unless (intB[2] == 1) @311
+objBgMove (83, 16, 66)
+
+  @311
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @312
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @312
+bgrMulti (strS[1000], 60, copy('CGUR09SN', 70))
+koePlay (2727605)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI doubt you would allow me to follow you into the afterlife, Ryuuya-sama. '
+gosub @556
+pause
+koePlay (2727606)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaOf course not. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I want Uraha to live even after I die. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Whether or not it\'s right of me to ask that, I\'m not backing down on that. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @313
+intF[1107] = 0
+msgHide
+
+  @313
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @317
+goto_unless (!intF[4]) @314
+strS[1003] = 'SDT07'
+goto @315
+
+  @314
+goto_unless (intF[4] == 1) @315
+strS[1003] = 'SDT08'
+
+  @315
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @316
+objBgMove (83, 16, 16)
+goto @317
+
+  @316
+goto_unless (intB[2] == 1) @317
+objBgMove (83, 16, 66)
+
+  @317
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @318
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @318
+bgrMulti (strS[1000], 60, copy('CGUR06SN', 70))
+koePlay (2727607)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIf you order me to, Ryuuya-sama, I am sure I could. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha says, accepting my feelings. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @319
+intF[1107] = 0
+msgHide
+
+  @319
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @323
+goto_unless (!intF[4]) @320
+strS[1003] = 'SDT07'
+goto @321
+
+  @320
+goto_unless (intF[4] == 1) @321
+strS[1003] = 'SDT08'
+
+  @321
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @322
+objBgMove (83, 16, 16)
+goto @323
+
+  @322
+goto_unless (intB[2] == 1) @323
+objBgMove (83, 16, 66)
+
+  @323
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @324
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @324
+bgrMulti (strS[1000], 60, copy('CGUR07SN', 70))
+koePlay (2727608)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaBut... please think about it. '
+gosub @556
+pause
+koePlay (2727609)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI would be waiting here alone for my body to die, without Kanna-sama or Ryuuya-sama by my side... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @325
+intF[1107] = 0
+msgHide
+
+  @325
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @329
+goto_unless (!intF[4]) @326
+strS[1003] = 'SDT07'
+goto @327
+
+  @326
+goto_unless (intF[4] == 1) @327
+strS[1003] = 'SDT08'
+
+  @327
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @328
+objBgMove (83, 16, 16)
+goto @329
+
+  @328
+goto_unless (intB[2] == 1) @329
+objBgMove (83, 16, 66)
+
+  @329
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @330
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @330
+bgrMulti (strS[1000], 60, copy('CGUR06SN', 70))
+koePlay (2727610)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThat would be a terrible fate. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks down, as if to hide from her own words. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then, she inches up to me. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @331
+intF[1107] = 0
+msgHide
+
+  @331
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @335
+goto_unless (!intF[4]) @332
+strS[1003] = 'SDT07'
+goto @333
+
+  @332
+goto_unless (intF[4] == 1) @333
+strS[1003] = 'SDT08'
+
+  @333
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @334
+objBgMove (83, 16, 16)
+goto @335
+
+  @334
+goto_unless (intB[2] == 1) @335
+objBgMove (83, 16, 66)
+
+  @335
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @336
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @336
+bgrMulti (strS[1000], 60, copy('CGUR12SN', 70))
+koePlay (2727611)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAt least give me someone to remember you by... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She buries her face in my chest. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can smell incense from her collar. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s been two years since I met Uraha. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I did think she was beautiful, but I never found her cute. '
+gosub @556
+pause
+koePlay (2727612)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou never do play fair. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I softly stroke Uraha\'s head. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s not as glossy as it used to be. She probably hasn\'t had time to take care of it. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @337
+intF[1107] = 0
+msgHide
+
+  @337
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @341
+goto_unless (!intF[4]) @338
+strS[1003] = 'SDT07'
+goto @339
+
+  @338
+goto_unless (intF[4] == 1) @339
+strS[1003] = 'SDT08'
+
+  @339
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @340
+objBgMove (83, 16, 16)
+goto @341
+
+  @340
+goto_unless (intB[2] == 1) @341
+objBgMove (83, 16, 66)
+
+  @341
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @342
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @342
+bgrMulti (strS[1000], 60, copy('CGUR03SN', 70))
+koePlay (2727613)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI am simply honest. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks up at me with her usual clear face. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t refuse her. '
+gosub @556
+pause
+koePlay (2727614)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaAll right. '
+gosub @556
+pause
+koePlay (2727615)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaUraha... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @343
+intF[1107] = 0
+msgHide
+
+  @343
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @347
+goto_unless (!intF[4]) @344
+strS[1003] = 'SDT07'
+goto @345
+
+  @344
+goto_unless (intF[4] == 1) @345
+strS[1003] = 'SDT08'
+
+  @345
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @346
+objBgMove (83, 16, 16)
+goto @347
+
+  @346
+goto_unless (intB[2] == 1) @347
+objBgMove (83, 16, 66)
+
+  @347
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @348
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @348
+bgrMulti (strS[1000], 60, copy('CGUR02SN', 70))
+koePlay (2727616)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes? '
+gosub @556
+pause
+koePlay (2727617)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWill you bear my child? '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @349
+intF[1107] = 0
+msgHide
+
+  @349
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @353
+goto_unless (!intF[4]) @350
+strS[1003] = 'SDT07'
+goto @351
+
+  @350
+goto_unless (intF[4] == 1) @351
+strS[1003] = 'SDT08'
+
+  @351
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @352
+objBgMove (83, 16, 16)
+goto @353
+
+  @352
+goto_unless (intB[2] == 1) @353
+objBgMove (83, 16, 66)
+
+  @353
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @354
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @354
+bgrMulti (strS[1000], 60, copy('CGUR03SN', 70))
+koePlay (2727618)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAs you will. '
+gosub @556
+pause
+koePlay (2727619)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaBut with one condition. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @355
+intF[1107] = 0
+msgHide
+
+  @355
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @359
+goto_unless (!intF[4]) @356
+strS[1003] = 'SDT07'
+goto @357
+
+  @356
+goto_unless (intF[4] == 1) @357
+strS[1003] = 'SDT08'
+
+  @357
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @358
+objBgMove (83, 16, 16)
+goto @359
+
+  @358
+goto_unless (intB[2] == 1) @359
+objBgMove (83, 16, 66)
+
+  @359
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @360
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @360
+bgrMulti (strS[1000], 60, copy('CGUR09SN', 70))
+'\s{strS[1901]}'
+strS[1900] = 'I gently hold Uraha\'s shoulders. '
+gosub @556
+pause
+koePlay (2727620)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaUraha. '
+gosub @556
+pause
+koePlay (2727621)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI\'m going to use all the time I have left for you. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @361
+intF[1107] = 0
+msgHide
+
+  @361
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @365
+goto_unless (!intF[4]) @362
+strS[1003] = 'SDT07'
+goto @363
+
+  @362
+goto_unless (intF[4] == 1) @363
+strS[1003] = 'SDT08'
+
+  @363
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @364
+objBgMove (83, 16, 16)
+goto @365
+
+  @364
+goto_unless (intB[2] == 1) @365
+objBgMove (83, 16, 66)
+
+  @365
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @366
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @366
+bgrMulti (strS[1000], 60, copy('CGUR12SN', 70))
+koePlay (2727622)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaIs that all right? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha nods and smiles. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @367
+intF[1107] = 0
+msgHide
+
+  @367
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @371
+goto_unless (!intF[4]) @368
+strS[1003] = 'SDT07'
+goto @369
+
+  @368
+goto_unless (intF[4] == 1) @369
+strS[1003] = 'SDT08'
+
+  @369
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @370
+objBgMove (83, 16, 16)
+goto @371
+
+  @370
+goto_unless (intB[2] == 1) @371
+objBgMove (83, 16, 66)
+
+  @371
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @372
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @372
+bgrMulti (strS[1000], 60, copy('CGUR03SN', 70))
+koePlay (2727623)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes! '
+gosub @556
+pause
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = 'The best smile I\'ve seen in the past two years. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+bgmFadeOutEx
+bgmLoop ('BGM08')
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Ha! ...Auu... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her hesitant gasps melt into the night. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaRyuuya... -sama... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can feel Uraha\'s softness in each one of my fingers. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her smell tickles my nostrils. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Suddenly, the clouds break up in the wind. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKN15', 0)
+'\s{strS[1901]}'
+strS[1900] = 'Moonlight shines down on her white skin. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s still some silk around her well-formed hips. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even the brief time it takes to remove that irritates me. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A crevice shows itself between her legs. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'In the faint moonlight, I can see her entrance shining. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That sight tempts me more than I can stand. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Ah! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She flinches from shame, shutting her legs. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou don\'t have to hide it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Yes. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha lets her legs open naturally. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I put my right hand behind her crotch and touch her hair. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My fingers crawl over it, along the curves. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAan...! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her jaw lurches back. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Uu... ah... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The voice leaking from her lips still sounds awkward. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha\'s far more passive than I expected. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wrap my left arm around her back and cover her weighty breasts with my hand. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I push it up from below and slowly squeeze it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAh... aaa... nn... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her nipples begin to get hard, as if answering my fingers. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'At the same time, my fingers comb her hair. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I slowly begin sinking my middle finger inside her. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can feel Uraha\'s body tighten up. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I want to churn up her moist insides right away. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m supposed to be dying. It\'s almost laughable that I\'m this excited now. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I pull my finger out, and push my erect member against her. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Just before I put my full body weight into it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Ryuuya-sama. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha calls my name with a shaking voice. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaPlease be gentle. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThis is... my first time, after all. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'For a moment, I thought I misheard her. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As I hold her from behind, I look at her face. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even in the darkness, I can tell her cheeks are red. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaIs this really your first time? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She nods like a girl. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaDidn\'t you say you \'understand precisely how this works\'? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...I do understand, but I have never experienced it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou fooled me again. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI did not... fool you. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She tries to smile like she usually does, but she\'s breathing too heavily. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaRyuuya-sama, you assumed... I was experienced. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Instead of answering, I pinch her sensitive protrusion. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaHia...! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She leaps like a trout. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAh... uuu! ...Hin...! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha dances as I move my fingers. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As her hair swings around, it smells like summer grass. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Once again, I diligently love Uraha\'s whole body. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I use my tongue and my fingers, sometimes gently, sometimes roughly. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wait for Uraha\'s climax to come naturally. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her green hair undulates, sticking to her wet skin. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Liquid seeps out from her crotch. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Ryuuya-sama... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t think I can hold myself back much longer either. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...I\'m going to put it in now. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes... please... go ahead... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaLift your legs and relax. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAll right... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha does as I say. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Lying face down, she moves her hips up one at a time. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She exposes her most shameful place to me. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I open her entrance with both hands. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her insides are smaller than I thought. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I touch my member to her and slowly move it in... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m wrapped in a warm, comforting sensation. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But it doesn\'t make much progress after that. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I put my hands on Uraha\'s hips and try to pull her towards me. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Nku... nn... Aaaah! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Unlike before, her gasping is from sharp pain. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha can feel my hesitation directly now. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Do not... worry... about me... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She furrows her brows in pain, but continues trying to smile. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I push in as slowly as I can, all the way in. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I gently stroke Uraha\'s sweaty hair. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wipe away her tears. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I move my hips carefully, a little at a time. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m nearing the peak myself. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I slide through it now like a sword in its scabbard. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha\'s voice is getting sweeter too. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Ah... Ah... Ah... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her naked body dances on her bed as she breathes a regular rhythm. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAh... ah... nah...! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAaah...! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And then... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I climax inside her. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Our lives connect... '
+gosub @556
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'Two months later, Uraha is pregnant. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m just happy. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG025', 56)
+'\s{strS[1901]}'
+strS[1900] = 'Time passes slowly. '
+gosub @556
+pause
+bgmFadeOutEx
+bgmLoop ('BGM13')
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG025NO', 56)
+'\s{strS[1901]}'
+strS[1900] = 'Autumn. '
+gosub @556
+pause
+koePlay (2727624)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Do not exert yourself. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha\'s words make me put down my pen. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Insects dance around the candle wick. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A calm life. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wouldn\'t trade this for anything in the world. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I wash my face with water, comb my hair, and start the day. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I eat food Uraha prepared. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I put on clothes Uraha sewed. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I make ink, write with it, and the day ends. '
+gosub @556
+pause
+koePlay (2727625)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAutumn is very calm this year. '
+gosub @556
+pause
+koePlay (2727626)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYeah. '
+gosub @556
+pause
+koePlay (2727627)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThe rice plants should grow quite well. '
+gosub @556
+pause
+koePlay (2727628)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaThe scarecrow will get buried though... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Meaningless small talk. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Daily life. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The warmth of someone precious. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha sits next to me, touching shoulders. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Only the moon watches us work... '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG025F', 56)
+'\s{strS[1901]}'
+strS[1900] = 'Winter. '
+gosub @556
+pause
+koePlay (2727629)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAre you cold? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She asks as she snuggles up to me. '
+gosub @556
+pause
+koePlay (2727630)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYeah. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The brazier didn\'t help this morning. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My old wound is screaming as if it\'s been soaked in ice water. '
+gosub @556
+pause
+koePlay (2727631)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou\'re cold too, you know. '
+gosub @556
+pause
+koePlay (2727632)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaThat\'s bad for the child. '
+gosub @556
+pause
+koePlay (2727633)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaDon\'t spend too much time helping the monks. '
+gosub @556
+pause
+koePlay (2727634)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou always work yourself too hard. '
+gosub @556
+pause
+koePlay (2727635)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaUhuhu! '
+gosub @556
+pause
+koePlay (2727636)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...Why are you laughing? '
+gosub @556
+pause
+koePlay (2727637)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaBecause I am happy. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She puts her hand on top of my bony hand. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I feel Uraha\'s warmth. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And how rough her palm is. '
+gosub @556
+pause
+koePlay (2727638)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...I will go borrow more blankets. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha stands up and opens the door. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG025FO', 56)
+koePlay (2727639)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaOh my, oh my... '
+gosub @556
+pause
+koePlay (2727640)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaSnow...? '
+gosub @556
+pause
+koePlay (2727641)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaNo wonder it was so cold. '
+gosub @556
+pause
+koePlay (2727642)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI didn\'t know it snowed out here... '
+gosub @556
+pause
+koePlay (2727643)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaCould you open the door more so I could see? '
+gosub @556
+pause
+koePlay (2727644)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Pure white crystals float down from the sky. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Like shards of fire purified in the sky. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We gaze at them endlessly in the biting cold... '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG025HO', 56)
+'\s{strS[1901]}'
+strS[1900] = 'Spring. '
+gosub @556
+pause
+koePlay (2727645)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIt\'s getting warmer now. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha speaks as she continues sewing. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A gentle light shines in through the door. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The faint smell of daphnes suddenly stirs my heart. '
+gosub @556
+pause
+koePlay (2727646)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI picked a great deal of horsetail this morning. '
+gosub @556
+pause
+koePlay (2727647)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI see... '
+gosub @556
+pause
+koePlay (2727648)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIt was as if the whole mountain was smiling. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s a pile of soiled cloth on my pillow. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I cough up blood every night, and wipe it off with those. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha talks about spring like an excited girl. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As if she can\'t see anything else. '
+gosub @556
+pause
+koePlay (2727649)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Look, it\'s done. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha was making a little cotton-filled doll. '
+gosub @556
+pause
+koePlay (2727650)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaIt\'s kinda ugly. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha smiles meaningfully. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She sets it down on the floor and starts focusing. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The doll of cloth and cotton stands up on its own and walks around. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then it jumps into my chest. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Before I can reach out for it, it falls down and turns back to a normal doll. '
+gosub @556
+pause
+koePlay (2727651)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaThat\'s impressive. '
+gosub @556
+pause
+koePlay (2727652)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWhen my child is born, I will entertain it with this. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She puts her hand on her stomach as she says that. The bulge is starting to become visible. '
+gosub @556
+pause
+koePlay (2727653)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaThat would be nice... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I answer, then return to fighting the dull pain... '
+gosub @556
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 56)
+'\s{strS[1901]}'
+strS[1900] = 'And then... '
+gosub @556
+pause
+bgmFadeOutEx
+bgmLoop ('BGM17')
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG023Y', 56)
+'\s{strS[1901]}'
+strS[1900] = 'By the time we get back on the mountain roads, it\'s almost sunset. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The forest feels deserted. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The diagonal, orange rays of light signal the approaching night. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I pick a campsite and put down my belongings. '
+gosub @556
+pause
+koePlay (2727654)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI shall go fetch some water. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'When Uraha takes out her cup, Kanna says something. '
+gosub @556
+pause
+koePlay (2727655)
+'\s{strS[1901]}'
+strS[1900] = 'KannaI shall assist. '
+gosub @556
+pause
+koePlay (2727656)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaStay here. We can\'t let you get yourself hurt. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna......... '
+gosub @556
+pause
+koePlay (2727657)
+'\s{strS[1901]}'
+strS[1900] = 'KannaAll right. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna looks strangely meek all of a sudden. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She does exactly what she\'s told a short distance away from me. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'For some reason that makes her look weak. '
+gosub @556
+pause
+koePlay (2727658)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...Kanna? '
+gosub @556
+pause
+koePlay (2727659)
+'\s{strS[1901]}'
+strS[1900] = 'KannaI am here. '
+gosub @556
+pause
+koePlay (2727660)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaOkay... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Something about that meaningless conversation feels embarrassing. '
+gosub @556
+pause
+koePlay (2727661)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou can go get some firewood if you want. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna looks at me, surprised. '
+gosub @556
+pause
+koePlay (2727662)
+'\s{strS[1901]}'
+strS[1900] = 'Kanna...Art thou sure? '
+gosub @556
+pause
+koePlay (2727663)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYeah. Just stay where I can see you. '
+gosub @556
+pause
+koePlay (2727664)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaAnd watch out for vipers. '
+gosub @556
+pause
+koePlay (2727665)
+'\s{strS[1901]}'
+strS[1900] = 'KannaI know that! '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She answers forcefully and runs off. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I think of something. '
+gosub @556
+pause
+koePlay (2727666)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWait a second. '
+gosub @556
+pause
+koePlay (2727667)
+'\s{strS[1901]}'
+strS[1900] = 'KannaWhat? '
+gosub @556
+pause
+koePlay (2727668)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaLeave the walnuts. I\'ll break them for you. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna takes out the bag of walnuts and puts it in my hand. '
+gosub @556
+pause
+koePlay (2727669)
+'\s{strS[1901]}'
+strS[1900] = 'KannaThou may break them, but do not eat them. '
+gosub @556
+pause
+koePlay (2727670)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWho would eat them!? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kanna runs off into the forest. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bells in her hair glow in the setting sun even in the darkness. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I told her to stay close, but she\'s going pretty far... '
+gosub @556
+pause
+bgmFadeOut (1200)
+intF[1107] = 1
+strS[1000] = 'BG025SO'
+goto_unless (intF[1107] == 1) @373
+intF[1107] = 0
+msgHide
+
+  @373
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @377
+goto_unless (!intF[4]) @374
+strS[1003] = 'SDT07'
+goto @375
+
+  @374
+goto_unless (intF[4] == 1) @375
+strS[1003] = 'SDT08'
+
+  @375
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @376
+objBgMove (83, 16, 16)
+goto @377
+
+  @376
+goto_unless (intB[2] == 1) @377
+objBgMove (83, 16, 66)
+
+  @377
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @378
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @378
+bgrMulti (strS[1000], 26)
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t know where I am. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I slowly open my clenched hand. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The walnuts I was holding have disappeared. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @379
+intF[1107] = 0
+msgHide
+
+  @379
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @383
+goto_unless (!intF[4]) @380
+strS[1003] = 'SDT07'
+goto @381
+
+  @380
+goto_unless (intF[4] == 1) @381
+strS[1003] = 'SDT08'
+
+  @381
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @382
+objBgMove (83, 16, 16)
+goto @383
+
+  @382
+goto_unless (intB[2] == 1) @383
+objBgMove (83, 16, 66)
+
+  @383
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @384
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @384
+bgrMulti (strS[1000], 60, copy('CGUR02S', 70))
+koePlay (2727671)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Are you awake? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha\'s standing in front of me. '
+gosub @556
+pause
+koePlay (2727672)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaGood morning. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She seems surprised to hear my greeting. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @385
+intF[1107] = 0
+msgHide
+
+  @385
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @389
+goto_unless (!intF[4]) @386
+strS[1003] = 'SDT07'
+goto @387
+
+  @386
+goto_unless (intF[4] == 1) @387
+strS[1003] = 'SDT08'
+
+  @387
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @388
+objBgMove (83, 16, 16)
+goto @389
+
+  @388
+goto_unless (intB[2] == 1) @389
+objBgMove (83, 16, 66)
+
+  @389
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @390
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @390
+bgrMulti (strS[1000], 60, copy('CGUR09S', 70))
+koePlay (2727673)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAre you feeling well today? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha\'s eyes are red. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She must have been watching me all night. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'When did I last close my eyes? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Lying face up, I turn my head. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The door\'s half-open. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'White sunlight seeps through. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then I remember. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s almost summer. '
+gosub @556
+pause
+koePlay (2727674)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...I want to see the sky. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @391
+intF[1107] = 0
+msgHide
+
+  @391
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @395
+goto_unless (!intF[4]) @392
+strS[1003] = 'SDT07'
+goto @393
+
+  @392
+goto_unless (intF[4] == 1) @393
+strS[1003] = 'SDT08'
+
+  @393
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @394
+objBgMove (83, 16, 16)
+goto @395
+
+  @394
+goto_unless (intB[2] == 1) @395
+objBgMove (83, 16, 66)
+
+  @395
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @396
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @396
+bgrMulti (strS[1000], 60, copy('CGUR02S', 70))
+koePlay (2727675)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThat would be a wonderful thing to do now. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha\'s eyes glisten as if we\'re about to go on a journey. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @397
+intF[1107] = 0
+msgHide
+
+  @397
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @401
+goto_unless (!intF[4]) @398
+strS[1003] = 'SDT07'
+goto @399
+
+  @398
+goto_unless (intF[4] == 1) @399
+strS[1003] = 'SDT08'
+
+  @399
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @400
+objBgMove (83, 16, 16)
+goto @401
+
+  @400
+goto_unless (intB[2] == 1) @401
+objBgMove (83, 16, 66)
+
+  @401
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @402
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @402
+bgrMulti (strS[1000], 60, copy('CGUR03S', 70))
+koePlay (2727676)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWait here while I prepare for it... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can tell she\'s pressing gently against her eyes with her sleeve. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha can probably tell. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Today is the last day I\'ll be able to look up at the sky. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+intF[1107] = 1
+strS[1000] = 'BG025S'
+goto_unless (intF[1107] == 1) @403
+intF[1107] = 0
+msgHide
+
+  @403
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @407
+goto_unless (!intF[4]) @404
+strS[1003] = 'SDT07'
+goto @405
+
+  @404
+goto_unless (intF[4] == 1) @405
+strS[1003] = 'SDT08'
+
+  @405
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @406
+objBgMove (83, 16, 16)
+goto @407
+
+  @406
+goto_unless (intB[2] == 1) @407
+objBgMove (83, 16, 66)
+
+  @407
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @408
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @408
+bgrMulti (strS[1000], 48)
+bgmLoop ('BGM13')
+'\s{strS[1901]}'
+strS[1900] = 'Uraha grabs my collar and slowly moves me outside. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My sickly body is little more than skin and bones now, so I\'m probably as light as a mummy. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But since Uraha\'s in her last month of pregnancy, this is still difficult for her. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Outside, my body is covered in light. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'We sit down together under a tree close to the door. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @409
+intF[1107] = 0
+msgHide
+
+  @409
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @413
+goto_unless (!intF[4]) @410
+strS[1003] = 'SDT07'
+goto @411
+
+  @410
+goto_unless (intF[4] == 1) @411
+strS[1003] = 'SDT08'
+
+  @411
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @412
+objBgMove (83, 16, 16)
+goto @413
+
+  @412
+goto_unless (intB[2] == 1) @413
+objBgMove (83, 16, 66)
+
+  @413
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @414
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @414
+bgrMulti (strS[1000], 60, copy('CGUR02S', 70))
+koePlay (2727677)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaRyuuya-sama, look... '
+gosub @556
+pause
+koePlay (2727678)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThat bird is flying so high up. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She points straight up to the bright blue sky. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t see it well. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sky is too bright for my eyes, '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha leans against me. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks at my face and smiles happily. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @415
+intF[1107] = 0
+msgHide
+
+  @415
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @419
+goto_unless (!intF[4]) @416
+strS[1003] = 'SDT07'
+goto @417
+
+  @416
+goto_unless (intF[4] == 1) @417
+strS[1003] = 'SDT08'
+
+  @417
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @418
+objBgMove (83, 16, 16)
+goto @419
+
+  @418
+goto_unless (intB[2] == 1) @419
+objBgMove (83, 16, 66)
+
+  @419
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @420
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @420
+bgrMulti (strS[1000], 60, copy('CGUR03S', 70))
+koePlay (2727679)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Oh, huhu. '
+gosub @556
+pause
+koePlay (2727680)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaWhat? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I move my head slightly and ask her. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @421
+intF[1107] = 0
+msgHide
+
+  @421
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @425
+goto_unless (!intF[4]) @422
+strS[1003] = 'SDT07'
+goto @423
+
+  @422
+goto_unless (intF[4] == 1) @423
+strS[1003] = 'SDT08'
+
+  @423
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @424
+objBgMove (83, 16, 16)
+goto @425
+
+  @424
+goto_unless (intB[2] == 1) @425
+objBgMove (83, 16, 66)
+
+  @425
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @426
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @426
+bgrMulti (strS[1000], 60, copy('CGUR02S', 70))
+koePlay (2727681)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYayako is kicking me. '
+gosub @556
+pause
+koePlay (2727682)
+'\s{strS[1901]}'
+strS[1900] = 'She laughs again. '
+gosub @556
+pause
+koePlay (2727683)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...Sorry, could I lie in your lap? '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @427
+intF[1107] = 0
+msgHide
+
+  @427
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @431
+goto_unless (!intF[4]) @428
+strS[1003] = 'SDT07'
+goto @429
+
+  @428
+goto_unless (intF[4] == 1) @429
+strS[1003] = 'SDT08'
+
+  @429
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @430
+objBgMove (83, 16, 16)
+goto @431
+
+  @430
+goto_unless (intB[2] == 1) @431
+objBgMove (83, 16, 66)
+
+  @431
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @432
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @432
+bgrMulti (strS[1000], 60, copy('CGUR03S', 70))
+koePlay (2727684)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYou are so needy. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @433
+intF[1107] = 0
+msgHide
+
+  @433
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @437
+goto_unless (!intF[4]) @434
+strS[1003] = 'SDT07'
+goto @435
+
+  @434
+goto_unless (intF[4] == 1) @435
+strS[1003] = 'SDT08'
+
+  @435
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @436
+objBgMove (83, 16, 16)
+goto @437
+
+  @436
+goto_unless (intB[2] == 1) @437
+objBgMove (83, 16, 66)
+
+  @437
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @438
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @438
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'She teases as she moves my head down to her lap. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I press my ear to her stomach. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Through her sash, I can hear something like knocking. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I listen to the signs of a life soon to be born. '
+gosub @556
+pause
+koePlay (2727685)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaThat\'s our child... isn\'t it...? '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @439
+intF[1107] = 0
+msgHide
+
+  @439
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @443
+goto_unless (!intF[4]) @440
+strS[1003] = 'SDT07'
+goto @441
+
+  @440
+goto_unless (intF[4] == 1) @441
+strS[1003] = 'SDT08'
+
+  @441
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @442
+objBgMove (83, 16, 16)
+goto @443
+
+  @442
+goto_unless (intB[2] == 1) @443
+objBgMove (83, 16, 66)
+
+  @443
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @444
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @444
+bgrMulti (strS[1000], 60, copy('CGUR02S', 70))
+koePlay (2727686)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes... it is ours... '
+gosub @556
+pause
+koePlay (2727687)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI hope it is born safely. '
+gosub @556
+pause
+koePlay (2727688)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaThere\'s nothing to worry about. '
+gosub @556
+pause
+koePlay (2727689)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI\'m sure... it\'ll be strong. '
+gosub @556
+pause
+koePlay (2727690)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWhen it grows up... we\'ll go to festivals together... '
+gosub @556
+pause
+koePlay (2727691)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAnd to the city and the market. '
+gosub @556
+pause
+koePlay (2727692)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIf it\'s a girl, I\'ll teach her how to juggle. '
+gosub @556
+pause
+koePlay (2727693)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaThough of course I\'d teach a boy that too. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @445
+intF[1107] = 0
+msgHide
+
+  @445
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @449
+goto_unless (!intF[4]) @446
+strS[1003] = 'SDT07'
+goto @447
+
+  @446
+goto_unless (intF[4] == 1) @447
+strS[1003] = 'SDT08'
+
+  @447
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @448
+objBgMove (83, 16, 16)
+goto @449
+
+  @448
+goto_unless (intB[2] == 1) @449
+objBgMove (83, 16, 66)
+
+  @449
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @450
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @450
+bgrMulti (strS[1000], 60, copy('CGUR03S', 70))
+koePlay (2727694)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI am sure he would be as clever and skilled as you, Ryuuya-sama... '
+gosub @556
+pause
+koePlay (2727695)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI will be sure to raise him kindly. '
+gosub @556
+pause
+koePlay (2727696)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou\'re complimenting me too much. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @451
+intF[1107] = 0
+msgHide
+
+  @451
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @455
+goto_unless (!intF[4]) @452
+strS[1003] = 'SDT07'
+goto @453
+
+  @452
+goto_unless (intF[4] == 1) @453
+strS[1003] = 'SDT08'
+
+  @453
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @454
+objBgMove (83, 16, 16)
+goto @455
+
+  @454
+goto_unless (intB[2] == 1) @455
+objBgMove (83, 16, 66)
+
+  @455
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @456
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @456
+bgrMulti (strS[1000], 60, copy('CGUR09S', 70))
+koePlay (2727697)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaOh my, Ryuuya-sama. '
+gosub @556
+pause
+koePlay (2727698)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaMy child won\'t grow if I don\'t praise you. '
+gosub @556
+pause
+koePlay (2727699)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI see... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @457
+intF[1107] = 0
+msgHide
+
+  @457
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @461
+goto_unless (!intF[4]) @458
+strS[1003] = 'SDT07'
+goto @459
+
+  @458
+goto_unless (intF[4] == 1) @459
+strS[1003] = 'SDT08'
+
+  @459
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @460
+objBgMove (83, 16, 16)
+goto @461
+
+  @460
+goto_unless (intB[2] == 1) @461
+objBgMove (83, 16, 66)
+
+  @461
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @462
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @462
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'We smile together. '
+gosub @556
+pause
+koePlay (2727700)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...I had a dream earlier. '
+gosub @556
+pause
+koePlay (2727701)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaAbout Kanna. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That was the first conversation I had with Kanna after my vow. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @463
+intF[1107] = 0
+msgHide
+
+  @463
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @467
+goto_unless (!intF[4]) @464
+strS[1003] = 'SDT07'
+goto @465
+
+  @464
+goto_unless (intF[4] == 1) @465
+strS[1003] = 'SDT08'
+
+  @465
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @466
+objBgMove (83, 16, 16)
+goto @467
+
+  @466
+goto_unless (intB[2] == 1) @467
+objBgMove (83, 16, 66)
+
+  @467
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @468
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @468
+bgrMulti (strS[1000], 60, copy('CGUR02S', 70))
+koePlay (2727702)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI had a dream as well. '
+gosub @556
+pause
+koePlay (2727703)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...What of? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Instead of answering, Uraha looks up at the sky. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 0)
+koePlay (2727704)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaIt will be summer soon... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That was so forced I can\'t help but smile. '
+gosub @556
+pause
+koePlay (2727705)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaWhat? '
+gosub @556
+pause
+koePlay (2727706)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaNothing... just... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Time passes slowly. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Gentle sunlight and comforting wind. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The cavern we live in. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Inside is my compilation of winged one legends. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'If our child goes in search of Kanna\'s soul, it\'s sure to help. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And Uraha will teach the child Houjutsu. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m sure anyone with Uraha\'s blood will have a talent for it. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'He or she might be able to find a solution we couldn\'t. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can feel my heart racing. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Is there something behind this hill? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That feeling I had as a child on a journey wells up again like a cloud. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can continue my journey even after death. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A journey to find those wings once again. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t wish for anything more. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I have nothing left to give. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even if... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Even if this is just a dream. '
+gosub @556
+pause
+koePlay (2727707)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaCan I ask you something? '
+gosub @556
+pause
+intF[1107] = 1
+strS[1000] = 'BG025S'
+goto_unless (intF[1107] == 1) @469
+intF[1107] = 0
+msgHide
+
+  @469
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @473
+goto_unless (!intF[4]) @470
+strS[1003] = 'SDT07'
+goto @471
+
+  @470
+goto_unless (intF[4] == 1) @471
+strS[1003] = 'SDT08'
+
+  @471
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @472
+objBgMove (83, 16, 16)
+goto @473
+
+  @472
+goto_unless (intB[2] == 1) @473
+objBgMove (83, 16, 66)
+
+  @473
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @474
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @474
+bgrMulti (strS[1000], 0)
+goto_unless (intF[1107] == 1) @475
+intF[1107] = 0
+msgHide
+
+  @475
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @479
+goto_unless (!intF[4]) @476
+strS[1003] = 'SDT07'
+goto @477
+
+  @476
+goto_unless (intF[4] == 1) @477
+strS[1003] = 'SDT08'
+
+  @477
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @478
+objBgMove (83, 16, 16)
+goto @479
+
+  @478
+goto_unless (intB[2] == 1) @479
+objBgMove (83, 16, 66)
+
+  @479
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @480
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @480
+bgrMulti (strS[1000], 60, copy('CGUR09S', 70))
+koePlay (2727708)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Uraha looks at me with her head tilted. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I gaze back at her. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'To burn this light, this wind, everything into my heart forever. '
+gosub @556
+pause
+koePlay (2727709)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou can forget about me. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @481
+intF[1107] = 0
+msgHide
+
+  @481
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @485
+goto_unless (!intF[4]) @482
+strS[1003] = 'SDT07'
+goto @483
+
+  @482
+goto_unless (intF[4] == 1) @483
+strS[1003] = 'SDT08'
+
+  @483
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @484
+objBgMove (83, 16, 16)
+goto @485
+
+  @484
+goto_unless (intB[2] == 1) @485
+objBgMove (83, 16, 66)
+
+  @485
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @486
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @486
+bgrMulti (strS[1000], 60, copy('CGUR02S', 70))
+koePlay (2727710)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou can raise the child and find a modest happiness. '
+gosub @556
+pause
+koePlay (2727711)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou can do... whatever makes you happy. '
+gosub @556
+pause
+koePlay (2727712)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI\'m sure Kanna would be fine with that. '
+gosub @556
+pause
+koePlay (2727713)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI\'ll apologise to her. '
+gosub @556
+pause
+koePlay (2727714)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaIf you do that... '
+gosub @556
+pause
+koePlay (2727715)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaPlease burn my book... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @487
+intF[1107] = 0
+msgHide
+
+  @487
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @491
+goto_unless (!intF[4]) @488
+strS[1003] = 'SDT07'
+goto @489
+
+  @488
+goto_unless (intF[4] == 1) @489
+strS[1003] = 'SDT08'
+
+  @489
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @490
+objBgMove (83, 16, 16)
+goto @491
+
+  @490
+goto_unless (intB[2] == 1) @491
+objBgMove (83, 16, 66)
+
+  @491
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @492
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @492
+bgrMulti (strS[1000], 60, copy('CGUR07S', 70))
+'\s{strS[1901]}'
+strS[1900] = 'Normally she wouldn\'t listen to something like this. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She never compromises when it comes to Kanna. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'ve seen that several times in the past. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s why I say this now. '
+gosub @556
+pause
+koePlay (2727716)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou can forget everything... and be happy. '
+gosub @556
+pause
+koePlay (2727717)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou can forget about Kanna. '
+gosub @556
+pause
+koePlay (2727718)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaYou can forget... about me... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @493
+intF[1107] = 0
+msgHide
+
+  @493
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @497
+goto_unless (!intF[4]) @494
+strS[1003] = 'SDT07'
+goto @495
+
+  @494
+goto_unless (intF[4] == 1) @495
+strS[1003] = 'SDT08'
+
+  @495
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @496
+objBgMove (83, 16, 16)
+goto @497
+
+  @496
+goto_unless (intB[2] == 1) @497
+objBgMove (83, 16, 66)
+
+  @497
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @498
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @498
+bgrMulti (strS[1000], 60, copy('CGUR06S', 70))
+'\s{strS[1901]}'
+strS[1900] = 'Uraha stays quiet, listening to me. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @499
+intF[1107] = 0
+msgHide
+
+  @499
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @503
+goto_unless (!intF[4]) @500
+strS[1003] = 'SDT07'
+goto @501
+
+  @500
+goto_unless (intF[4] == 1) @501
+strS[1003] = 'SDT08'
+
+  @501
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @502
+objBgMove (83, 16, 16)
+goto @503
+
+  @502
+goto_unless (intB[2] == 1) @503
+objBgMove (83, 16, 66)
+
+  @503
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @504
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @504
+bgrMulti (strS[1000], 60, copy('CGUR03S', 70))
+'\s{strS[1901]}'
+strS[1900] = 'She smiles brightly. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then she answers. '
+gosub @556
+pause
+koePlay (2727719)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI don\'t want to. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t have the strength to hold anything anymore, but Uraha grips my hand. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @505
+intF[1107] = 0
+msgHide
+
+  @505
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @509
+goto_unless (!intF[4]) @506
+strS[1003] = 'SDT07'
+goto @507
+
+  @506
+goto_unless (intF[4] == 1) @507
+strS[1003] = 'SDT08'
+
+  @507
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @508
+objBgMove (83, 16, 16)
+goto @509
+
+  @508
+goto_unless (intB[2] == 1) @509
+objBgMove (83, 16, 66)
+
+  @509
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @510
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @510
+bgrMulti (strS[1000], 60, copy('CGUR02S', 70))
+koePlay (2727720)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI am not alone. '
+gosub @556
+pause
+koePlay (2727721)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaKanna-sama and Ryuuya-sama will still be by my side. '
+gosub @556
+pause
+koePlay (2727722)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaAnd I will have my child. '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @511
+intF[1107] = 0
+msgHide
+
+  @511
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @515
+goto_unless (!intF[4]) @512
+strS[1003] = 'SDT07'
+goto @513
+
+  @512
+goto_unless (intF[4] == 1) @513
+strS[1003] = 'SDT08'
+
+  @513
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @514
+objBgMove (83, 16, 16)
+goto @515
+
+  @514
+goto_unless (intB[2] == 1) @515
+objBgMove (83, 16, 66)
+
+  @515
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @516
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @516
+bgrMulti (strS[1000], 60, copy('CGUR03S', 70))
+koePlay (2727723)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI am quite happy. '
+gosub @556
+pause
+koePlay (2727724)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaI will live long after this. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I feel something through her fingers. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her feelings. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'So I ask myself. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Did I do my best? '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Did I live happily? '
+gosub @556
+pause
+bgmFadeOutEx (1200)
+bgmLoop ('BGM25')
+'\s{strS[1901]}'
+strS[1900] = 'Then it hits me. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That answer was always right here. '
+gosub @556
+pause
+intF[1107] = 1
+strS[1000] = 'BG025S'
+goto_unless (intF[1107] == 1) @517
+intF[1107] = 0
+msgHide
+
+  @517
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @521
+goto_unless (!intF[4]) @518
+strS[1003] = 'SDT07'
+goto @519
+
+  @518
+goto_unless (intF[4] == 1) @519
+strS[1003] = 'SDT08'
+
+  @519
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @520
+objBgMove (83, 16, 16)
+goto @521
+
+  @520
+goto_unless (intB[2] == 1) @521
+objBgMove (83, 16, 66)
+
+  @521
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @522
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @522
+bgrMulti (strS[1000], 0)
+koePlay (2727725)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...I... see... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @523
+intF[1107] = 0
+msgHide
+
+  @523
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @527
+goto_unless (!intF[4]) @524
+strS[1003] = 'SDT07'
+goto @525
+
+  @524
+goto_unless (intF[4] == 1) @525
+strS[1003] = 'SDT08'
+
+  @525
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @526
+objBgMove (83, 16, 16)
+goto @527
+
+  @526
+goto_unless (intB[2] == 1) @527
+objBgMove (83, 16, 66)
+
+  @527
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @528
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @528
+bgrMulti (strS[1000], 60, copy('CGUR02S', 70))
+koePlay (2727726)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes. '
+gosub @556
+pause
+koePlay (2727727)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaThat\'s why... we\'re... together... '
+gosub @556
+pause
+goto_unless (intF[1107] == 1) @529
+intF[1107] = 0
+msgHide
+
+  @529
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @533
+goto_unless (!intF[4]) @530
+strS[1003] = 'SDT07'
+goto @531
+
+  @530
+goto_unless (intF[4] == 1) @531
+strS[1003] = 'SDT08'
+
+  @531
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @532
+objBgMove (83, 16, 16)
+goto @533
+
+  @532
+goto_unless (intB[2] == 1) @533
+objBgMove (83, 16, 66)
+
+  @533
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @534
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @534
+bgrMulti (strS[1000], 60, copy('CGUR03S', 70))
+koePlay (2727728)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes...! '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 56)
+'\s{strS[1901]}'
+strS[1900] = 'I look up at the sky again. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A high, clear sky. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A sky filled with light. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And yet, huge drops of rain land on my cheeks. '
+gosub @556
+pause
+koePlay (2727729)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaRyuuya-sama... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Warm summer rain. '
+gosub @556
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 56)
+koePlay (2727730)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaRyuuya-sama... Ryuuya-sama... '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Like someone\'s tears... '
+gosub @556
+pause
+koePlay (2727731)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...Thank... you... '
+gosub @556
+pause
+koePlay (2727732)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...U... ra... ha... '
+gosub @556
+pause
+koePlay (2727733)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaRyuuya... -sama... '
+gosub @556
+pause
+wait (3000)
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG051', 0)
+'\s{strS[1901]}'
+strS[1900] = 'I look at the sky. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I feel the wind blowing. '
+gosub @556
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The pure white feathers falling from the sky capture me... '
+gosub @556
+pause
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @535
+intG[1050] = 1
+goto @536
+
+  @535
+goto_unless (intA[1000] == 1) @536
+intG[1050] = 0
+
+  @536
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @537
+intF[1017] = 1
+goto @538
+
+  @537
+goto_unless (intA[1000] == 1) @538
+intF[1017] = 0
+
+  @538
+SetSkipAnimations (0)
+goto @539
+goto @539
+SetSkipAnimations (1)
+
+  @539
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 56)
+EnableSyscom
+goto_unless (intG[1049] == 1) @541
+goto_unless (intG[1050] == 1) @540
+SetSkipAnimations (0)
+goto @541
+
+  @540
+goto_unless (!intG[1050]) @541
+SetSkipAnimations (1)
+
+  @541
+intG[1049] = 0
+wait (3000)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @542
+intG[1050] = 1
+goto @543
+
+  @542
+goto_unless (intA[1000] == 1) @543
+intG[1050] = 0
+
+  @543
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @544
+intF[1017] = 1
+goto @545
+
+  @544
+goto_unless (intA[1000] == 1) @545
+intF[1017] = 0
+
+  @545
+SetSkipAnimations (0)
+goto @546
+goto @546
+SetSkipAnimations (1)
+
+  @546
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKN13', 56)
+EnableSyscom
+goto_unless (intG[1049] == 1) @548
+goto_unless (intG[1050] == 1) @547
+SetSkipAnimations (0)
+goto @548
+
+  @547
+goto_unless (!intG[1050]) @548
+SetSkipAnimations (1)
+
+  @548
+intG[1049] = 0
+koePlay (2727734)
+'\s{strS[1901]}'
+strS[1900] = 'Ryuuya...Haha. '
+gosub @556
+pause
+koePlay (2727735)
+'\s{strS[1901]}'
+strS[1900] = 'Uraha...Huhuhu, what is it? '
+gosub @556
+pause
+koePlay (2727736)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaIt\'s nothing. '
+gosub @556
+pause
+koePlay (2727737)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaI guess it\'s time to go. '
+gosub @556
+pause
+koePlay (2727738)
+'\s{strS[1901]}'
+strS[1900] = 'RyuuyaKanna\'s waiting for me in the sky. '
+gosub @556
+pause
+koePlay (2727739)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaYes, and I will follow you. '
+gosub @556
+pause
+koePlay (2727740)
+'\s{strS[1901]}'
+strS[1900] = 'UrahaForever and ever... '
+gosub @556
+pause
+intF[1014] = GetOpenAnmMod (0)
+intF[1014] = GetCloseAnmMod (0)
+SetOpenAnmMod (0, 1)
+SetCloseAnmMod (0, 1)
+intF[1015] = GetOpenAnmTime (0)
+intF[1015] = GetCloseAnmTime (0)
+SetOpenAnmTime (0, 1200)
+SetCloseAnmTime (0, 1200)
+msgHideAll
+SetOpenAnmMod (0, intF[1014])
+SetCloseAnmMod (0, intF[1014])
+SetOpenAnmTime (0, intF[1015])
+SetCloseAnmTime (0, intF[1015])
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @549
+intG[1050] = 1
+goto @550
+
+  @549
+goto_unless (intA[1000] == 1) @550
+intG[1050] = 0
+
+  @550
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @551
+intF[1017] = 1
+goto @552
+
+  @551
+goto_unless (intA[1000] == 1) @552
+intF[1017] = 0
+
+  @552
+SetSkipAnimations (0)
+goto @553
+goto @553
+SetSkipAnimations (1)
+
+  @553
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 0, 0, 639, 479, 0, 0, 5000, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+EnableSyscom
+goto_unless (intG[1049] == 1) @555
+goto_unless (intG[1050] == 1) @554
+SetSkipAnimations (0)
+goto @555
+
+  @554
+goto_unless (!intG[1050]) @555
+SetSkipAnimations (1)
+
+  @555
+intG[1049] = 0
+bgmFadeOut (1200)
+wait (5000)
+intG[17] = 1
+TextWindow (0)
+EnableSyscom (12)
+EnableSyscom (14)
+EnableSyscom (18)
+ReturnMenu
+halt
+CallDLL (0, 10, intC[1] | 1179648)
+goto @557
+
+  @556
+CallDLL (0, 10, 1181548)
+
+  @557
+DisableAutoSavepoints
+store = 8
+strS[1900] = '        '
+
+  @558
+goto_unless (store < 512) @559
+strS[1900] += strS[1900]
+store *= 2
+goto @558
+
+  @559
+CallDLL (0, 12, 1181548, 131073)
+goto_on store {  @566, @567, @565, @560, @561, @562, @563, @564 }
+goto @567
+
+  @560
+br
+goto @559
+
+  @561
+page
+TextPos (0, 0)
+CallDLL (0, 13, 1181548)
+goto @559
+
+  @562
+SetIndent
+goto @559
+
+  @563
+ClearIndent
+goto @559
+
+  @564
+FontColour (6)
+CallDLL (0, 21)
+intC[0] += 1
+
+  @565
+'\s{strS[1900]}\posx{intC[1]}'
+goto @559
+
+  @566
+strS[1901] = strS[1900]
+strS[1900] = 'Error: '
+strS[1900] += strS[1901]
+strS[1900] += '. Unable to format text.'
+strclear (strS[1901])
+FastText
+'\s{strS[1900]}'
+NormalText
+
+  @567
+EnableAutoSavepoints
+ret
+goto @559
+eof

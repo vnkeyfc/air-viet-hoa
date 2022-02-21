@@ -1,0 +1,914 @@
+{-# cp utf8 #- Disassembled with Kprl 1.40 -}
+
+#file 'SEEN0170.TXT'
+
+#kidoku_type 2
+#character '＊Ａ'
+#character 'Children'
+#character 'Boy'
+#character 'Girl'
+#entrypoint 000
+intB[2] = 0
+intF[2] = 1
+intF[3] = 17
+intF[4] = 0
+title ('17th July (Mon)  ')
+intF[1500] = 0
+farcall (8993)
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGMZ15D', 26)
+'\s{strS[1901]}'
+strS[1900] = '...I\'m racing through the air. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '...Through many layers of clouds. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Soaring endlessly higher and higher. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My pulse quickens. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My body feels like it might fall to the ground, so I muster all my strength... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And fly towards my destination. '
+gosub @25
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I step onto the pavement. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The bus drives away, blowing a wave of heat and exhaust fumes into my face. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I feel light-headed, so I close my eyes. '
+gosub @25
+pause
+wavStop
+wavLoop ('ABURA', 0)
+'\s{strS[1901]}'
+strS[1900] = 'The bus engine fades into the distance, and the cries of the cicadas take its place. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The smell of the tide fills my nostrils. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can feel the sunlight burning my exposed neck. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I slowly open my eyes. '
+gosub @25
+pause
+bgmLoop ('BGM00')
+intF[1107] = 1
+strS[1000] = 'BG008'
+goto_unless (intF[1107] == 1) @1
+intF[1107] = 0
+msgHide
+
+  @1
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @5
+goto_unless (!intF[4]) @2
+strS[1003] = 'SDT07'
+goto @3
+
+  @2
+goto_unless (intF[4] == 1) @3
+strS[1003] = 'SDT08'
+
+  @3
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @4
+objBgMove (83, 16, 16)
+goto @5
+
+  @4
+goto_unless (intB[2] == 1) @5
+objBgMove (83, 16, 66)
+
+  @5
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @6
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @6
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'Before me is nothing but unfamiliar summer scenery. '
+gosub @25
+pause
+koePlay (0)
+'\s{strS[1901]}'
+strS[1900] = '__I\'m in the middle of nowhere... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I sit on the bench next to the bus stop. '
+gosub @25
+pause
+koePlay (1)
+'\s{strS[1901]}'
+strS[1900] = '__Phew... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can feel some wooden splinters sticking into my backside, but I ignore them. '
+gosub @25
+pause
+koePlay (2)
+'\s{strS[1901]}'
+strS[1900] = '__So... now what? What am I even doing here...? '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t think straight in this heat. '
+gosub @25
+pause
+koePlay (3)
+'\s{strS[1901]}'
+strS[1900] = '__One ramen set please. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '...No. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I remember now... '
+gosub @25
+pause
+koePlay (4)
+'\s{strS[1901]}'
+strS[1900] = '__I\'ve run out of money. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That\'s why I got off at a town in the middle of nowhere. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t have the money to eat a normal meal, let alone buy a takeaway. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A ramen set is a mere dream. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Which means I have no choice but to earn some hard cash. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'ll be able to leave in no time if I earn some money here, but... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look around. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Two young siblings carrying backpacks happen to pass in front of me. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m in luck. '
+gosub @25
+pause
+koePlay (5)
+'\s{strS[1901]}'
+strS[1900] = '__Hey, you two. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I call out to them. '
+gosub @25
+pause
+koePlay (6)
+'\s{strS[1901]}'
+strS[1900] = 'ChildrenHuh? '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They look in my direction. '
+gosub @25
+pause
+koePlay (7)
+'\s{strS[1901]}'
+strS[1900] = '__You\'re just in time. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I take a puppet out the back pocket of my jeans and place it on the ground. '
+gosub @25
+pause
+koePlay (8)
+'\s{strS[1901]}'
+strS[1900] = '__Behold, the fantastic puppet show is about to begin! '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I hold my hand above the puppet and focus. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The puppet springs up from the ground. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Now it can move wherever I want it to. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Step, step, step... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The puppet starts to walk. '
+gosub @25
+pause
+koePlay (9)
+'\s{strS[1901]}'
+strS[1900] = '__Well? Isn\'t it amazing? Isn\'t it cool? '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I glance at their faces. '
+gosub @25
+pause
+koePlay (10)
+'\s{strS[1901]}'
+strS[1900] = 'BoyWhy don\'t we check on the morning glories? '
+gosub @25
+pause
+koePlay (11)
+'\s{strS[1901]}'
+strS[1900] = 'GirlOh, that sounds nice. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They\'re talking about something else. '
+gosub @25
+pause
+koePlay (12)
+'\s{strS[1901]}'
+strS[1900] = '__(Those little...) '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Well, whatever. They still saw my performance. '
+gosub @25
+pause
+koePlay (13)
+'\s{strS[1901]}'
+strS[1900] = '__Look, you two. I let you watch, so isn\'t there something you need to give me? '
+gosub @25
+pause
+koePlay (14)
+'\s{strS[1901]}'
+strS[1900] = 'BoyWhat\'s that man talking about? '
+gosub @25
+pause
+koePlay (15)
+'\s{strS[1901]}'
+strS[1900] = 'GirlJust ignore him, Takashi. '
+gosub @25
+pause
+koePlay (16)
+'\s{strS[1901]}'
+strS[1900] = 'BoyOh, okay. I\'ll kick this thing, and then we\'ll go home. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The boy looks at my feet. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Right at my puppet. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I reach out my hand, but I\'m one second too slow. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Smack...! '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The puppet flies into the sky, and lands somewhere in the distance. '
+gosub @25
+pause
+koePlay (17)
+'\s{strS[1901]}'
+strS[1900] = 'GirlTakashi! Come over here now! '
+gosub @25
+pause
+koePlay (18)
+'\s{strS[1901]}'
+strS[1900] = 'BoyBye bye, sucker! '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The siblings run away. '
+gosub @25
+pause
+wavStopAll
+bgmFadeOut (1200)
+'\s{strS[1901]}'
+strS[1900] = 'Whoooooosh... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A desolate wind blows past. '
+gosub @25
+pause
+wavStop
+wavLoop ('ABURA', 0)
+'\s{strS[1901]}'
+strS[1900] = 'Actually no. This cold breeze only exists in my mind. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m still covered in blazing heat. '
+gosub @25
+pause
+bgmLoop ('BGM00')
+koePlay (19)
+'\s{strS[1901]}'
+strS[1900] = '__Haah... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I sit down on the bench again. '
+gosub @25
+pause
+koePlay (20)
+'\s{strS[1901]}'
+strS[1900] = '__So where was I...? '
+gosub @25
+pause
+koePlay (21)
+'\s{strS[1901]}'
+strS[1900] = '__One ramen set please. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '...No. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I remember now. '
+gosub @25
+pause
+koePlay (22)
+'\s{strS[1901]}'
+strS[1900] = '__I\'d better find my puppet... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I get up. '
+gosub @25
+pause
+koePlay (23)
+'\s{strS[1901]}'
+strS[1900] = '__How far did it go...? '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look up as I walk. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sky spreads out before me. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can see it perfectly, with nothing in the way. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sky and the ground converge at eye level. '
+gosub @25
+pause
+koePlay (24)
+'\s{strS[1901]}'
+strS[1900] = '__(I\'m seriously in the middle of nowhere...) '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look up even higher, and the ground disappears from view. '
+gosub @25
+pause
+wavStopAll
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 0)
+'\s{strS[1901]}'
+strS[1900] = 'I can see nothing but blue. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I feel like I\'m seeing the continuation of that dream I had on the bus. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Yeah, that was definitely a dream. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Soaring endlessly higher and higher... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Flying towards my destination... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'What awaits me there? '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I keep walking forward in order to find out. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The sunlight flickers. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A single bird is fluttering towards the sky. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'What lies ahead is so bright I can barely see it. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'If I close my eyes right now, will that bird take me with it? '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Will I leave my wingless body on the ground? '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I try closing my eyes. '
+gosub @25
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 26)
+wavStopAll
+farcall (8005)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '... '
+gosub @25
+pause
+intF[1107] = 1
+strS[1000] = 'BG001Y'
+goto_unless (intF[1107] == 1) @7
+intF[1107] = 0
+msgHide
+
+  @7
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @11
+goto_unless (!intF[4]) @8
+strS[1003] = 'SDT07'
+goto @9
+
+  @8
+goto_unless (intF[4] == 1) @9
+strS[1003] = 'SDT08'
+
+  @9
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @10
+objBgMove (83, 16, 16)
+goto @11
+
+  @10
+goto_unless (intB[2] == 1) @11
+objBgMove (83, 16, 66)
+
+  @11
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @12
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @12
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = '__...... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I think I heard a voice. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Is someone... calling for me...? '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My neck... hurts. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I suddenly notice the wall of concrete right in front of my face. '
+gosub @25
+pause
+koePlay (25)
+'\s{strS[1901]}'
+strS[1900] = '__(Did I fall asleep...?) '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I try to remember what I was doing. '
+gosub @25
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+goto_unless (intF[1107] == 1) @13
+intF[1107] = 0
+msgHide
+
+  @13
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @17
+goto_unless (!intF[4]) @14
+strS[1003] = 'SDT07'
+goto @15
+
+  @14
+goto_unless (intF[4] == 1) @15
+strS[1003] = 'SDT08'
+
+  @15
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @16
+objBgMove (83, 16, 16)
+goto @17
+
+  @16
+goto_unless (intB[2] == 1) @17
+objBgMove (83, 16, 66)
+
+  @17
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @18
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @18
+bgrMulti (strS[1000], 0)
+'\s{strS[1901]}'
+strS[1900] = 'But I stop before I think too hard. '
+gosub @25
+pause
+koePlay (26)
+'\s{strS[1901]}'
+strS[1900] = '__(It\'s just too sad to think about...) '
+gosub @25
+pause
+bgmLoop ('BGM00')
+'\s{strS[1901]}'
+strS[1900] = 'I was trying to find my puppet after some brat kicked it. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'d walked in the direction it flew and looked around, but in the end I gave up without finding it. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then I sat down on top of this embankment for a rest, and I fainted from hunger and drowsiness. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I think I slept for two or three hours. It\'s already getting dark. '
+gosub @25
+pause
+koePlay (27)
+'\s{strS[1901]}'
+strS[1900] = '__(I can\'t go looking for it anymore, can I...? At least not today.) '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'That puppet is vital in my line of work. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t make money without it. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And I can\'t eat anything without money. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s a matter of life and death. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A vicious cycle... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I look around me. '
+gosub @25
+pause
+koePlay (28)
+'\s{strS[1901]}'
+strS[1900] = '__(Where am I...?) '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t even know which direction I came from. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Growl... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m hungry. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'All right, I need to do something... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Maybe I should switch to being a highway robber. '
+gosub @25
+pause
+intF[1107] = 1
+strS[1000] = 'BG003Y'
+goto_unless (intF[1107] == 1) @19
+intF[1107] = 0
+msgHide
+
+  @19
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @23
+goto_unless (!intF[4]) @20
+strS[1003] = 'SDT07'
+goto @21
+
+  @20
+goto_unless (intF[4] == 1) @21
+strS[1003] = 'SDT08'
+
+  @21
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @22
+objBgMove (83, 16, 16)
+goto @23
+
+  @22
+goto_unless (intB[2] == 1) @23
+objBgMove (83, 16, 66)
+
+  @23
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @24
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @24
+bgrMulti (strS[1000], 48)
+'\s{strS[1901]}'
+strS[1900] = 'I begin to walk unsteadily. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My legs shake from hunger. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Somebody passes me by. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s an old woman. She walks off into the distance at a snail\'s pace. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Gaaahhh... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The old woman overtook me. I\'m slower than an old granny right now. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'This is the worst. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m in no condition to become a highway robber. It\'s the complete opposite. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Small children could deprive me of all my possessions right now. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I\'m totally exhausted. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Hunger is my greatest weakness. '
+gosub @25
+pause
+koePlay (29)
+'\s{strS[1901]}'
+strS[1900] = '__Gwah... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I eventually collapse. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Nothing good\'s happened to me since I arrived here. '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '...My beloved puppet was kicked by some kids... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And I was overtaken by an old woman... '
+gosub @25
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = '......... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '...... '
+gosub @25
+pause
+'\s{strS[1901]}'
+strS[1900] = '... '
+gosub @25
+pause
+bgmStop
+jump (180)
+halt
+CallDLL (0, 10, intC[1] | 1179648)
+goto @26
+
+  @25
+CallDLL (0, 10, 1181548)
+
+  @26
+DisableAutoSavepoints
+store = 8
+strS[1900] = '        '
+
+  @27
+goto_unless (store < 512) @28
+strS[1900] += strS[1900]
+store *= 2
+goto @27
+
+  @28
+CallDLL (0, 12, 1181548, 131073)
+goto_on store {  @35, @36, @34, @29, @30, @31, @32, @33 }
+goto @36
+
+  @29
+br
+goto @28
+
+  @30
+page
+TextPos (0, 0)
+CallDLL (0, 13, 1181548)
+goto @28
+
+  @31
+SetIndent
+goto @28
+
+  @32
+ClearIndent
+goto @28
+
+  @33
+FontColour (6)
+CallDLL (0, 21)
+intC[0] += 1
+
+  @34
+'\s{strS[1900]}\posx{intC[1]}'
+goto @28
+
+  @35
+strS[1901] = strS[1900]
+strS[1900] = 'Error: '
+strS[1900] += strS[1901]
+strS[1900] += '. Unable to format text.'
+strclear (strS[1901])
+FastText
+'\s{strS[1900]}'
+NormalText
+
+  @36
+EnableAutoSavepoints
+ret
+goto @28
+eof

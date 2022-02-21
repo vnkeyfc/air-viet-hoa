@@ -1,0 +1,1384 @@
+{-# cp utf8 #- Disassembled with Kprl 1.40 -}
+
+#file 'SEEN0505.TXT'
+
+#kidoku_type 2
+#character 'Voice'
+#character 'Shiraho'
+#character 'Priest'
+#character 'Kano'
+#character 'Mother'
+#entrypoint 000
+wavStop
+wavLoop ('KAZE', 0)
+'\s{strS[1901]}'
+strS[1900] = 'Wind. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The wind blows. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A golden ocean. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Awakening memories. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The feather conveys them. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A soft, woman\'s voice. '
+gosub @1
+pause
+koePlay (1111491)
+'\s{strS[1901]}'
+strS[1900] = 'VoiceYou may call me \'Shiraho\'. '
+gosub @1
+pause
+koePlay (1111492)
+'\s{strS[1901]}'
+strS[1900] = 'VoicePlease, listen to my story... '
+gosub @1
+pause
+bgmLoop ('BGM08')
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA19A', 56)
+koePlay (1111493)
+'\s{strS[1901]}'
+strS[1900] = 'I recall autumn that year being utterly beautiful. '
+gosub @1
+pause
+koePlay (1111494)
+'\s{strS[1901]}'
+strS[1900] = 'We would always go into the pampas grass after finishing our farm work for the day. '
+gosub @1
+pause
+koePlay (1111495)
+'\s{strS[1901]}'
+strS[1900] = 'The heads of the grass would sway in the sunset, resembling a golden sea. '
+gosub @1
+pause
+koePlay (1111496)
+'\s{strS[1901]}'
+strS[1900] = 'My husband held Yakumo in his arms. '
+gosub @1
+pause
+koePlay (1111497)
+'\s{strS[1901]}'
+strS[1900] = 'Yakumo was our first born child. '
+gosub @1
+pause
+koePlay (1111498)
+'\s{strS[1901]}'
+strS[1900] = 'But she was born with an ugly birthmark on her wrist. '
+gosub @1
+pause
+koePlay (1111499)
+'\s{strS[1901]}'
+strS[1900] = 'The villagers said it was a bad omen. '
+gosub @1
+pause
+koePlay (1111500)
+'\s{strS[1901]}'
+strS[1900] = 'That my child wouldn\'t live very long. '
+gosub @1
+pause
+koePlay (1111501)
+'\s{strS[1901]}'
+strS[1900] = 'But we paid no mind to them. '
+gosub @1
+pause
+koePlay (1111502)
+'\s{strS[1901]}'
+strS[1900] = 'My husband would calm her when she was fretful. '
+gosub @1
+pause
+koePlay (1111503)
+'\s{strS[1901]}'
+strS[1900] = 'And I would sing her lullabies. '
+gosub @1
+pause
+koePlay (1111504)
+'\s{strS[1901]}'
+strS[1900] = 'Then she would stop crying. '
+gosub @1
+pause
+koePlay (1111505)
+'\s{strS[1901]}'
+strS[1900] = 'But that day was different. '
+gosub @1
+pause
+koePlay (1111506)
+'\s{strS[1901]}'
+strS[1900] = 'Yakumo was reaching for something. '
+gosub @1
+pause
+koePlay (1111507)
+'\s{strS[1901]}'
+strS[1900] = 'It was a feather. '
+gosub @1
+pause
+koePlay (1111508)
+'\s{strS[1901]}'
+strS[1900] = 'A bright white feather that twirled down through the sunset. '
+gosub @1
+pause
+koePlay (1111509)
+'\s{strS[1901]}'
+strS[1900] = 'I caught the feather, and handed it to her. '
+gosub @1
+pause
+koePlay (1111510)
+'\s{strS[1901]}'
+strS[1900] = 'And when she grasped it, '
+gosub @1
+pause
+koePlay (1111511)
+'\s{strS[1901]}'
+strS[1900] = 'The feather began to shine. '
+gosub @1
+pause
+koePlay (1111512)
+'\s{strS[1901]}'
+strS[1900] = 'Yakumo laughed. '
+gosub @1
+pause
+koePlay (1111513)
+'\s{strS[1901]}'
+strS[1900] = 'My husband laughed too. '
+gosub @1
+pause
+koePlay (1111514)
+'\s{strS[1901]}'
+strS[1900] = 'Even I laughed. '
+gosub @1
+pause
+koePlay (1111515)
+'\s{strS[1901]}'
+strS[1900] = 'We were sure that feather was a gift from the gods. Something that would protect us. '
+gosub @1
+pause
+koePlay (1111516)
+'\s{strS[1901]}'
+strS[1900] = 'I made a wish to the feather. '
+gosub @1
+pause
+koePlay (1111517)
+'\s{strS[1901]}'
+strS[1900] = 'A wish for my child to grow up healthy and kind. '
+gosub @1
+pause
+koePlay (1111518)
+'\s{strS[1901]}'
+strS[1900] = 'That was all I longed for. '
+gosub @1
+pause
+koePlay (1111519)
+'\s{strS[1901]}'
+strS[1900] = 'That was my happiness. '
+gosub @1
+pause
+koePlay (1111520)
+'\s{strS[1901]}'
+strS[1900] = 'My husband and child were by my side. '
+gosub @1
+pause
+koePlay (1111521)
+'\s{strS[1901]}'
+strS[1900] = 'That was all I needed to be happy. '
+gosub @1
+pause
+koePlay (1111522)
+'\s{strS[1901]}'
+strS[1900] = 'That autumn, '
+gosub @1
+pause
+koePlay (1111523)
+'\s{strS[1901]}'
+strS[1900] = 'War broke out. '
+gosub @1
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 56)
+koePlay (1111524)
+'\s{strS[1901]}'
+strS[1900] = 'A foreign army brought ships, and invaded the harbour. '
+gosub @1
+pause
+koePlay (1111525)
+'\s{strS[1901]}'
+strS[1900] = 'Tens of thousands of men arriving in countless warships. '
+gosub @1
+pause
+koePlay (1111526)
+'\s{strS[1901]}'
+strS[1900] = 'I heard they had thousands of cavalry as well. '
+gosub @1
+pause
+koePlay (1111527)
+'\s{strS[1901]}'
+strS[1900] = 'It wasn\'t even a battle. '
+gosub @1
+pause
+koePlay (1111528)
+'\s{strS[1901]}'
+strS[1900] = 'A sound like thunder could be heard near the beach. '
+gosub @1
+pause
+koePlay (1111529)
+'\s{strS[1901]}'
+strS[1900] = 'It was always followed by the whinny of horses, and the sound of our warriors dying. '
+gosub @1
+pause
+koePlay (1111530)
+'\s{strS[1901]}'
+strS[1900] = 'They tried to fight, but most didn\'t even shoot a single arrow. '
+gosub @1
+pause
+koePlay (1111531)
+'\s{strS[1901]}'
+strS[1900] = 'All of the men in our village were rounded up. '
+gosub @1
+pause
+koePlay (1111532)
+'\s{strS[1901]}'
+strS[1900] = 'Even my husband was lead away. '
+gosub @1
+pause
+koePlay (1111533)
+'\s{strS[1901]}'
+strS[1900] = 'I\'ll definitely come back. '
+gosub @1
+pause
+koePlay (1111534)
+'\s{strS[1901]}'
+strS[1900] = 'That\'s what he said as he left our house. '
+gosub @1
+pause
+koePlay (1111535)
+'\s{strS[1901]}'
+strS[1900] = 'I watched him leave, waving my sleeve so much it almost tore. '
+gosub @1
+pause
+koePlay (1111536)
+'\s{strS[1901]}'
+strS[1900] = 'Yakumo just giggled. She didn\'t understand what was happening. '
+gosub @1
+pause
+koePlay (1111537)
+'\s{strS[1901]}'
+strS[1900] = 'My husband never came back. '
+gosub @1
+pause
+koePlay (1111538)
+'\s{strS[1901]}'
+strS[1900] = 'I was told the enemy were cruel. '
+gosub @1
+pause
+koePlay (1111539)
+'\s{strS[1901]}'
+strS[1900] = 'I heard everyone who faced them was killed. '
+gosub @1
+pause
+koePlay (1111540)
+'\s{strS[1901]}'
+strS[1900] = 'Even the shrine to the War God was captured by them and burnt down. '
+gosub @1
+pause
+koePlay (1111541)
+'\s{strS[1901]}'
+strS[1900] = 'Everyone around me had already resigned themselves. '
+gosub @1
+pause
+koePlay (1111542)
+'\s{strS[1901]}'
+strS[1900] = 'But one night, '
+gosub @1
+pause
+koePlay (1111543)
+'\s{strS[1901]}'
+strS[1900] = 'A gale was blowing. '
+gosub @1
+pause
+koePlay (1111544)
+'\s{strS[1901]}'
+strS[1900] = 'A fierce gale seldom seen in that season. '
+gosub @1
+pause
+koePlay (1111545)
+'\s{strS[1901]}'
+strS[1900] = 'And when dawn broke, everything had changed. '
+gosub @1
+pause
+koePlay (1111546)
+'\s{strS[1901]}'
+strS[1900] = 'Every last foreign ship in the harbour had sunk. '
+gosub @1
+pause
+koePlay (1111547)
+'\s{strS[1901]}'
+strS[1900] = 'The war was over. '
+gosub @1
+pause
+koePlay (1111548)
+'\s{strS[1901]}'
+strS[1900] = 'Everyone in the village was talking about it. '
+gosub @1
+pause
+koePlay (1111549)
+'\s{strS[1901]}'
+strS[1900] = 'They said the Wind God had come down and destroyed the ships. '
+gosub @1
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA19A', 56)
+koePlay (1111550)
+'\s{strS[1901]}'
+strS[1900] = 'I just wanted my husband to return home. '
+gosub @1
+pause
+koePlay (1111551)
+'\s{strS[1901]}'
+strS[1900] = 'I wanted to make him some new clothes when he came home. '
+gosub @1
+pause
+koePlay (1111552)
+'\s{strS[1901]}'
+strS[1900] = 'I wanted to make his favourite food every night. '
+gosub @1
+pause
+koePlay (1111553)
+'\s{strS[1901]}'
+strS[1900] = 'I knew he would embrace me the moment he came back. '
+gosub @1
+pause
+koePlay (1111554)
+'\s{strS[1901]}'
+strS[1900] = 'I\'d put red on my lips, and scape the dead skin off my face with a razor... '
+gosub @1
+pause
+koePlay (1111555)
+'\s{strS[1901]}'
+strS[1900] = 'I knew it was just a dream, and that I had no control over it. '
+gosub @1
+pause
+koePlay (1111556)
+'\s{strS[1901]}'
+strS[1900] = 'But I still kept waiting. '
+gosub @1
+pause
+koePlay (1111557)
+'\s{strS[1901]}'
+strS[1900] = 'One day, a government official rode into the village. '
+gosub @1
+pause
+koePlay (1111558)
+'\s{strS[1901]}'
+strS[1900] = 'He asked if anyone here had picked up a shining feather. '
+gosub @1
+pause
+koePlay (1111559)
+'\s{strS[1901]}'
+strS[1900] = 'He announced that anyone who touched the feather should step forward, as it was an unholy thing. '
+gosub @1
+pause
+koePlay (1111560)
+'\s{strS[1901]}'
+strS[1900] = 'Yakumo was still playing with the feather. '
+gosub @1
+pause
+koePlay (1111561)
+'\s{strS[1901]}'
+strS[1900] = 'She seemed really happy whenever she held it. '
+gosub @1
+pause
+koePlay (1111562)
+'\s{strS[1901]}'
+strS[1900] = 'I held her in my arms, and hid the feather away under my kimono. '
+gosub @1
+pause
+koePlay (1111563)
+'\s{strS[1901]}'
+strS[1900] = 'And that night, I left the village. '
+gosub @1
+pause
+wavStopAll
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG023Y', 0)
+koePlay (1111564)
+'\s{strS[1901]}'
+strS[1900] = 'I got on a freighter, and left the plot of land I\'d always lived on. '
+gosub @1
+pause
+koePlay (1111565)
+'\s{strS[1901]}'
+strS[1900] = 'Going on a journey with an infant wasn\'t easy. '
+gosub @1
+pause
+koePlay (1111566)
+'\s{strS[1901]}'
+strS[1900] = 'We walked through deep mountain paths for days and days. '
+gosub @1
+pause
+koePlay (1111567)
+'\s{strS[1901]}'
+strS[1900] = 'I was sure there would be a place somewhere that would accept us. '
+gosub @1
+pause
+koePlay (1111568)
+'\s{strS[1901]}'
+strS[1900] = 'I continued my journey believing that. '
+gosub @1
+pause
+koePlay (1111569)
+'\s{strS[1901]}'
+strS[1900] = 'Eventually we found a village. '
+gosub @1
+pause
+koePlay (1111570)
+'\s{strS[1901]}'
+strS[1900] = 'A calm little village. '
+gosub @1
+pause
+koePlay (1111571)
+'\s{strS[1901]}'
+strS[1900] = 'The villagers barely scraped a living from fishing. '
+gosub @1
+pause
+koePlay (1111572)
+'\s{strS[1901]}'
+strS[1900] = 'There was an old shrine on the top of a nearby hill. '
+gosub @1
+pause
+koePlay (1111573)
+'\s{strS[1901]}'
+strS[1900] = 'We started living there. '
+gosub @1
+pause
+koePlay (1111574)
+'\s{strS[1901]}'
+strS[1900] = 'The priests were really kind, despite us being strangers. '
+gosub @1
+pause
+koePlay (1111575)
+'\s{strS[1901]}'
+strS[1900] = 'There we could start a new life. '
+gosub @1
+pause
+koePlay (1111576)
+'\s{strS[1901]}'
+strS[1900] = 'I could live happily with Yakumo. '
+gosub @1
+pause
+koePlay (1111577)
+'\s{strS[1901]}'
+strS[1900] = 'That\'s what I thought. '
+gosub @1
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+koePlay (1111578)
+'\s{strS[1901]}'
+strS[1900] = 'And yet... '
+gosub @1
+pause
+bgmFadeOutEx
+bgmLoop ('BGM14')
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA08A', 0)
+koePlay (1111579)
+'\s{strS[1901]}'
+strS[1900] = 'Shiraho...Are you awake? '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A gentle voice. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The candle trembles near my pillow. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A warm finger touches my forehead. '
+gosub @1
+pause
+koePlay (1111580)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoIs my child...? '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A second finger touches my forehead. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'An old, uneven finger. '
+gosub @1
+pause
+koePlay (1111581)
+'\s{strS[1901]}'
+strS[1900] = 'PriestThe danger has passed. Her fever should die down shortly. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can hear a man\'s voice. '
+gosub @1
+pause
+koePlay (1111582)
+'\s{strS[1901]}'
+strS[1900] = 'PriestBut... '
+gosub @1
+pause
+koePlay (1111583)
+'\s{strS[1901]}'
+strS[1900] = 'PriestThe villagers think you\'ve brought a plague here. '
+gosub @1
+pause
+koePlay (1111584)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoThat can\'t-! '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Someone\'s looking down at me. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A sad, worried face. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I want to tell them we\'re fine. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But I can\'t move. '
+gosub @1
+pause
+koePlay (1111585)
+'\s{strS[1901]}'
+strS[1900] = 'PriestIt was a mistake to let you stay here... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The man\'s voice continues. '
+gosub @1
+pause
+koePlay (1111586)
+'\s{strS[1901]}'
+strS[1900] = 'PriestOur shrine holds a Mikogami. '
+gosub @1
+pause
+koePlay (1111587)
+'\s{strS[1901]}'
+strS[1900] = 'PriestA Mikogami marks those who bring catastrophe to the land. '
+gosub @1
+pause
+koePlay (1111588)
+'\s{strS[1901]}'
+strS[1900] = 'PriestJust like your child. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'His old finger presses against my wrist. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My tiny wrist. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Where a dark, smudge-like bruise is. '
+gosub @1
+pause
+koePlay (1111589)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoMy child is not a plague god! '
+gosub @1
+pause
+koePlay (1111590)
+'\s{strS[1901]}'
+strS[1900] = 'PriestWe know she isn\'t. '
+gosub @1
+pause
+koePlay (1111591)
+'\s{strS[1901]}'
+strS[1900] = 'PriestBut I\'m afraid the villagers do not agree with me. '
+gosub @1
+pause
+koePlay (1111592)
+'\s{strS[1901]}'
+strS[1900] = 'PriestThose who know of her birthmark wish for her to be presented to the god... '
+gosub @1
+pause
+koePlay (1111593)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoAre you... Are you saying my child should become an offering!? '
+gosub @1
+pause
+koePlay (1111594)
+'\s{strS[1901]}'
+strS[1900] = 'PriestThat is how the people here prevent calamity. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'An oppressive silence. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The man\'s voice seems to almost be warning us. '
+gosub @1
+pause
+koePlay (1111595)
+'\s{strS[1901]}'
+strS[1900] = 'PriestYou are still young. '
+gosub @1
+pause
+koePlay (1111596)
+'\s{strS[1901]}'
+strS[1900] = 'PriestYou will have many chances in the future to have more children. '
+gosub @1
+pause
+koePlay (1111597)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoI have told you before. '
+gosub @1
+pause
+koePlay (1111598)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoThis child is my life. '
+gosub @1
+pause
+koePlay (1111599)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoMy only treasure, and the only thing I have left of my husband. '
+gosub @1
+pause
+koePlay (1111600)
+'\s{strS[1901]}'
+strS[1900] = 'PriestPlease give up. '
+gosub @1
+pause
+koePlay (1111601)
+'\s{strS[1901]}'
+strS[1900] = 'PriestAll of us will be killed otherwise. '
+gosub @1
+pause
+koePlay (1111602)
+'\s{strS[1901]}'
+strS[1900] = 'PriestIt won\'t just be you, but everyone in the shrine. '
+gosub @1
+pause
+koePlay (1111603)
+'\s{strS[1901]}'
+strS[1900] = 'Shiraho......... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Silent eyes. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They look at me. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I feel a sleeve move. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A slender wrist. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She put a gentle finger over my throat. '
+gosub @1
+pause
+koePlay (1111604)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoThen I would rather... by my own hand... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She pushes down. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can feel her fingertips trembling. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t breathe. '
+gosub @1
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'I can\'t see anything. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It doesn\'t hurt. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s not as scary as I thought. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I don\'t have any regrets either. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s just... sad. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Unbearably sad. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I won\'t be able to see that person\'s smiling face anymore. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I won\'t get to hear her singing again either. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'When I thought that... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Suddenly, all the strength left those fingers. '
+gosub @1
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA08A', 0)
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA08B', 0)
+koePlay (1111605)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoI can\'t do it! '
+gosub @1
+pause
+koePlay (1111606)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoI could never do it...! '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I can see light within the darkness. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A teardrop. '
+gosub @1
+pause
+koePlay (1111607)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoWhat mother would ever kill her own child? '
+gosub @1
+pause
+koePlay (1111608)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoEven if she does spread disease... '
+gosub @1
+pause
+koePlay (1111609)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoEven if she will ruin society... '
+gosub @1
+pause
+koePlay (1111610)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoWhat mother would ever kill her own child? '
+gosub @1
+pause
+koePlay (1111611)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoHow could I... do such a thing? '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'There\'s a wooden bucket near my pillow. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Inside is a razor, and some crude cosmetic tools. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She grasps the handle with trembling fingers... '
+gosub @1
+pause
+koePlay (1111612)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoI wish to sacrifice myself instead. '
+gosub @1
+pause
+koePlay (1111613)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoPlease, at least... '
+gosub @1
+pause
+koePlay (1111614)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoAt least let me save my child! '
+gosub @1
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+koePlay (1111615)
+'\s{strS[1901]}'
+strS[1900] = 'PriestDon\'t be rash...! '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The man rushes over, but he\'s too late. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My mother runs the razor across her skin. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She cuts herself over and over. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As though to make up for my birthmark. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her wrists are dyed red. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her thin body crumbles. '
+gosub @1
+pause
+koePlay (1111616)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoPlease, please... '
+gosub @1
+pause
+koePlay (1111617)
+'\s{strS[1901]}'
+strS[1900] = 'ShirahoAt least... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her wrist falls into a pool of blood. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She closes her eyes. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Only her tears continue flowing. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her life drains away. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My beloved mother vanishes into the distance. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'I watch, unable to do anything. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'And then... '
+gosub @1
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+'\s{strS[1901]}'
+strS[1900] = 'Light burst forth. '
+gosub @1
+pause
+bgmFadeOutEx
+bgmLoop ('BGM24')
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA19A', 56)
+'\s{strS[1901]}'
+strS[1900] = 'The wind blows. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The feather quivers. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The last dream. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The dream that isn\'t a dream. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'My memories that aren\'t memories. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'The golden ocean. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Something sleeps in the depths of this feather. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It\'s... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A soul. '
+gosub @1
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 56)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG011N2', 56)
+'\s{strS[1901]}'
+strS[1900] = 'The shrine grounds. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Multicoloured carts and stalls are lined up. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'An orange glow flows from the Chinese lanterns. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'People enjoying the festival bustle past. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kano stands among them, alone. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She\'s wearing her yukata, and holding a balloon in one hand. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Maybe that\'s why she looks so young. '
+gosub @1
+pause
+koePlay (1111618)
+'\s{strS[1901]}'
+strS[1900] = 'Kano...Mum! '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks around helplessly. '
+gosub @1
+pause
+koePlay (1111619)
+'\s{strS[1901]}'
+strS[1900] = 'KanoMum, where are you? '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A kind voice answers. '
+gosub @1
+pause
+koePlay (1111620)
+'\s{strS[1901]}'
+strS[1900] = 'MotherI\'m here. '
+gosub @1
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA04', 0)
+koePlay (1111621)
+'\s{strS[1901]}'
+strS[1900] = 'KanoMum... '
+gosub @1
+pause
+koePlay (1111622)
+'\s{strS[1901]}'
+strS[1900] = 'MotherThat\'s right, I\'m over here. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kano feels relieved. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'But her smile seems awkward. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As though she\'s happy, but perplexed. '
+gosub @1
+pause
+koePlay (1111623)
+'\s{strS[1901]}'
+strS[1900] = 'MotherAnything you want to eat? '
+gosub @1
+pause
+koePlay (1111624)
+'\s{strS[1901]}'
+strS[1900] = 'KanoI\'m already full. '
+gosub @1
+pause
+koePlay (1111625)
+'\s{strS[1901]}'
+strS[1900] = 'MotherHow about buying something? '
+gosub @1
+pause
+koePlay (1111626)
+'\s{strS[1901]}'
+strS[1900] = 'KanoNo. '
+gosub @1
+pause
+koePlay (1111627)
+'\s{strS[1901]}'
+strS[1900] = 'MotherDo you want more balloons? '
+gosub @1
+pause
+koePlay (1111628)
+'\s{strS[1901]}'
+strS[1900] = 'KanoNo... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kano stops talking. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her mother falls silent too. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'They can only hear the festival band playing over and over. '
+gosub @1
+pause
+koePlay (1111629)
+'\s{strS[1901]}'
+strS[1900] = 'KanoMum. '
+gosub @1
+pause
+koePlay (1111630)
+'\s{strS[1901]}'
+strS[1900] = 'MotherYes? '
+gosub @1
+pause
+koePlay (1111631)
+'\s{strS[1901]}'
+strS[1900] = 'KanoUmm... '
+gosub @1
+pause
+koePlay (1111632)
+'\s{strS[1901]}'
+strS[1900] = 'KanoWell, umm... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kano......... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She looks around. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'As if to confirm where she is. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Then Kano speaks. '
+gosub @1
+pause
+koePlay (1111633)
+'\s{strS[1901]}'
+strS[1900] = 'KanoI\'d like to go home. '
+gosub @1
+pause
+koePlay (1111634)
+'\s{strS[1901]}'
+strS[1900] = 'KanoOnee-chan\'s waiting for me. '
+gosub @1
+pause
+koePlay (1111635)
+'\s{strS[1901]}'
+strS[1900] = 'KanoShe\'s probably really worried. '
+gosub @1
+pause
+koePlay (1111636)
+'\s{strS[1901]}'
+strS[1900] = 'KanoPotato\'s there too. '
+gosub @1
+pause
+koePlay (1111637)
+'\s{strS[1901]}'
+strS[1900] = 'KanoI think he\'s worried too. '
+gosub @1
+pause
+koePlay (1111638)
+'\s{strS[1901]}'
+strS[1900] = 'KanoAnd besides... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She lowers her head a little. '
+gosub @1
+pause
+koePlay (1111639)
+'\s{strS[1901]}'
+strS[1900] = 'KanoThere\'s someone I really like back there too. '
+gosub @1
+pause
+koePlay (1111640)
+'\s{strS[1901]}'
+strS[1900] = 'KanoHe\'s a little strange, but he\'s nice to me. '
+gosub @1
+pause
+koePlay (1111641)
+'\s{strS[1901]}'
+strS[1900] = 'KanoHe\'s looking for a girl. '
+gosub @1
+pause
+koePlay (1111642)
+'\s{strS[1901]}'
+strS[1900] = 'KanoA girl in the sky. '
+gosub @1
+pause
+koePlay (1111643)
+'\s{strS[1901]}'
+strS[1900] = 'KanoI kept thinking it\'d be nice if I was her. '
+gosub @1
+pause
+koePlay (1111644)
+'\s{strS[1901]}'
+strS[1900] = 'KanoBut it doesn\'t look like I am. '
+gosub @1
+pause
+koePlay (1111645)
+'\s{strS[1901]}'
+strS[1900] = 'KanoAhaha, I guess my love\'s unrequited... '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She laughs, then falls silent again. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her mother just watches over her. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her silhouette slowly grows lighter. '
+gosub @1
+pause
+koePlay (1111646)
+'\s{strS[1901]}'
+strS[1900] = 'MotherIf you\'re in pain, then why not come with me? '
+gosub @1
+pause
+koePlay (1111647)
+'\s{strS[1901]}'
+strS[1900] = 'MotherYou\'ve always been a needy child, after all. '
+gosub @1
+pause
+koePlay (1111648)
+'\s{strS[1901]}'
+strS[1900] = 'MotherSo you can stay with me as long as you want. '
+gosub @1
+pause
+koePlay (1111649)
+'\s{strS[1901]}'
+strS[1900] = 'MotherHere... '
+gosub @1
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA05', 0)
+'\s{strS[1901]}'
+strS[1900] = 'She holds out her hand. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'A warmth that Kano wants more than anything. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'It brings back memories of her cherished youth. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Kano can\'t experience them anymore. '
+gosub @1
+pause
+koePlay (1111650)
+'\s{strS[1901]}'
+strS[1900] = 'KanoUmm, Mum. '
+gosub @1
+pause
+koePlay (1111651)
+'\s{strS[1901]}'
+strS[1900] = 'KanoThank you. '
+gosub @1
+pause
+koePlay (1111652)
+'\s{strS[1901]}'
+strS[1900] = 'KanoI don\'t really remember you. '
+gosub @1
+pause
+koePlay (1111653)
+'\s{strS[1901]}'
+strS[1900] = 'KanoI thought it was my fault that you didn\'t live a long life... '
+gosub @1
+pause
+koePlay (1111654)
+'\s{strS[1901]}'
+strS[1900] = 'KanoBut now... '
+gosub @1
+pause
+koePlay (1111655)
+'\s{strS[1901]}'
+strS[1900] = 'KanoI want to thank you, for having me. '
+gosub @1
+pause
+koePlay (1111656)
+'\s{strS[1901]}'
+strS[1900] = 'KanoThat\'s all I wanted to say. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her mother doesn\'t say anything. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'Her hand shakes slightly. '
+gosub @1
+pause
+'\s{strS[1901]}'
+strS[1900] = 'She smiles a tiny bit. '
+gosub @1
+pause
+koePlay (1111657)
+'\s{strS[1901]}'
+strS[1900] = 'MotherKano. '
+gosub @1
+pause
+koePlay (1111658)
+'\s{strS[1901]}'
+strS[1900] = 'MotherYou don\'t have wings. '
+gosub @1
+pause
+koePlay (1111659)
+'\s{strS[1901]}'
+strS[1900] = 'MotherYou can never come to the sky, no matter how much it hurts... '
+gosub @1
+pause
+koePlay (1111660)
+'\s{strS[1901]}'
+strS[1900] = 'MotherSo be happy down there.  '
+gosub @1
+pause
+farcall (8505)
+jump (506)
+halt
+CallDLL (0, 10, intC[1] | 1179648)
+goto @2
+
+  @1
+CallDLL (0, 10, 1181548)
+
+  @2
+DisableAutoSavepoints
+store = 8
+strS[1900] = '        '
+
+  @3
+goto_unless (store < 512) @4
+strS[1900] += strS[1900]
+store *= 2
+goto @3
+
+  @4
+CallDLL (0, 12, 1181548, 131073)
+goto_on store {  @11, @12, @10, @5, @6, @7, @8, @9 }
+goto @12
+
+  @5
+br
+goto @4
+
+  @6
+page
+TextPos (0, 0)
+CallDLL (0, 13, 1181548)
+goto @4
+
+  @7
+SetIndent
+goto @4
+
+  @8
+ClearIndent
+goto @4
+
+  @9
+FontColour (6)
+CallDLL (0, 21)
+intC[0] += 1
+
+  @10
+'\s{strS[1900]}\posx{intC[1]}'
+goto @4
+
+  @11
+strS[1901] = strS[1900]
+strS[1900] = 'Error: '
+strS[1900] += strS[1901]
+strS[1900] += '. Unable to format text.'
+strclear (strS[1901])
+FastText
+'\s{strS[1900]}'
+NormalText
+
+  @12
+EnableAutoSavepoints
+ret
+goto @4
+eof
